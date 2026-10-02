@@ -252,3 +252,23 @@
 .event-lightbox.open{display:flex}
 .event-lb-img{max-width:min(92vw,1200px);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:10px;box-shadow:0 20px 70px rgba(0,0,0,.55)}
 .event-lb-close{position:fixed;top:14px;right:20px;border:0;background:transparent;color:var(--cream);font-size:2.5rem;line-height:1;cursor:pointer;padding:6px 10px}
+
+
+/* Gallery portrait emphasis: larger personal photos */
+.gallery{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  width:min(100%,1040px)!important;
+  gap:14px!important;
+}
+.gallery .gitem{
+  max-width:250px!important;
+  height:180px!important;
+}
+@media(max-width:900px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;width:min(100%,520px)!important}
+  .gallery .gitem{max-width:250px!important;height:180px!important}
+}
+@media(max-width:620px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;width:100%!important}
+  .gallery .gitem{max-width:none!important;height:145px!important}
+}
