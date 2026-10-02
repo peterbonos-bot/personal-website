@@ -198,3 +198,13 @@
   .gallery{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;width:100%!important}
   .gallery .gitem{max-width:none!important;height:105px!important}
 }
+
+/* Definitive gallery grid placement: override legacy nth-child spans */
+.gallery > .gitem,
+.gallery > .gitem:nth-child(1),
+.gallery > .gitem:nth-child(2),
+.gallery > .gitem:nth-child(n+3),
+.gallery > .gitem:nth-child(n){
+  grid-column:auto!important;
+  grid-row:auto!important;
+}
