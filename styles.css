@@ -208,3 +208,6 @@
   grid-column:auto!important;
   grid-row:auto!important;
 }
+
+/* Upcoming performance images */
+.event-image{width:300px!important;max-width:100%;height:auto;display:block;margin:14px 0 18px;border-radius:12px;border:1px solid var(--line)}
