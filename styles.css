@@ -78,3 +78,20 @@
  .compact-page-hero .wrap{padding:38px 0 22px}
  .compact-page-hero h1{font-size:clamp(2.7rem,14vw,4rem)}
 }
+
+/* Site-wide type scale cleanup + compact branch heroes */
+.branch-hero .hero-copy{max-width:850px}
+.branch-hero .hero-copy h1{font-size:clamp(3.1rem,6vw,5.4rem);line-height:.88;margin:.08em 0 .12em}
+.branch-hero .hero-copy .lede{font-size:clamp(1rem,1.45vw,1.18rem);max-width:760px}
+.branch-hero .hero-role{font-size:clamp(1rem,1.5vw,1.2rem)}
+.branch-hero-overlay{min-height:62vh!important;padding-top:46px;padding-bottom:36px}
+.section-head h2,.editorial-head h2{font-size:clamp(2rem,3.5vw,3.25rem)}
+.intro-statement p{font-size:clamp(1.2rem,2.15vw,1.75rem)}
+.contact-message h2{font-size:clamp(2.1rem,4vw,3.6rem)}
+.resume-section-title{font-size:clamp(2rem,3.2vw,2.65rem);margin:32px 0 18px}
+@media(max-width:620px){
+ .branch-hero,.branch-hero-overlay{min-height:56vh!important}
+ .branch-hero-overlay{padding-top:34px;padding-bottom:28px}
+ .branch-hero .hero-copy h1{font-size:clamp(2.8rem,13vw,4.1rem)}
+ .section-head h2,.editorial-head h2{font-size:clamp(1.9rem,10vw,2.7rem)}
+}
