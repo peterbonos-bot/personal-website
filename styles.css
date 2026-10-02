@@ -318,3 +318,32 @@ section:not(.intro-band):not(.performance-calendar):before{content:"";position:a
 footer{border-top:1px solid rgba(227,193,90,.2);background:#061722}
 @media(max-width:900px){.c4-hero-grid{grid-template-columns:1fr;gap:32px;padding:54px 0}.c4-collage{height:520px}.c4-featured{grid-template-columns:1fr!important}.c4-featured .c4-card img{height:260px}}
 @media(max-width:620px){.c4-hero-grid{padding:40px 0}.c4-hero h1{font-size:clamp(4rem,20vw,6rem)}.c4-collage{height:430px}.c4-photo-main{width:62%;height:68%}.c4-photo-performance{width:51%;height:48%;top:18%}.c4-photo-band{width:76%;height:31%}.c4-motif{height:16px;background-size:18px 18px}.calendar-event:hover{padding-left:0;padding-right:0}}
+
+
+/* C5 immersive editorial refinement — face-safe imagery */
+.c5-hero{min-height:auto!important;background:linear-gradient(115deg,#071925 0%,#0b2d39 58%,#16343b 100%);overflow:hidden;border-bottom:0}
+.c5-hero-grid{display:grid;grid-template-columns:.72fr .88fr 1.15fr;min-height:660px;align-items:stretch;position:relative}
+.c5-copy{padding:82px 34px 58px 0;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:4}
+.c5-copy h1{font-size:clamp(4.8rem,7vw,7.7rem);line-height:.8;text-transform:uppercase;letter-spacing:.015em;margin:.2em 0 .28em}
+.c5-copy .hero-role{text-transform:uppercase;color:var(--cream);letter-spacing:.09em;line-height:1.65;font-size:.95rem}
+.c5-quote{font-family:Georgia,serif;font-style:italic;font-size:clamp(1.2rem,2vw,1.65rem);line-height:1.4;color:var(--cream);margin:24px 0}
+.c5-portrait{position:relative;z-index:3;min-height:660px;border-left:1px solid rgba(227,193,90,.35);border-right:1px solid rgba(227,193,90,.35);background:#18363c;overflow:hidden}
+.c5-portrait img{width:100%;height:100%;object-fit:contain;object-position:center center;background:#18363c;display:block}
+.c5-stack{position:relative;min-height:660px;padding:45px 0 45px 28px}
+.c5-stack figure{position:absolute;margin:0;overflow:hidden;border:2px solid var(--amber);box-shadow:0 20px 45px rgba(0,0,0,.38);background:#071925}
+.c5-stack figure img{width:100%;height:100%;object-fit:contain;object-position:center;background:#071925;display:block}
+.c5-stack figure:nth-child(1){width:86%;height:38%;right:0;top:44px;transform:rotate(-2deg);z-index:3}
+.c5-stack figure:nth-child(2){width:65%;height:42%;left:18px;top:300px;transform:rotate(1.5deg);z-index:4}
+.c5-stack .c5-oud{width:31%;height:47%;right:0;bottom:36px;z-index:5;border-color:var(--teal)}
+.c5-stack .c5-oud img{object-fit:contain;background:#142b32}
+.c5-pattern{height:22px;background:repeating-linear-gradient(135deg,#8e452f 0 8px,#c99045 8px 12px,#071925 12px 20px,#2d8f86 20px 24px);border-top:1px solid rgba(227,193,90,.5);border-bottom:1px solid rgba(227,193,90,.4)}
+.c5-explore{background:linear-gradient(180deg,#08202c,#071925);padding-top:72px}
+.c5-explore .section-head{border-left:3px solid var(--amber);padding-left:20px}
+.c5-explore .c4-featured{margin-top:32px}
+.c5-explore .c4-card{border-radius:2px!important;border:1px solid rgba(227,193,90,.38)!important;box-shadow:0 14px 34px rgba(0,0,0,.32)}
+.c5-explore .c4-card img{height:230px;object-fit:contain;background:#061722;padding:6px;box-sizing:border-box}
+.intro-band{border-top:0;background:linear-gradient(90deg,#f3eddc 0%,#e9d6ae 100%);color:#102735}
+.intro-band p{color:#102735}.intro-band .tag{color:#8e452f}
+.performance-calendar:before{content:"";display:block;height:12px;background:repeating-linear-gradient(135deg,#8e452f 0 7px,#c99045 7px 11px,#071925 11px 18px,#2d8f86 18px 22px)}
+@media(max-width:980px){.c5-hero-grid{grid-template-columns:.9fr 1.1fr}.c5-copy{padding-left:0}.c5-portrait{min-height:560px}.c5-stack{grid-column:1/-1;min-height:470px;padding:25px 0}.c5-stack figure:nth-child(1){width:55%;height:56%;left:0;top:28px}.c5-stack figure:nth-child(2){width:47%;height:52%;left:34%;top:190px}.c5-stack .c5-oud{width:27%;height:62%;right:0;bottom:20px}}
+@media(max-width:650px){.c5-hero-grid{display:block}.c5-copy{padding:48px 0 34px}.c5-copy h1{font-size:clamp(4rem,20vw,6rem)}.c5-portrait{min-height:0;height:auto}.c5-portrait img{height:auto;object-fit:contain}.c5-stack{min-height:620px}.c5-stack figure:nth-child(1){width:94%;height:34%;left:3%;top:30px}.c5-stack figure:nth-child(2){width:70%;height:37%;left:3%;top:260px}.c5-stack .c5-oud{width:38%;height:39%;right:2%;bottom:24px}.c5-explore .c4-card img{height:auto;max-height:330px}}
