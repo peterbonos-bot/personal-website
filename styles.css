@@ -211,3 +211,10 @@
 
 /* Upcoming performance images */
 .event-image{width:300px!important;max-width:100%;height:auto;display:block;margin:14px 0 18px;border-radius:12px;border:1px solid var(--line)}
+
+/* Gallery thumbnails: show full portrait images without cropping */
+.gallery .gitem img{
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#071925;
+}
