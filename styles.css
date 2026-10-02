@@ -15,3 +15,56 @@
 
 /* Compact Music / Projects page */
 .projects-hero .wrap{padding:58px 0 30px}.projects-hero h1{font-size:clamp(3rem,5.4vw,5rem);margin:.08em 0 .12em}.projects-hero .lede{max-width:900px;margin:.5rem 0 0}.projects-section{padding:36px 0 46px}.projects-section .section-head,.collaborations-section .section-head{margin-bottom:24px}.projects-section .section-head h2,.collaborations-section .section-head h2{font-size:clamp(2.2rem,4vw,3.5rem)}.projects-section .project-asym{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0}.projects-section .project-card{margin-top:0}.projects-section .project-card>img{height:220px}.projects-section .project-card>div{padding:18px}.projects-section .project-card h3{font-size:1.35rem}.projects-section .project-card p{font-size:.94rem;margin:.45rem 0}.projects-section .project-card .links{margin-top:14px}.collaborations-section{padding:42px 0}.collaborations-section .venue-flow{grid-template-columns:repeat(2,1fr)}.collaborations-section .venue-flow article{padding:20px 22px}.collaborations-section .venue-flow h3{font-size:1.3rem}.collaborations-section .venue-flow p{margin:.35rem 0 1rem}.collaborations-section+.intro-band{padding:30px 0}.collaborations-section+.intro-band .intro-statement p{font-size:clamp(1.1rem,1.8vw,1.45rem)}@media(max-width:900px){.projects-section .project-asym{grid-template-columns:1fr 1fr}.collaborations-section .venue-flow{grid-template-columns:1fr 1fr}}@media(max-width:620px){.projects-hero .wrap{padding:42px 0 24px}.projects-section,.collaborations-section{padding:30px 0}.projects-section .project-asym,.collaborations-section .venue-flow{grid-template-columns:1fr}.projects-section .project-card>img{height:240px}}
+
+/* Strong compact overrides: projects + merged gallery instruments */
+@media (min-width:901px){
+  .projects-section .project-asym{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:14px!important;
+    align-items:stretch!important;
+  }
+  .projects-section .project-card,
+  .projects-section .project-card.wide,
+  .projects-section .project-card.tall{
+    width:auto!important;
+    margin:0!important;
+    min-width:0!important;
+  }
+  .projects-section .project-card>img{
+    width:100%!important;
+    height:185px!important;
+    object-fit:cover!important;
+  }
+  .projects-section .project-card>div{padding:15px!important}
+  .projects-section .project-card h3{font-size:1.22rem!important;margin:.15em 0!important}
+  .projects-section .project-card p{font-size:.88rem!important;line-height:1.45!important}
+  .projects-section .project-card .links{gap:6px!important;margin-top:10px!important}
+  .projects-section .project-card .pill{padding:7px 10px!important;font-size:.76rem!important}
+
+  #instruments .instrument-grid{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+  #instruments .instrument,
+  #instruments .instrument.big,
+  #instruments .instrument.small,
+  #instruments .instrument.half{
+    grid-column:auto!important;
+    width:auto!important;
+    min-width:0!important;
+    min-height:285px!important;
+  }
+  #instruments .instrument-lightbox-item{
+    padding:16px 16px 88px!important;
+  }
+  #instruments .instrument-lightbox-item img,
+  #instruments .instrument-lightbox-item img[src="Selmer-Concept-TT trumpet-Bonos.jpg"]{
+    width:88%!important;
+    height:175px!important;
+    object-fit:contain!important;
+  }
+  #instruments .instrument-cap strong{font-size:1.15rem!important}
+  #instruments .instrument-cap span{font-size:.78rem!important;line-height:1.35!important}
+}
