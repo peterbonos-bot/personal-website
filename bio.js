@@ -1,4 +1,4 @@
-/* Short and medium biography tabs; the extended version uses a native disclosure. */
+/* Three biography lengths with accessible tabs and direct version links. */
 (function () {
   const tabList = document.querySelector('.bio-version-tabs');
   if (!tabList) return;
@@ -19,10 +19,8 @@
     if (updateHash) history.replaceState(null, '', '#' + panels[index].id);
   }
   function fromHash() {
-    const extended = document.getElementById('long');
     const index = panels.findIndex(panel => '#' + panel.id === location.hash);
     select(index === -1 ? 1 : index, false);
-    if (location.hash === '#long') extended.open = true;
   }
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => select(index, true));
