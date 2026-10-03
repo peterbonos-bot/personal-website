@@ -26,3 +26,9 @@
 .bio-version-heading .tag{white-space:nowrap}
 .bio-version+.bio-version{margin-top:40px}
 .bio-copy [role="tabpanel"]{margin-top:0}
+
+.extended-bio-disclosure{margin-top:28px;border-top:1px solid var(--line);padding-top:22px}
+.extended-bio-disclosure summary{color:var(--yellow);font-weight:700;cursor:pointer;text-decoration:underline;text-underline-offset:5px;width:fit-content}
+.extended-bio-disclosure summary:focus-visible{outline:2px solid var(--yellow);outline-offset:5px}
+.extended-bio-disclosure .bio-extended{padding-top:28px}
+.extended-bio-disclosure .bio-version-heading{align-items:flex-start}
