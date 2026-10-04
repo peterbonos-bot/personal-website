@@ -60,9 +60,25 @@
     if (Number(parts.hour) < 4) date.setUTCDate(date.getUTCDate() - 1);
     return date.toISOString().slice(0, 10);
   }
+  function performanceId(event) {
+    const heading = (event.html.match(/<h3>([\s\S]*?)<\/h3>/) || [null, 'concert'])[1];
+    const slug = heading.replace(/<[^>]*>/g, '').normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    return 'performance-' + event.startDate + '-' + slug;
+  }
+  const requestedId = new URLSearchParams(window.location.search).get('performance');
   const cutoff = cutoffDate(new Date());
   document.querySelectorAll('[data-performance-list]').forEach(list => {
     const past = list.dataset.performanceList === 'past';
+    const requestedEvent = performances.find(event => performanceId(event) === requestedId);
+    if (requestedEvent && (requestedEvent.endDate < cutoff) !== past) {
+      const destination = new URL(requestedEvent.endDate < cutoff ? 'past-performances.html' : 'index.html', window.location.href);
+      destination.searchParams.set('performance', requestedId);
+      destination.hash = requestedId;
+      window.location.replace(destination.href);
+      return;
+    }
     const selected = performances.filter(event => (event.endDate < cutoff) === past);
     selected.sort((a, b) => past ? b.endDate.localeCompare(a.endDate) : a.startDate.localeCompare(b.startDate));
     if (past) {
@@ -76,6 +92,61 @@
     } else {
       list.innerHTML = selected.map(event => event.html).join('') || '<p>New performance dates will be announced soon.</p>';
     }
+    list.querySelectorAll('.calendar-event').forEach((article, index) => {
+      const event = selected[index];
+      article.id = performanceId(event);
+      const title = article.querySelector('h3').textContent.trim();
+      const url = new URL('index.html', window.location.href);
+      url.searchParams.set('performance', article.id);
+      url.hash = article.id;
+      const actions = document.createElement('div');
+      actions.className = 'event-share-actions';
+      const shareButton = document.createElement('button');
+      shareButton.type = 'button';
+      shareButton.className = 'pill event-share-button';
+      shareButton.textContent = typeof navigator.share === 'function' ? 'Share concert ↗' : 'Copy concert link';
+      shareButton.setAttribute('aria-label', 'Share ' + title);
+      const status = document.createElement('span');
+      status.className = 'event-share-status';
+      status.setAttribute('role', 'status');
+      const manualLink = document.createElement('input');
+      manualLink.type = 'text';
+      manualLink.readOnly = true;
+      manualLink.hidden = true;
+      manualLink.value = url.href;
+      manualLink.className = 'event-share-link';
+      manualLink.setAttribute('aria-label', 'Concert link to copy');
+      async function copyLink() {
+        try {
+          if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+          await navigator.clipboard.writeText(url.href);
+          status.textContent = 'Link copied!';
+        } catch (_) {
+          manualLink.hidden = false;
+          manualLink.focus();
+          manualLink.select();
+          status.textContent = 'Copy the selected link below.';
+        }
+      }
+      shareButton.addEventListener('click', async () => {
+        status.textContent = '';
+        if (typeof navigator.share === 'function') {
+          try {
+            await navigator.share({
+              title: title + ' | Peter Bonos',
+              text: title + ' · ' + article.querySelector('.event-date').innerText.replace(/Read more ↓|Show less ↑/g, '').trim(),
+              url: url.href
+            });
+          } catch (error) {
+            if (error.name !== 'AbortError') await copyLink();
+          }
+        } else {
+          await copyLink();
+        }
+      });
+      actions.append(shareButton, status, manualLink);
+      article.querySelector('.event-info').append(actions);
+    });
     list.querySelectorAll('.calendar-toggle').forEach((button, index) => {
       const details = button.closest('.calendar-event').querySelector('.event-details');
       details.id = 'performance-details-' + index;
@@ -88,6 +159,13 @@
       });
     });
   });
+  if (requestedId) {
+    const requestedArticle = document.getElementById(requestedId);
+    if (requestedArticle) {
+      requestedArticle.querySelector('.calendar-toggle').click();
+      window.requestAnimationFrame(() => requestedArticle.scrollIntoView({ block: 'start' }));
+    }
+  }
   // Refresh an open page after the cutoff changes, including overnight tabs.
   function checkCutoff() {
     if (cutoffDate(new Date()) !== cutoff) window.location.reload();

@@ -353,3 +353,18 @@ footer{border-top:1px solid rgba(227,193,90,.2);background:#061722}
 .footer-links .social-icon svg{display:block;width:22px;height:22px}
 .footer-links .social-icon:hover{color:var(--yellow);background:rgba(227,193,90,.1)}
 .footer-links .social-icon:focus-visible{outline:2px solid var(--yellow);outline-offset:4px}
+
+/* Full-color social icons and concert sharing */
+.footer-links .social-icon[href*="facebook.com"]{background:#1877f2;border-color:#1877f2;color:#fff}
+.footer-links .social-icon[href*="instagram.com"]{background:radial-gradient(circle at 30% 110%,#ffdc80 0%,#fcaf45 20%,#f77737 35%,#e1306c 55%,#c13584 70%,#833ab4 85%,#405de6 100%);border-color:transparent;color:#fff}
+.footer-links .social-icon[href*="facebook.com"]:hover,.footer-links .social-icon[href*="instagram.com"]:hover{color:#fff;filter:brightness(1.12)}
+.calendar-event{scroll-margin-top:80px}
+.event-share-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:14px 0}
+.event-share-button{color:var(--cream);font-family:inherit;cursor:pointer;min-height:44px}
+.event-share-button:hover{background:rgba(227,193,90,.12)}
+.event-share-button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.event-share-status{font-size:.85rem;color:var(--muted)}
+.event-share-link{flex-basis:100%;width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--night);color:var(--cream);font:inherit}
+
+.footer-links .social-icon[href*="linkedin.com"]{background:#0a66c2;border-color:#0a66c2;color:#fff;border-radius:8px}
+.footer-links .social-icon[href*="linkedin.com"]:hover{color:#fff;filter:brightness(1.12)}
