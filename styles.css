@@ -347,3 +347,9 @@ footer{border-top:1px solid rgba(227,193,90,.2);background:#061722}
 .performance-calendar:before{content:"";display:block;height:12px;background:repeating-linear-gradient(135deg,#8e452f 0 7px,#c99045 7px 11px,#071925 11px 18px,#2d8f86 18px 22px)}
 @media(max-width:980px){.c5-hero-grid{grid-template-columns:.9fr 1.1fr}.c5-copy{padding-left:0}.c5-portrait{min-height:560px}.c5-stack{grid-column:1/-1;min-height:470px;padding:25px 0}.c5-stack figure:nth-child(1){width:55%;height:56%;left:0;top:28px}.c5-stack figure:nth-child(2){width:47%;height:52%;left:34%;top:190px}.c5-stack .c5-oud{width:27%;height:62%;right:0;bottom:20px}}
 @media(max-width:650px){.c5-hero-grid{display:block}.c5-copy{padding:48px 0 34px}.c5-copy h1{font-size:clamp(4rem,20vw,6rem)}.c5-portrait{min-height:0;height:auto}.c5-portrait img{height:auto;object-fit:contain}.c5-stack{min-height:620px}.c5-stack figure:nth-child(1){width:94%;height:34%;left:3%;top:30px}.c5-stack figure:nth-child(2){width:70%;height:37%;left:3%;top:260px}.c5-stack .c5-oud{width:38%;height:39%;right:2%;bottom:24px}.c5-explore .c4-card img{height:auto;max-height:330px}}
+
+/* Facebook and Instagram footer links */
+.footer-links .social-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:10px;border-radius:50%;color:var(--cream)}
+.footer-links .social-icon svg{display:block;width:22px;height:22px}
+.footer-links .social-icon:hover{color:var(--yellow);background:rgba(227,193,90,.1)}
+.footer-links .social-icon:focus-visible{outline:2px solid var(--yellow);outline-offset:4px}
