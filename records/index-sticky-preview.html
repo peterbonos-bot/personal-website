@@ -67,6 +67,7 @@ body.list-view .controls{position:sticky;top:0;z-index:20;background:var(--paper
 @media(max-width:650px){.hero-art{height:120px;max-height:120px}}
 .select-genre{margin-left:auto;border:1px solid var(--accent2);border-radius:5px;background:transparent;color:var(--accent2);font:600 .8rem system-ui,sans-serif;padding:7px 10px;cursor:pointer;min-height:36px}.genre-head{flex-wrap:wrap}.controls button:disabled{opacity:.65;cursor:default}
 body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height,110px);z-index:10;background:var(--card)}body.list-view #summary{scroll-margin-top:calc(var(--catalog-controls-height,110px) + 12px)}
+.request-selected{position:relative}.request-selected .cancel-x{font:22px/1 sans-serif;margin-left:8px}.cancel-tooltip{display:none;position:absolute;right:0;bottom:calc(100% + 5px);background:#eee3d1;border:1px solid #dacdb8;border-radius:3px;padding:5px 8px;white-space:nowrap;color:#303b3c;font:12px/1.3 system-ui,-apple-system,sans-serif;box-shadow:0 2px 5px #0001;z-index:30;pointer-events:none}.request-selected:hover .cancel-tooltip,.request-selected:focus-visible .cancel-tooltip{display:block}.request-selected:hover{overflow:visible}.grid{padding-top:2.3rem}.match-actions{padding-top:1.5rem}
 </style>
 </head>
 <body>
@@ -122,7 +123,7 @@ try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInt
 cart=[...new Set(cart)];
 function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
 function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
-function cartButton(r){const i=records.indexOf(r);return '<button type="button" class="add-cart" data-record-index="'+i+'"'+'>'+(cart.includes(i)?'✓ Added — click to cancel':'Add to Request')+'</button>'}
+function cartButton(r){const i=records.indexOf(r),added=cart.includes(i);return '<button type="button" class="add-cart'+(added?' request-selected':'')+'" data-record-index="'+i+'" aria-label="'+(added?'Remove record':'Add to Request')+'" aria-pressed="'+String(added)+'">'+(added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request')+'</button>'}
 function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();if(!document.getElementById('cartModal').hidden)renderCart()}
 function renderCart(){const box=document.getElementById('cartItems');box.innerHTML=cart.length?cart.map(i=>{const r=records[i];return '<div class="cart-row"><div><strong>'+esc(r.artist||'Unknown artist')+' — '+esc(r.title||'Untitled')+'</strong><br>'+formatValue(r.value)+'</div><button type="button" data-remove-index="'+i+'">Remove</button></div>'}).join(''):'<p>Your request list is empty.</p>';
 const priced=cart.map(i=>records[i]).filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
