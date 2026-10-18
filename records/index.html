@@ -65,6 +65,7 @@ body.list-view .controls{position:relative;top:auto;background:var(--paper)}
 /* Narrow banner using the collection photograph uploaded to the repository. */
 .hero-art{width:100%;height:clamp(120px,17vw,220px);max-height:220px;object-fit:cover;object-position:center 43%}
 @media(max-width:650px){.hero-art{height:120px;max-height:120px}}
+.select-genre{margin-left:auto;border:1px solid var(--accent2);border-radius:5px;background:transparent;color:var(--accent2);font:600 .8rem system-ui,sans-serif;padding:7px 10px;cursor:pointer;min-height:36px}.genre-head{flex-wrap:wrap}.controls button:disabled{opacity:.65;cursor:default}
 </style>
 </head>
 <body>
@@ -73,7 +74,7 @@ body.list-view .controls{position:relative;top:auto;background:var(--paper)}
 <input id="q" type="search" placeholder="Search artist, album, genre, label…">
 <select id="genre"><option value="">All genres</option></select>
 <button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
-<button id="viewAllRecords" type="button">View All Records</button>
+<button type="button" id="selectAllRecords">Select all records</button><button type="button" id="selectCurrentGenre" hidden>Select entire genre</button><button id="viewAllRecords" type="button">View All Records</button>
 <a class="viewing-link" href="#requestViewing">Request a Viewing</a>
 <button class="cart-button" id="openCart" type="button">My Requests (<span id="cartCount">0</span>)</button>
 <select id="sort">
@@ -86,7 +87,7 @@ body.list-view .controls{position:relative;top:auto;background:var(--paper)}
 <main>
 <section class="intro"><h2>Browse the Collection</h2><p class="summary">Search the complete catalog, explore genres, compare condition and estimated values, and follow release-reference links for pressing details.</p></section>
 <section id="featured"></section>
-<section><h2 style="font-size:1.8rem;margin-top:2rem">Browse by Genre</h2><div id="summary" class="summary"></div><div class="shelf-label">Each genre has its own row. Scroll sideways within a row →</div><div id="grid"></div></section>
+<section><h2 style="font-size:1.8rem;margin-top:2rem">Browse by Genre</h2><p id="bulkStatus" role="status" aria-live="polite" style="color:var(--accent2)"></p><div id="summary" class="summary"></div><div class="shelf-label">Each genre has its own row. Scroll sideways within a row →</div><div id="grid"></div></section>
 <section class="viewing-section" id="requestViewing" aria-labelledby="viewingTitle">
 <h2 id="viewingTitle">Request an Appointment to View the Collection</h2>
 <p>Interested in browsing the records in person? Suggest a date and time. Visits are by appointment only and subject to confirmation. The collection's location will be provided after your appointment is arranged.</p>
@@ -120,8 +121,8 @@ try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInt
 cart=[...new Set(cart)];
 function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
 function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
-function cartButton(r){const i=records.indexOf(r);return '<button type="button" class="add-cart" data-record-index="'+i+'"'+(cart.includes(i)?' disabled':'')+'>'+(cart.includes(i)?'✓ Added':'Add to Request')+'</button>'}
-function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(!cart.includes(i))cart.push(i);saveCart();render();if(!document.getElementById('cartModal').hidden)renderCart()}
+function cartButton(r){const i=records.indexOf(r);return '<button type="button" class="add-cart" data-record-index="'+i+'"'+'>'+(cart.includes(i)?'✓ Added — click to cancel':'Add to Request')+'</button>'}
+function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();if(!document.getElementById('cartModal').hidden)renderCart()}
 function renderCart(){const box=document.getElementById('cartItems');box.innerHTML=cart.length?cart.map(i=>{const r=records[i];return '<div class="cart-row"><div><strong>'+esc(r.artist||'Unknown artist')+' — '+esc(r.title||'Untitled')+'</strong><br>'+formatValue(r.value)+'</div><button type="button" data-remove-index="'+i+'">Remove</button></div>'}).join(''):'<p>Your request list is empty.</p>';
 const priced=cart.map(i=>records[i]).filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
 const total=priced.reduce((sum,r)=>sum+Number(r.value),0);
@@ -164,6 +165,7 @@ function render(){
  document.body.classList.toggle('list-view',listView);
  const term=q.value.trim().toLowerCase();
  const a=records.filter(r=>(!genre.value||r.genre===genre.value)&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
+ const allButton=document.getElementById('selectAllRecords');allButton.disabled=false;allButton.textContent=cart.length===records.length?'Cancel all selections':'Select all '+records.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent=records.filter(r=>r.genre===genre.value).every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value||'genre')+' records';
  summary.textContent=a.length+' of '+records.length+' records shown'+(listView?' · list view':' · cover view');
  featured.hidden=listView;
  document.querySelector('.shelf-label').hidden=listView;
@@ -174,7 +176,7 @@ function render(){
   const groups=[...new Set(a.map(r=>r.genre||'Other / To Be Classified'))].sort();
   grid.innerHTML=groups.map(g=>{
    const rows=a.filter(r=>(r.genre||'Other / To Be Classified')===g).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
-   return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
+   return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">'+(rows.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all')+'</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
   }).join('')||'<div class="empty">No records match those filters.</div>';
  }
 }
@@ -184,6 +186,10 @@ document.getElementById('viewAllRecords').addEventListener('click',()=>{
  viewToggle.textContent='▦ Cover View';viewToggle.setAttribute('aria-pressed','true');
  render();document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'start'});
 });
+function selectMany(indices){const before=cart.length;const removing=indices.length&&indices.every(i=>cart.includes(i));cart=removing?cart.filter(i=>!indices.includes(i)):[...new Set([...cart,...indices])];saveCart();render();featuredRender();const status=document.getElementById('bulkStatus');status.textContent=(removing?(before-cart.length)+' selections cancelled. ':(cart.length-before)+' records added. ')+cart.length+' selected in total.'}
+document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i)));
+document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>records[i].genre===genre.value)));
+document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>(records[i].genre||'Other / To Be Classified')===b.dataset.selectGenre))});
 q.addEventListener('input',render);
 genre.addEventListener('change',render);
 sort.addEventListener('change',render);
