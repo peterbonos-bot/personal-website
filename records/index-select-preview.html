@@ -165,7 +165,7 @@ function render(){
  document.body.classList.toggle('list-view',listView);
  const term=q.value.trim().toLowerCase();
  const a=records.filter(r=>(!genre.value||r.genre===genre.value)&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
- const allButton=document.getElementById('selectAllRecords');allButton.disabled=cart.length===records.length;allButton.textContent=cart.length===records.length?'✓ All records selected':'Select all '+records.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent='Select all '+(genre.value||'genre')+' records';
+ const allButton=document.getElementById('selectAllRecords');allButton.disabled=false;allButton.textContent=cart.length===records.length?'Cancel all selections':'Select all '+records.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent=records.filter(r=>r.genre===genre.value).every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value||'genre')+' records';
  summary.textContent=a.length+' of '+records.length+' records shown'+(listView?' · list view':' · cover view');
  featured.hidden=listView;
  document.querySelector('.shelf-label').hidden=listView;
@@ -176,7 +176,7 @@ function render(){
   const groups=[...new Set(a.map(r=>r.genre||'Other / To Be Classified'))].sort();
   grid.innerHTML=groups.map(g=>{
    const rows=a.filter(r=>(r.genre||'Other / To Be Classified')===g).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
-   return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">Select all</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
+   return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">'+(rows.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all')+'</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
   }).join('')||'<div class="empty">No records match those filters.</div>';
  }
 }
@@ -186,7 +186,7 @@ document.getElementById('viewAllRecords').addEventListener('click',()=>{
  viewToggle.textContent='▦ Cover View';viewToggle.setAttribute('aria-pressed','true');
  render();document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'start'});
 });
-function selectMany(indices){const before=cart.length;cart=[...new Set([...cart,...indices])];saveCart();render();featuredRender();const status=document.getElementById('bulkStatus');status.textContent=(cart.length-before)+' records added. '+cart.length+' selected in total.'}
+function selectMany(indices){const before=cart.length;const removing=indices.length&&indices.every(i=>cart.includes(i));cart=removing?cart.filter(i=>!indices.includes(i)):[...new Set([...cart,...indices])];saveCart();render();featuredRender();const status=document.getElementById('bulkStatus');status.textContent=(removing?(before-cart.length)+' selections cancelled. ':(cart.length-before)+' records added. ')+cart.length+' selected in total.'}
 document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i)));
 document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>records[i].genre===genre.value)));
 document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>(records[i].genre||'Other / To Be Classified')===b.dataset.selectGenre))});
