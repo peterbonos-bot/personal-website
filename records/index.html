@@ -165,7 +165,7 @@ function render(){
  document.querySelector('.shelf-label').hidden=listView;
  if(listView){
   const sorted=[...a].sort(compare);
-  grid.innerHTML='<div class="list-wrap"><table class="record-list"><thead><tr><th>Artist</th><th>Album</th><th>Release year</th><th>Genre</th><th>Disc condition</th><th>Sleeve condition</th><th>Est. value</th><th>Details</th><th>Request</th></tr></thead><tbody>'+sorted.map(r=>'<tr><td>'+esc(r.artist||'Unknown artist')+'</td><td>'+esc(r.title||'Untitled')+'</td><td>'+esc(r.release_year||'Not verified')+'</td><td>'+esc(r.genre||'—')+'</td><td>'+esc(r.media||'Not graded')+'</td><td>'+esc(r.sleeve||'Not graded')+'</td><td>'+(formatValue(r.value))+'</td><td>'+'<a href="record.html?id='+records.indexOf(r)+'">Details</a>'+'</td><td>'+cartButton(r)+'</td></tr>').join('')+'</tbody></table></div>';
+  grid.innerHTML='<div class="list-wrap"><table class="record-list"><thead><tr><th>Artist</th><th>Album</th><th>Release year</th><th>Genre</th><th>Disc condition</th><th>Sleeve condition</th><th>Est. value</th><th>Details</th><th>Request</th></tr></thead><tbody>'+sorted.map(r=>'<tr><td>'+esc(r.artist||'Unknown artist')+'</td><td>'+esc(r.title||'Untitled')+'</td><td>'+esc(r.release_year||r.year_status||'Not verified')+'</td><td>'+esc(r.genre||'—')+'</td><td>'+esc(r.media||'Not graded')+'</td><td>'+esc(r.sleeve||'Not graded')+'</td><td>'+(formatValue(r.value))+'</td><td>'+'<a href="record.html?id='+records.indexOf(r)+'">Details</a>'+'</td><td>'+cartButton(r)+'</td></tr>').join('')+'</tbody></table></div>';
  }else{
   const groups=[...new Set(a.map(r=>r.genre||'Other / To Be Classified'))].sort();
   grid.innerHTML=groups.map(g=>{
