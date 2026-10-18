@@ -119,13 +119,13 @@ const valid=selected.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Numbe
 const total=valid.reduce((sum,r)=>sum+Number(r.value),0);
 const missing=selected.length-valid.length;
 const lines=selected.map((r,i)=>(i+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled')+' — '+formatValue(r.value)+(r.year?' ('+r.year+')':'')+(r.condition?' — Condition: '+r.condition:''));
-const body=['Keith Terry Record Collection — purchase request','','Buyer: '+name,'Buyer email: '+email,'','Requested records:',...lines,'','Estimated record total for priced items (excluding shipping and handling): $'+total.toFixed(2),...(missing?['Plus '+missing+' item(s) with Value TBD — final pricing to be confirmed upon request.']:[]),'','Shipping and handling costs will be determined later after purchase consultation and are not included in this total.','Some titles may not be available. Items marked Value TBD are priced upon request.','This is a purchase request only. Please confirm availability, final prices, shipping/handling and payment details before proceeding.'].join('\n');
+const body=['Keith Terry Record Collection — purchase request','','Buyer: '+name,'Buyer email: '+email,'','Requested records:',...lines,'','Estimated record total for priced items (excluding shipping and handling): $'+total.toFixed(2),...(missing?['Plus '+missing+' item(s) with Value TBD — final pricing to be confirmed upon request.']:[]),'','Shipping and handling costs will be determined later after purchase consultation and are not included in this total.','Some titles may not be available. Items marked Value TBD are priced upon request. Local purchases encouraged.','This is a purchase request only. Please confirm availability, final prices, shipping/handling and payment details before proceeding.'].join('\n');
 const subject='Record purchase request — '+name+' ('+cart.length+' records)';
 const params=new URLSearchParams({cc:'peterbonos@gmail.com,'+email,subject,body});
 window.location.href='mailto:keithterry@crosspulse.com?'+params.toString();
 document.getElementById('cartInstructions').textContent='Your email app should open with the request. Review it and press Send to submit; the website does not send emails itself.';
 }
-document.getElementById('openCart').addEventListener('click',()=>{renderCart();document.getElementById('cartModal').hidden=false});
+document.getElementById('openCart').addEventListener('click',()=>{window.location.href='requests.html'});
 document.getElementById('closeCart').addEventListener('click',()=>document.getElementById('cartModal').hidden=true);
 document.getElementById('cartModal').addEventListener('click',e=>{if(e.target.id==='cartModal')e.currentTarget.hidden=true});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('cartModal').hidden=true});
