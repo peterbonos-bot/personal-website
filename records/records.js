@@ -877,7 +877,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Soundtracks, Cast & Stage",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": 1970
@@ -2657,7 +2657,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Soundtracks, Cast & Stage",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2989,7 +2989,7 @@ window.RECORDS = [
     "catalog": "RCA Victor LOC-1032",
     "matrix": "",
     "runout": "",
-    "genre": "Soundtracks, Cast & Stage",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3402,7 +3402,7 @@ window.RECORDS = [
     "catalog": "Capitol ST-2993",
     "matrix": "",
     "runout": "",
-    "genre": "Soundtracks, Cast & Stage",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4043,7 +4043,7 @@ window.RECORDS = [
     "catalog": "Columbia Masterworks OS 2015",
     "matrix": "",
     "runout": "",
-    "genre": "Soundtracks, Cast & Stage",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
