@@ -1,11 +1,12 @@
 # Discogs sync ownership rule
 
-The moments_last shop contains both Keith Terry collection items and Peter Bonos's personal records, CDs, and tapes.
+The moments_last shop mixes Keith Terry items with Peter Bonos's personal records, CDs, and tapes.
 
-- Do not add newly encountered inventory to this website without Peter confirming that the specific physical item belonged to Keith Terry.
-- Sync only existing confirmed Keith collection items. Exact release IDs prevent pressing mismatches but do not establish physical-copy ownership.
-- Ask Peter before linking ambiguous duplicate, replacement, or relisted copies.
-- Keep personal items off the collection website.
-- Preserve catalog estimates; verified Discogs listing prices use separate sale fields.
+Peter authorizes assuming records matching his Keith Terry collection sheet are Keith's and for sale. The existing records.js catalog is the current site representation of the sheet.
+
+- Automatically link and update unique exact Discogs release-ID matches to existing Keith sheet/catalog items.
+- Never import unmatched shop inventory. Ask Peter whether each unfamiliar item belonged to Keith before adding it, and wait for confirmation.
+- Ask about unclear pressing matches or multiple matching sale copies; do not guess.
+- Preserve catalog estimates and grading/notes; seller price uses separate sale fields.
 - Read complete inventory before removing absent sale links; absence does not prove sold.
-- Test draft changes and verify live behavior before reporting success.
+- Test draft changes and verify live behavior.
