@@ -161,6 +161,6 @@ render();
 const catalogControls=document.querySelector('.controls');
 function measureCatalogControls(){document.documentElement.style.setProperty('--catalog-controls-height',catalogControls.getBoundingClientRect().height+'px')}
 new ResizeObserver(measureCatalogControls).observe(catalogControls);measureCatalogControls();
-</script>
+function refreshSavedBasket(){try{cart=[...new Set(JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(n=>Number.isInteger(n)&&n>=0&&n<records.length))]}catch{cart=[]}updateCartCount();render();featuredRender()}window.addEventListener('pageshow',refreshSavedBasket);window.addEventListener('storage',e=>{if(e.key===CART_KEY||e.key===null)refreshSavedBasket()});</script>
 </body>
 </html>
