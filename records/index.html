@@ -61,10 +61,14 @@ body.list-view .controls{position:relative;top:auto;background:var(--paper)}
 .record-list td,.record-list th{padding:.8rem}
 .list-wrap .record-list{min-width:850px}
 }
+
+/* Narrow banner using the collection photograph uploaded to the repository. */
+.hero-art{width:100%;height:clamp(120px,17vw,220px);max-height:220px;object-fit:cover;object-position:center 43%}
+@media(max-width:650px){.hero-art{height:120px;max-height:120px}}
 </style>
 </head>
 <body>
-<header><img class="hero-art" src="https://peterbonos-bot.github.io/keith-terry-records/Moody%20Vintage%20Vinyl%20Collection%20Collage.png" alt="Vintage vinyl record collection collage"><div class="hero-copy"><div class="artist" style="color:#fff">Vinyl collection</div><h1>Keith Terry Record Collection</h1><p>Browse the collection by genre, artist, year, value, condition and popularity. Search across artist, album, genre, label, catalog number and notes.</p></div></header>
+<header><img class="hero-art" src="https://peterbonos-bot.github.io/keith-terry-records/Jazz%20Records.jpg" alt="Actual record spines from the Keith Terry collection"><div class="hero-copy"><div class="artist" style="color:#fff">Vinyl collection</div><h1>Keith Terry Record Collection</h1><p>Browse the collection by genre, artist, year, value, condition and popularity. Search across artist, album, genre, label, catalog number and notes.</p></div></header>
 <div class="controls">
 <input id="q" type="search" placeholder="Search artist, album, genre, label…">
 <select id="genre"><option value="">All genres</option></select>
