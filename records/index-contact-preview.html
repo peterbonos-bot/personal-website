@@ -83,7 +83,7 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
 <button type="button" id="selectAllRecords">Select all records</button><button type="button" id="selectCurrentGenre" hidden>Select entire genre</button><button id="viewAllRecords" type="button">View All Records</button>
 
-<a class="cart-button main-request-link" id="openCart" href="requests.html#recordsHeading"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 10 4-7 4 7M3 10h18l-2 11H5L3 10Z"/><path d="M9 13v5m6-5v5"/></svg> View my requests (<span id="cartCount">0</span>)</a><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a>
+<a class="cart-button main-request-link" id="openCart" href="requests.html#recordsHeading"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 10 4-7 4 7M3 10h18l-2 11H5L3 10Z"/><path d="M9 13v5m6-5v5"/></svg> View my requests (<span id="cartCount">0</span>)</a><button type="button" id="emptyCartTop">Empty cart</button><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a>
 <select id="sort">
 <option value="artist">Artist A–Z</option><option value="title">Album A–Z</option>
 <option value="year-desc">Year: newest</option><option value="year-asc">Year: oldest</option>
@@ -118,6 +118,7 @@ function formatValue(v){return v==null||String(v).trim()===''||!Number.isFinite(
 const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
 function compare(x,y){switch(sort.value){case 'title':return (x.title||'').localeCompare(y.title||'');case 'year-desc':return (Number(y.release_year)||0)-(Number(x.release_year)||0);case 'year-asc':return (Number(x.release_year)||9999)-(Number(y.release_year)||9999);case 'value-desc':return (Number(y.value)||0)-(Number(x.value)||0);case 'value-asc':return (Number(x.value)||0)-(Number(y.value)||0);case 'popularity':return (Number(y.popularity)||0)-(Number(x.popularity)||0);default:return (x.artist||'').localeCompare(y.artist||'')||(x.title||'').localeCompare(y.title||'');}}
 function isBargain(r){return r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value))&&Number(r.value)>0&&Number(r.value)<5}
+document.getElementById('emptyCartTop').addEventListener('click',()=>{if(!cart.length)return;if(!confirm('Empty your request basket and remove all comments and offers?'))return;cart=[];localStorage.removeItem('keith-terry-record-notes-v1');localStorage.removeItem('keith-terry-record-offers-v1');saveCart();render();featuredRender()});
 genre.add(new Option('Bargain Bin · under $5','__bargain'));
 [...new Set(records.map(r=>r.genre).filter(Boolean))].sort().forEach(g=>genre.add(new Option(g,g)));
 function saleButton(r){return r.discogs_sale_url&&/^https:\/\/www.discogs.com\/sell\/item\/\d+$/.test(r.discogs_sale_url)?'<a class="sale-button" href="'+esc(r.discogs_sale_url)+'" target="_blank" rel="noopener noreferrer">Buy on Discogs ↗</a>':''}
