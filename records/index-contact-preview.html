@@ -98,7 +98,7 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <p class="viewing-secondary"><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a> <a href="requests.html#viewDate">Arrange an in-person viewing</a> · By appointment</p>
 <footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
 </main>
-<script src="records.js?v=6cd6d42f"></script>
+<script src="records.js?v=6cd6d42f"></script><script>records.forEach(r=>{if(r.genre==="Soundtracks, Cast & Stage")r.genre="Other / To Be Classified"});</script>
 <script>
 const records=(window.RECORDS||[]).map(r=>({...r,cover:r.cover&&!/^https?:/i.test(r.cover)?'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover:r.cover}));
 const CART_KEY='keith-terry-records-cart-v1';
