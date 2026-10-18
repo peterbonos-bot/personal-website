@@ -3745,7 +3745,7 @@ window.RECORDS = [
   {
     "artist": "Don Ellis",
     "title": "At Fillmore",
-    "value": 0,
+    "value": null,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/master/113903-Don-Ellis-Don-Ellis-At-Fillmore?format=LP&label=1866&country=US",
@@ -3761,7 +3761,7 @@ window.RECORDS = [
   {
     "artist": "Kenny Loggins with Jim Messina",
     "title": "Sittin' In",
-    "value": 0,
+    "value": null,
     "sleeve": "P",
     "media": "G+",
     "url": "https://www.discogs.com/release/1318188-Kenny-Loggins-With-Jim-Messina-Sittin-In",
