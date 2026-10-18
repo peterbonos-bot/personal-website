@@ -98,7 +98,7 @@ function composeDraft(){
  const values=selected.map(i=>records[i]),priced=values.filter(r=>Number.isFinite(priceFor(r)));
  const amounts=quoteTotals(priced),missing=values.length-priced.length,delivery=shippingEstimate(selected.length),shipping=delivery.total;
  const viewing=['viewDate','viewTime','altDate','altTime'].some(id=>!!$(id).value);
- $('emailSubject').value=(selected.length?'Record inquiry ('+selected.length+' records)':viewing?'Phone consultation request':'Keith Terry Record Collection — inquiry')+' — '+(name||'Visitor');
+ $('emailSubject').value='Record Purchase Inquiry';
  const lines=['Hello Keith and Peter,','','Name: '+(name||'[Your name]'),'Email: '+(email||'[Your email]'),...(phone?['Phone: '+phone]:[])];
  if(clean($('generalNotes').value))lines.push('','Message:',clean($('generalNotes').value));
  if(viewing)lines.push('','Phone consultation request (Pacific Time):',...($('viewDate').value?['Preferred date: '+$('viewDate').value]:[]),...($('viewTime').value?['Preferred time: '+$('viewTime').value]:[]),...($('altDate').value?['Alternate date: '+$('altDate').value]:[]),...($('altTime').value?['Alternate time: '+$('altTime').value]:[]),'Please confirm a suitable phone consultation time.');
