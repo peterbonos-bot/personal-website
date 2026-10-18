@@ -124,7 +124,7 @@ function showMatches(){
 }
 $('recordSearch').addEventListener('input',showMatches);$('recordSearch').addEventListener('keydown',e=>{if(e.key==='Escape'){$('searchResults').hidden=true;$('recordSearch').blur()}});
 $('searchResults').addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;const i=Number(b.dataset.add);if(!Number.isInteger(i)||i<0||i>=records.length||selected.includes(i))return;commitPendingComments();selected.push(i);render();sync();showMatches();setStatus('Record added to your request.')});
-for(const id of formIds)$(id).addEventListener('input',sync);
+for(const id of formIds)$(id).addEventListener('input',()=>{if(id==='localPickup')render();sync()});
 for(const id of ['emailSubject','emailBody'])$(id).addEventListener('input',()=>{dirty=true;setStatus('Custom email edits saved on this page. Use Regenerate to rebuild from form data.',true)});
 $('regenerate').addEventListener('click',()=>{commitPendingComments();composeDraft();persist();setStatus('Email draft regenerated.')});
 $('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Remove all selected records and their comments? Your contact details will stay.'))return;selected=[];notes={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
