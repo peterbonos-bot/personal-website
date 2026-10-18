@@ -57,6 +57,7 @@ header:after{display:none}
 <input id="q" type="search" placeholder="Search artist, album, genre, label…">
 <select id="genre"><option value="">All genres</option></select>
 <button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
+<button id="viewAllRecords" type="button">View All Records</button>
 <a class="viewing-link" href="#requestViewing">Request a Viewing</a>
 <button class="cart-button" id="openCart" type="button">My Requests (<span id="cartCount">0</span>)</button>
 <select id="sort">
@@ -161,6 +162,11 @@ function render(){
  }
 }
 viewToggle.addEventListener('click',()=>{listView=!listView;viewToggle.textContent=listView?'▦ Cover View':'☰ List View';viewToggle.setAttribute('aria-pressed',String(listView));render();});
+document.getElementById('viewAllRecords').addEventListener('click',()=>{
+ q.value='';genre.value='';listView=true;
+ viewToggle.textContent='▦ Cover View';viewToggle.setAttribute('aria-pressed','true');
+ render();document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'start'});
+});
 q.addEventListener('input',render);
 genre.addEventListener('change',render);
 sort.addEventListener('change',render);
