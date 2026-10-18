@@ -15,7 +15,8 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1983,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4406554818"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4406554818",
+    "discogs_sale_price": 100
   },
   {
     "artist": "John Coltrane",
@@ -33,7 +34,8 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1967,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413281856"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413281856",
+    "discogs_sale_price": 100
   },
   {
     "artist": "The Beatles",
@@ -136,7 +138,8 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1981,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413252747"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413252747",
+    "discogs_sale_price": 70
   },
   {
     "artist": "Wings",
@@ -254,7 +257,8 @@ window.RECORDS = [
     "year": 1959,
     "featured": true,
     "release_year": 1977,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413294006"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413294006",
+    "discogs_sale_price": 68
   },
   {
     "artist": "Charles M. Bogert",
@@ -409,7 +413,8 @@ window.RECORDS = [
     "year": 1973,
     "featured": false,
     "release_year": 1973,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413262443"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413262443",
+    "discogs_sale_price": 39
   },
   {
     "artist": "Miles Davis",
@@ -427,7 +432,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1974,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413284061"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413284061",
+    "discogs_sale_price": 38
   },
   {
     "artist": "Max Roach featuring Anthony Braxton",
@@ -462,7 +468,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1974,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413264159"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413264159",
+    "discogs_sale_price": 33
   },
   {
     "artist": "John Abercrombie, Jan Hammer, Jack De Johnette",
@@ -480,7 +487,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1975,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413242733"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413242733",
+    "discogs_sale_price": 25
   },
   {
     "artist": "The Beatles",
@@ -565,7 +573,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1986,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413257952"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413257952",
+    "discogs_sale_price": 30
   },
   {
     "artist": "The Mothers of Invention (Frank Zappa)",
@@ -717,7 +726,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1973,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413250206"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413250206",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Joe Crocker",
@@ -887,7 +897,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413288897"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413288897",
+    "discogs_sale_price": 25
   },
   {
     "artist": "Peter Schickele And His Orchestra",
@@ -922,7 +933,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1977,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413253962"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413253962",
+    "discogs_sale_price": 25
   },
   {
     "artist": "Ethic Folkways Library",
@@ -1007,7 +1019,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1971,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413284976"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413284976",
+    "discogs_sale_price": 23.8
   },
   {
     "artist": "Ralph Towner / Gary Burton ",
@@ -1126,7 +1139,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1986,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413275307"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413275307",
+    "discogs_sale_price": 19
   },
   {
     "artist": "George Marsh, John Abercrombie",
@@ -1499,7 +1513,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1967,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413245601"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413245601",
+    "discogs_sale_price": 40
   },
   {
     "artist": "Bobby Bridger ",
@@ -1750,7 +1765,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413277512"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413277512",
+    "discogs_sale_price": 20
   },
   {
     "artist": "Ray Charles",
@@ -1836,7 +1852,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1986,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413257040"
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4413257040",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Roger Williams",
