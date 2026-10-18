@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17282b">
+<title>Contact & Record Requests | Keith Terry Record Collection</title>
+<style>
+:root{--ink:#223338;--muted:#607075;--paper:#f7f4ed;--panel:#fffdf8;--line:#e0d8ca;--teal:#116f71;--deep:#17282b;--orange:#cf6145;--warm:#f7e9d7;--focus:#ffbd50;--shadow:0 12px 30px rgba(27,39,43,.065)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 93% 2%,#e4eee9,transparent 30%),linear-gradient(160deg,#f9f6ef,#eee9dd);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,textarea{font:inherit}button{cursor:pointer}
+a{color:var(--teal);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+[hidden]{display:none!important}
+.sitebar{background:#101d20;color:#f5f0e8;padding:12px max(22px,calc((100vw - 1070px)/2));display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:.8rem;font-weight:700;letter-spacing:.12em}
+.sitebar a{color:#e8eee9;font-weight:500;letter-spacing:0;text-decoration:none;white-space:nowrap}.sitebar a:hover{text-decoration:underline}
+.hero{position:relative;overflow:hidden;color:#fff5ea;background:linear-gradient(115deg,#182b2e,#274342 75%,#315754);padding:52px 24px 50px}
+.hero:after{content:"";position:absolute;pointer-events:none;right:-125px;top:-205px;width:490px;height:490px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 30px,rgba(255,255,255,.07) 31px 33px,transparent 34px 44px)}
+.hero .wrap{position:relative;z-index:1}.eyebrow{text-transform:uppercase;letter-spacing:.19em;color:#f4bc78;font-weight:800;font-size:.76rem;margin:0 0 10px}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.15}h1{font-size:clamp(2.15rem,4.6vw,3.75rem);letter-spacing:-.04em;margin:0 0 17px;max-width:750px}h2{font-size:1.65rem;letter-spacing:-.025em;margin:0 0 10px}h3{font-size:1.1rem;margin:0 0 8px}.hero p:not(.eyebrow){margin:0;max-width:650px;color:#d6e2df;font-size:1.04rem}
+.wrap{max-width:1060px;margin:0 auto}.bodywrap{padding:28px 20px 75px}.introline{display:flex;gap:15px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 0 22px;color:var(--muted);font-size:.88rem}.introline p{margin:0}
+.two-col{display:grid;grid-template-columns:1.07fr .93fr;gap:22px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;margin:0 0 22px;box-shadow:var(--shadow)}.panel .lede{color:var(--muted);font-size:.91rem;margin:0 0 18px;max-width:660px}.step{display:inline-block;color:var(--orange);font-size:.76rem;letter-spacing:.15em;font-weight:800;margin-bottom:9px}
+label{display:block;font-size:.91rem;font-weight:700;margin:13px 0 6px}label .optional{font-weight:400;color:var(--muted)}input,textarea{display:block;width:100%;border:1px solid #b6c2bc;background:#fff;color:#1b3033;border-radius:8px;padding:12px 13px;min-height:46px}input:hover,textarea:hover{border-color:#78938c}input:focus,textarea:focus{border-color:var(--teal)}textarea{min-height:112px;resize:vertical}.smallgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.smallgrid>div{min-width:0}.subhead{font-weight:800;font-size:.94rem;border-top:1px solid var(--line);padding-top:20px;margin:24px 0 4px}.hint{font-size:.83rem;color:var(--muted);margin:5px 0 0}.privacy{border-top:1px solid var(--line);padding-top:14px;margin-top:17px;font-size:.8rem;color:var(--muted)}
+.searchbox{position:relative}.searchbox:before{content:'⌕';position:absolute;left:13px;top:7px;font-size:1.7rem;color:#60827d;line-height:1}.searchbox input{padding-left:42px}.searchresults{border:1px solid var(--line);border-radius:10px;background:#fff;max-height:342px;overflow-y:auto;margin-top:10px}.match{display:flex;gap:13px;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid #ece9e3}.match:last-child{border-bottom:0}.match .meta{font-size:.77rem;color:var(--muted)}.match .title{font-weight:750;line-height:1.3}.match button{flex-shrink:0}.empty{padding:20px;color:var(--muted);text-align:center;background:#f9f7f1;border-radius:10px}.helper{background:#f0f5f1;border:1px solid #d6e4d9;border-radius:10px;padding:17px;margin-top:23px;color:#365851;font-size:.88rem}.helper strong{display:block;color:var(--deep);margin-bottom:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 17px;border-radius:8px;border:1px solid transparent;background:var(--teal);color:#fff;text-decoration:none;font-weight:750;font-size:.88rem;line-height:1.2}.btn:hover{background:#0c5658}.btn.alt{background:#f5f6f2;color:#235255;border:1px solid #a7beba}.btn.alt:hover{background:#e5efea}.btn.remove{color:#8c4139;background:transparent;border:1px solid #d9afa9}.btn.remove:hover{background:#fff1ed}.btn:disabled{opacity:.5;cursor:default}
+.rowhead{display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}.count{font:700 .82rem system-ui;color:var(--muted)}.summary{font-weight:750;color:#395e56;font-size:.95rem;margin:20px 0 2px}
+.release{display:grid;grid-template-columns:77px minmax(0,1fr);gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}.release:first-child{border-top:1px solid var(--line)}.release:last-child{border-bottom:0}.cover{width:76px;aspect-ratio:1;object-fit:cover;border:1px solid #ddd7ca;border-radius:6px;background:#eeeae0}.record-title{font-size:1.03rem;font-weight:750;line-height:1.36}.record-meta{color:var(--muted);font-size:.82rem;margin:4px 0 8px}.release label{margin-top:16px}.release textarea{min-height:80px;background:#fff}.release textarea[readonly]{background:#f4f4ef;color:#3b4f4f}.release .actions{margin:9px 0 0}.inline-link{font-size:.82rem}.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.actions .btn{font-size:.82rem;padding:9px 14px;min-height:38px}
+.emailgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.preview-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px}.to-line{font-size:.83rem;color:#476661;background:#ecf4ef;border-radius:8px;padding:11px 13px;margin:5px 0 19px}.mailbody{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.84rem;line-height:1.62;min-height:290px}#emailSubject{font-size:.9rem}.status{min-height:1.4em;font-size:.85rem;color:#376c53;font-weight:700;margin:14px 0 0}.warn{color:#905833}.footer{padding:12px 0 0;color:var(--muted);font-size:.83rem;text-align:center}
+@media(max-width:800px){.two-col{grid-template-columns:1fr}.hero{padding:38px 20px 41px}.panel{padding:22px}.bodywrap{padding-top:22px}}
+@media(max-width:520px){.sitebar{padding:12px 17px;font-size:.69rem;letter-spacing:.06em}.hero{padding:32px 18px 35px}h1{font-size:2.25rem}.bodywrap{padding:16px 12px 50px}.panel{padding:17px;border-radius:12px}.smallgrid,.emailgrid{grid-template-columns:1fr}.release{grid-template-columns:56px minmax(0,1fr);gap:10px}.cover{width:54px}.match{align-items:flex-start}.match .btn{max-width:115px;padding:8px 10px}.actions .btn{flex-grow:1}.introline{font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.release{position:relative;padding-right:40px}.remove-record{position:absolute;right:0;top:12px;width:32px;height:32px;padding:0;border:0;background:transparent;color:#607075;font:24px/1 sans-serif;display:grid;place-items:center;border-radius:4px}.remove-record:hover{color:#223338;background:#f0e7d8}.remove-tooltip{display:none;position:absolute;right:0;bottom:calc(100% + 5px);background:#eee3d1;border:1px solid #dacdb8;border-radius:3px;padding:5px 8px;white-space:nowrap;color:#303b3c;font:12px/1.3 system-ui,-apple-system,sans-serif;box-shadow:0 2px 5px #0001;z-index:2;pointer-events:none}.remove-record:hover .remove-tooltip,.remove-record:focus-visible .remove-tooltip{display:block}
+</style>
+</head>
+<body>
+<div class="sitebar"><span>KEITH TERRY · RECORD COLLECTION</span><a href="./">← Browse collection</a></div>
+<header class="hero"><div class="wrap"><p class="eyebrow">Get in touch · Browse · Arrange a visit</p><h1>Contact &amp; Record Requests</h1><p>Questions about the collection? Send a message, request an appointment, or gather records you'd like to inquire about—all in one place.</p></div></header>
+<main class="wrap bodywrap">
+<div class="introline"><p>All inquiries go to Keith Terry, with Peter Bonos copied.</p><p>No payment or submission happens on this page.</p></div>
+<div class="two-col">
+<section class="panel" aria-labelledby="contactHeading"><div class="step">01 · GET IN TOUCH</div><h2 id="contactHeading">Your message</h2><p class="lede">Contact us without requesting a record, or fill out this information along with your selections.</p>
+<div class="smallgrid"><div><label for="buyerName">Your name <span aria-hidden="true">*</span></label><input id="buyerName" autocomplete="name" maxlength="120" required></div><div><label for="buyerEmail">Email address <span aria-hidden="true">*</span></label><input id="buyerEmail" type="email" autocomplete="email" maxlength="254" required></div></div>
+<label for="buyerPhone">Phone <span class="optional">(optional)</span></label><input id="buyerPhone" type="tel" autocomplete="tel" maxlength="50" placeholder="For a call back, if preferred">
+<label for="generalNotes">Message <span class="optional">(optional)</span></label><textarea id="generalNotes" maxlength="3000" placeholder="Tell us what you're looking for or ask a question..."></textarea>
+<div class="subhead">Request an in-person viewing <span class="optional">(optional)</span></div><p class="hint">Choose dates and times that work for you. Visits are by appointment and require confirmation.</p>
+<div class="smallgrid"><div><label for="viewDate">Preferred date</label><input id="viewDate" type="date"></div><div><label for="viewTime">Preferred time</label><input id="viewTime" type="time"></div><div><label for="altDate">Alternate date</label><input id="altDate" type="date"></div><div><label for="altTime">Alternate time</label><input id="altTime" type="time"></div></div><p class="privacy">Your draft details are saved in this browser, not sent to our website. You can edit everything before sending an email.</p>
+</section>
+<section class="panel" aria-labelledby="searchHeading"><div class="step">02 · FIND A RECORD</div><h2 id="searchHeading">Search the collection</h2><p class="lede">Add records to your inquiry. Results appear as you type.</p>
+<label for="recordSearch">Artist or album title</label><div class="searchbox"><input id="recordSearch" type="search" autocomplete="off" placeholder="Try Miles Davis, Bookends..." aria-controls="searchResults" aria-describedby="searchHelp"></div><p class="hint" id="searchHelp">Choose “Add” beside any matching record. You can add several.</p>
+<div id="searchResults" class="searchresults" role="region" aria-label="Record search results" aria-live="polite" hidden></div>
+<div class="helper"><strong>Just want to say hello?</strong>You don't have to select records. Fill in your contact details and message, then review your email draft below.</div>
+</section>
+</div>
+<section class="panel" aria-labelledby="recordsHeading"><div class="step">03 · YOUR SELECTIONS</div><div class="rowhead"><h2 id="recordsHeading">Records of interest</h2><span class="count" id="recordCount">0 records</span></div><p class="lede">Ask a question or leave an offer for any release. Use <b>Save comment</b> before moving on.</p><div id="items" aria-live="polite"></div><p id="total" class="summary"></p></section>
+<section class="panel" aria-labelledby="draftHeading"><div class="step">04 · REVIEW &amp; SEND</div><div class="preview-head"><h2 id="draftHeading">Your editable email</h2><span class="count">No email sent automatically</span></div><p class="lede">This draft updates when you change a field or save a record comment. You can also edit the draft itself.</p><p class="to-line"><strong>To:</strong> Keith Terry &nbsp; · &nbsp; <strong>Cc:</strong> Peter Bonos and your email address</p>
+<label for="emailSubject">Email subject</label><input id="emailSubject" maxlength="300"><label for="emailBody">Email message</label><textarea id="emailBody" class="mailbody" spellcheck="true"></textarea>
+<div class="actions"><button id="compose" type="button" class="btn">Open in email app ↗</button><button id="copyDraft" type="button" class="btn alt">Copy email</button><button id="regenerate" type="button" class="btn alt">Regenerate draft</button><button id="clear" type="button" class="btn remove">Clear selected records</button></div>
+<p class="status" id="status" role="status" aria-live="polite"></p><p class="hint">Your email application will open an editable draft. Press Send there to deliver it. If your mail app isn't configured, use “Copy email.”</p></section>
+<div class="footer">Keith Terry Record Collection · Request a price quote for records. Viewing appointments require confirmation.</div>
+</main>
+<script src="records.js?v=0ca7f987"></script>
+<script>
+'use strict';
+const records=window.RECORDS||[],KEY='keith-terry-records-cart-v1',NOTES='keith-terry-record-notes-v1',FORM='keith-terry-request-form-v1';
+const $=id=>document.getElementById(id);
+const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Piedmont, CA: CDTFA rate effective October 1, 2026.
+const SALES_TAX_RATE=0.1025;
+function quoteTotals(rows){const subtotalCents=rows.reduce((s,r)=>s+Math.round(Number(r.value)*100),0),taxCents=Math.round(subtotalCents*SALES_TAX_RATE);return {subtotal:(subtotalCents/100).toFixed(2),tax:(taxCents/100).toFixed(2),total:((subtotalCents+taxCents)/100).toFixed(2)}}
+const clean=x=>String(x??'').trim();
+const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
+let selected=[...new Set(read(KEY,[]).filter(n=>Number.isInteger(n)&&n>=0&&n<records.length))],notes=read(NOTES,{}),form=read(FORM,{}),dirty=false;
+const formIds=['buyerName','buyerEmail','buyerPhone','generalNotes','viewDate','viewTime','altDate','altTime'];
+for(const id of formIds)$(id).value=form[id]||'';
+const fmt=r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value))?'$'+Number(r.value).toFixed(2):'Value TBD';
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(selected));localStorage.setItem(NOTES,JSON.stringify(notes));localStorage.setItem(FORM,JSON.stringify(Object.fromEntries(formIds.map(k=>[k,$(k).value]))))}catch(e){setStatus('Browser storage unavailable: details may not survive reload.',true)}}
+function setStatus(msg,warning=false){$('status').textContent=msg;$('status').classList.toggle('warn',warning)}
+function composeDraft(){
+ const name=clean($('buyerName').value),email=clean($('buyerEmail').value),phone=clean($('buyerPhone').value);
+ const values=selected.map(i=>records[i]),priced=values.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+ const amounts=quoteTotals(priced),missing=values.length-priced.length;
+ const viewing=['viewDate','viewTime','altDate','altTime'].some(id=>!!$(id).value);
+ $('emailSubject').value=(selected.length?'Record inquiry ('+selected.length+' records)':viewing?'Collection viewing request':'Keith Terry Record Collection — inquiry')+' — '+(name||'Visitor');
+ const lines=['Hello Keith and Peter,','','Name: '+(name||'[Your name]'),'Email: '+(email||'[Your email]'),...(phone?['Phone: '+phone]:[])];
+ if(clean($('generalNotes').value))lines.push('','Message:',clean($('generalNotes').value));
+ if(viewing)lines.push('','In-person viewing request:',...($('viewDate').value?['Preferred date: '+$('viewDate').value]:[]),...($('viewTime').value?['Preferred time: '+$('viewTime').value]:[]),...($('altDate').value?['Alternate date: '+$('altDate').value]:[]),...($('altTime').value?['Alternate time: '+$('altTime').value]:[]),'Please confirm a suitable appointment.');
+ if(selected.length)lines.push('','Records of interest:',...selected.flatMap((idx,k)=>{const r=records[idx],item=[(k+1)+'. '+clean(r.artist||'Unknown artist')+' — '+clean(r.title||'Untitled')+' — '+fmt(r)+(r.year?' ('+r.year+')':'')+(r.condition?' — Condition: '+r.condition:'')];if(clean(notes[idx]))item.push('   Comment: '+clean(notes[idx]));return item}),'','Estimated record subtotal: );
+ lines.push('','Thank you,',name||'[Your name]');$('emailBody').value=lines.join('\n');dirty=false;
+}
+function sync(){persist();if(!dirty){composeDraft();setStatus('')}else setStatus('Your manual email edits are preserved. Regenerate the draft to include recent form changes.',true)}
+function render(){
+ $('recordCount').textContent=selected.length+' record'+(selected.length===1?'':'s');
+ $('items').innerHTML=selected.length?selected.map((idx,k)=>{
+  const r=records[idx];const img=r.cover?'<img loading="lazy" class="cover" alt="" src="'+escapeHTML(/^https?:/i.test(r.cover)?r.cover:'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover)+'">':'<div class="cover" aria-hidden="true"></div>';
+  return '<article class="release"><button type="button" class="remove-record" data-remove="'+idx+'" aria-label="Remove record"><span aria-hidden="true">×</span><span class="remove-tooltip" role="tooltip">Remove record</span></button>'+img+'<div><div class="record-title">'+escapeHTML((k+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="record-meta">'+escapeHTML([r.year,r.label,r.condition,fmt(r)].filter(Boolean).join(' · '))+'</div>'+(r.url?'<a class="inline-link" target="_blank" rel="noopener noreferrer" href="'+escapeHTML(r.url)+'">View release details ↗</a>':'')+'<label for="note-'+idx+'">Your comment <span class="optional">(optional)</span></label><textarea id="note-'+idx+'" data-note="'+idx+'" maxlength="1500" placeholder="Ask about this record...">'+escapeHTML(notes[idx]||'')+'</textarea><div class="actions"><button type="button" class="btn alt" data-edit="'+idx+'">'+'Edit comment'+'</button><button type="button" class="btn" data-save="'+idx+'">Save comment</button></div></div></article>';
+ }).join(''):'<div class="empty">No records selected yet. Search above to add a record, or just send a message.</div>';
+ const rr=selected.map(i=>records[i]),known=rr.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+ const amounts=quoteTotals(known);
+ $('total').textContent=selected.length?'Estimated subtotal: $'+amounts.subtotal+' · Piedmont sales tax (10.25%): $'+amounts.tax+' · Estimated total: $'+amounts.total+(rr.length-known.length?' · '+(rr.length-known.length)+' record(s) to be quoted, plus applicable tax':''): 'Contact-only messages are welcome.';
+}
+function commitPendingComments(){
+ for(const t of $('items').querySelectorAll('textarea[data-note]:not([readonly])')){notes[t.dataset.note]=t.value;const id=t.dataset.note;const edit=$('items').querySelector('[data-edit="'+id+'"]'),save=$('items').querySelector('[data-save="'+id+'"]');if(edit){edit.hidden=false;edit.textContent=clean(t.value)?'Edit comment':'Add comment'}if(save)save.hidden=true}
+ sync();
+}
+$('items').addEventListener('input',e=>{const t=e.target.closest('textarea[data-note]');if(!t)return;notes[t.dataset.note]=t.value;const save=$('items').querySelector('[data-save="'+t.dataset.note+'"]');if(save)save.hidden=false;sync()});
+$('items').addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]'),save=e.target.closest('[data-save]'),remove=e.target.closest('[data-remove]');
+ if(edit){const t=$('note-'+edit.dataset.edit);t.readOnly=false;t.focus();edit.hidden=true;$('items').querySelector('[data-save="'+edit.dataset.edit+'"]').hidden=false;return}
+ if(save){commitPendingComments();setStatus('Comment saved. The email draft was updated unless you edited it manually.');return}
+ if(remove){selected=selected.filter(i=>i!==Number(remove.dataset.remove));delete notes[remove.dataset.remove];render();sync();showMatches()}
+});
+function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase()}
+function showMatches(){
+ const q=normalize(clean($('recordSearch').value)),box=$('searchResults');if(!q){box.hidden=true;box.innerHTML='';return}
+ const matches=records.map((r,i)=>({r,i})).filter(({r})=>normalize((r.artist||'')+' '+(r.title||'')).includes(q)).sort((a,b)=>Number(normalize(a.r.artist).startsWith(q)===false)-Number(normalize(b.r.artist).startsWith(q)===false)).slice(0,12);
+ box.hidden=false;box.innerHTML=matches.length?matches.map(({r,i})=>'<div class="match"><div><div class="title">'+escapeHTML((r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="meta">'+escapeHTML([r.year,r.genre,fmt(r)].filter(Boolean).join(' · '))+'</div></div><button class="btn" type="button" data-add="'+i+'" '+(selected.includes(i)?'disabled':'')+'>'+(selected.includes(i)?'Added':'Add')+'</button></div>').join(''):'<div class="empty">No matching records. Try another artist or title.</div>';
+}
+$('recordSearch').addEventListener('input',showMatches);$('recordSearch').addEventListener('keydown',e=>{if(e.key==='Escape'){$('searchResults').hidden=true;$('recordSearch').blur()}});
+$('searchResults').addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;const i=Number(b.dataset.add);if(!Number.isInteger(i)||i<0||i>=records.length||selected.includes(i))return;commitPendingComments();selected.push(i);render();sync();showMatches();setStatus('Record added to your request.')});
+for(const id of formIds)$(id).addEventListener('input',sync);
+for(const id of ['emailSubject','emailBody'])$(id).addEventListener('input',()=>{dirty=true;setStatus('Custom email edits saved on this page. Use Regenerate to rebuild from form data.',true)});
+$('regenerate').addEventListener('click',()=>{commitPendingComments();composeDraft();persist();setStatus('Email draft regenerated.')});
+$('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Remove all selected records and their comments? Your contact details will stay.'))return;selected=[];notes={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
+$('copyDraft').addEventListener('click',async()=>{commitPendingComments();const body='To: keithterry@crosspulse.com\nCc: peterbonos@gmail.com'+(clean($('buyerEmail').value)?', '+clean($('buyerEmail').value):'')+'\nSubject: '+$('emailSubject').value+'\n\n'+$('emailBody').value;try{await navigator.clipboard.writeText(body);setStatus('Email copied. Paste it into your email app.')}catch{setStatus('Copy unavailable. Select and copy the email message above instead.',true)}});
+$('compose').addEventListener('click',()=>{
+ commitPendingComments();if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
+ if(!$('buyerEmail').checkValidity()||!clean($('buyerEmail').value)){$('buyerEmail').reportValidity();$('buyerEmail').focus();setStatus('Please enter a valid email address.',true);return}
+ const cc='peterbonos@gmail.com,'+clean($('buyerEmail').value),p=new URLSearchParams({cc,subject:$('emailSubject').value,body:$('emailBody').value});
+ persist();if(p.toString().length>6000){setStatus('This email is long. If your email application does not open it completely, use Copy email instead.',true)}else setStatus('Your email app should open an editable draft. Review and press Send there.');
+ window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
+});
+render();composeDraft();
+</script>
+</body></html>+amounts.subtotal,'Estimated Piedmont, CA sales tax (10.25%): );
+ lines.push('','Thank you,',name||'[Your name]');$('emailBody').value=lines.join('\n');dirty=false;
+}
+function sync(){persist();if(!dirty){composeDraft();setStatus('')}else setStatus('Your manual email edits are preserved. Regenerate the draft to include recent form changes.',true)}
+function render(){
+ $('recordCount').textContent=selected.length+' record'+(selected.length===1?'':'s');
+ $('items').innerHTML=selected.length?selected.map((idx,k)=>{
+  const r=records[idx];const img=r.cover?'<img loading="lazy" class="cover" alt="" src="'+escapeHTML(/^https?:/i.test(r.cover)?r.cover:'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover)+'">':'<div class="cover" aria-hidden="true"></div>';
+  return '<article class="release"><button type="button" class="remove-record" data-remove="'+idx+'" aria-label="Remove record"><span aria-hidden="true">×</span><span class="remove-tooltip" role="tooltip">Remove record</span></button>'+img+'<div><div class="record-title">'+escapeHTML((k+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="record-meta">'+escapeHTML([r.year,r.label,r.condition,fmt(r)].filter(Boolean).join(' · '))+'</div>'+(r.url?'<a class="inline-link" target="_blank" rel="noopener noreferrer" href="'+escapeHTML(r.url)+'">View release details ↗</a>':'')+'<label for="note-'+idx+'">Your comment <span class="optional">(optional)</span></label><textarea id="note-'+idx+'" data-note="'+idx+'" maxlength="1500" placeholder="Ask about this record...">'+escapeHTML(notes[idx]||'')+'</textarea><div class="actions"><button type="button" class="btn alt" data-edit="'+idx+'">'+'Edit comment'+'</button><button type="button" class="btn" data-save="'+idx+'">Save comment</button></div></div></article>';
+ }).join(''):'<div class="empty">No records selected yet. Search above to add a record, or just send a message.</div>';
+ const rr=selected.map(i=>records[i]),known=rr.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+ $('total').textContent=selected.length?'Estimated record value: $'+known.reduce((s,r)=>s+Number(r.value),0).toFixed(2)+(rr.length-known.length?' · '+(rr.length-known.length)+' with Value TBD':''):'Contact-only messages are welcome.';
+}
+function commitPendingComments(){
+ for(const t of $('items').querySelectorAll('textarea[data-note]:not([readonly])')){notes[t.dataset.note]=t.value;const id=t.dataset.note;const edit=$('items').querySelector('[data-edit="'+id+'"]'),save=$('items').querySelector('[data-save="'+id+'"]');if(edit){edit.hidden=false;edit.textContent=clean(t.value)?'Edit comment':'Add comment'}if(save)save.hidden=true}
+ sync();
+}
+$('items').addEventListener('input',e=>{const t=e.target.closest('textarea[data-note]');if(!t)return;notes[t.dataset.note]=t.value;const save=$('items').querySelector('[data-save="'+t.dataset.note+'"]');if(save)save.hidden=false;sync()});
+$('items').addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]'),save=e.target.closest('[data-save]'),remove=e.target.closest('[data-remove]');
+ if(edit){const t=$('note-'+edit.dataset.edit);t.readOnly=false;t.focus();edit.hidden=true;$('items').querySelector('[data-save="'+edit.dataset.edit+'"]').hidden=false;return}
+ if(save){commitPendingComments();setStatus('Comment saved. The email draft was updated unless you edited it manually.');return}
+ if(remove){selected=selected.filter(i=>i!==Number(remove.dataset.remove));delete notes[remove.dataset.remove];render();sync();showMatches()}
+});
+function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase()}
+function showMatches(){
+ const q=normalize(clean($('recordSearch').value)),box=$('searchResults');if(!q){box.hidden=true;box.innerHTML='';return}
+ const matches=records.map((r,i)=>({r,i})).filter(({r})=>normalize((r.artist||'')+' '+(r.title||'')).includes(q)).sort((a,b)=>Number(normalize(a.r.artist).startsWith(q)===false)-Number(normalize(b.r.artist).startsWith(q)===false)).slice(0,12);
+ box.hidden=false;box.innerHTML=matches.length?matches.map(({r,i})=>'<div class="match"><div><div class="title">'+escapeHTML((r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="meta">'+escapeHTML([r.year,r.genre,fmt(r)].filter(Boolean).join(' · '))+'</div></div><button class="btn" type="button" data-add="'+i+'" '+(selected.includes(i)?'disabled':'')+'>'+(selected.includes(i)?'Added':'Add')+'</button></div>').join(''):'<div class="empty">No matching records. Try another artist or title.</div>';
+}
+$('recordSearch').addEventListener('input',showMatches);$('recordSearch').addEventListener('keydown',e=>{if(e.key==='Escape'){$('searchResults').hidden=true;$('recordSearch').blur()}});
+$('searchResults').addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;const i=Number(b.dataset.add);if(!Number.isInteger(i)||i<0||i>=records.length||selected.includes(i))return;commitPendingComments();selected.push(i);render();sync();showMatches();setStatus('Record added to your request.')});
+for(const id of formIds)$(id).addEventListener('input',sync);
+for(const id of ['emailSubject','emailBody'])$(id).addEventListener('input',()=>{dirty=true;setStatus('Custom email edits saved on this page. Use Regenerate to rebuild from form data.',true)});
+$('regenerate').addEventListener('click',()=>{commitPendingComments();composeDraft();persist();setStatus('Email draft regenerated.')});
+$('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Remove all selected records and their comments? Your contact details will stay.'))return;selected=[];notes={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
+$('copyDraft').addEventListener('click',async()=>{commitPendingComments();const body='To: keithterry@crosspulse.com\nCc: peterbonos@gmail.com'+(clean($('buyerEmail').value)?', '+clean($('buyerEmail').value):'')+'\nSubject: '+$('emailSubject').value+'\n\n'+$('emailBody').value;try{await navigator.clipboard.writeText(body);setStatus('Email copied. Paste it into your email app.')}catch{setStatus('Copy unavailable. Select and copy the email message above instead.',true)}});
+$('compose').addEventListener('click',()=>{
+ commitPendingComments();if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
+ if(!$('buyerEmail').checkValidity()||!clean($('buyerEmail').value)){$('buyerEmail').reportValidity();$('buyerEmail').focus();setStatus('Please enter a valid email address.',true);return}
+ const cc='peterbonos@gmail.com,'+clean($('buyerEmail').value),p=new URLSearchParams({cc,subject:$('emailSubject').value,body:$('emailBody').value});
+ persist();if(p.toString().length>6000){setStatus('This email is long. If your email application does not open it completely, use Copy email instead.',true)}else setStatus('Your email app should open an editable draft. Review and press Send there.');
+ window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
+});
+render();composeDraft();
+</script>
+</body></html>+amounts.tax,'Estimated total including tax: );
+ lines.push('','Thank you,',name||'[Your name]');$('emailBody').value=lines.join('\n');dirty=false;
+}
+function sync(){persist();if(!dirty){composeDraft();setStatus('')}else setStatus('Your manual email edits are preserved. Regenerate the draft to include recent form changes.',true)}
+function render(){
+ $('recordCount').textContent=selected.length+' record'+(selected.length===1?'':'s');
+ $('items').innerHTML=selected.length?selected.map((idx,k)=>{
+  const r=records[idx];const img=r.cover?'<img loading="lazy" class="cover" alt="" src="'+escapeHTML(/^https?:/i.test(r.cover)?r.cover:'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover)+'">':'<div class="cover" aria-hidden="true"></div>';
+  return '<article class="release"><button type="button" class="remove-record" data-remove="'+idx+'" aria-label="Remove record"><span aria-hidden="true">×</span><span class="remove-tooltip" role="tooltip">Remove record</span></button>'+img+'<div><div class="record-title">'+escapeHTML((k+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="record-meta">'+escapeHTML([r.year,r.label,r.condition,fmt(r)].filter(Boolean).join(' · '))+'</div>'+(r.url?'<a class="inline-link" target="_blank" rel="noopener noreferrer" href="'+escapeHTML(r.url)+'">View release details ↗</a>':'')+'<label for="note-'+idx+'">Your comment <span class="optional">(optional)</span></label><textarea id="note-'+idx+'" data-note="'+idx+'" maxlength="1500" placeholder="Ask about this record...">'+escapeHTML(notes[idx]||'')+'</textarea><div class="actions"><button type="button" class="btn alt" data-edit="'+idx+'">'+'Edit comment'+'</button><button type="button" class="btn" data-save="'+idx+'">Save comment</button></div></div></article>';
+ }).join(''):'<div class="empty">No records selected yet. Search above to add a record, or just send a message.</div>';
+ const rr=selected.map(i=>records[i]),known=rr.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+ $('total').textContent=selected.length?'Estimated record value: $'+known.reduce((s,r)=>s+Number(r.value),0).toFixed(2)+(rr.length-known.length?' · '+(rr.length-known.length)+' with Value TBD':''):'Contact-only messages are welcome.';
+}
+function commitPendingComments(){
+ for(const t of $('items').querySelectorAll('textarea[data-note]:not([readonly])')){notes[t.dataset.note]=t.value;const id=t.dataset.note;const edit=$('items').querySelector('[data-edit="'+id+'"]'),save=$('items').querySelector('[data-save="'+id+'"]');if(edit){edit.hidden=false;edit.textContent=clean(t.value)?'Edit comment':'Add comment'}if(save)save.hidden=true}
+ sync();
+}
+$('items').addEventListener('input',e=>{const t=e.target.closest('textarea[data-note]');if(!t)return;notes[t.dataset.note]=t.value;const save=$('items').querySelector('[data-save="'+t.dataset.note+'"]');if(save)save.hidden=false;sync()});
+$('items').addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]'),save=e.target.closest('[data-save]'),remove=e.target.closest('[data-remove]');
+ if(edit){const t=$('note-'+edit.dataset.edit);t.readOnly=false;t.focus();edit.hidden=true;$('items').querySelector('[data-save="'+edit.dataset.edit+'"]').hidden=false;return}
+ if(save){commitPendingComments();setStatus('Comment saved. The email draft was updated unless you edited it manually.');return}
+ if(remove){selected=selected.filter(i=>i!==Number(remove.dataset.remove));delete notes[remove.dataset.remove];render();sync();showMatches()}
+});
+function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase()}
+function showMatches(){
+ const q=normalize(clean($('recordSearch').value)),box=$('searchResults');if(!q){box.hidden=true;box.innerHTML='';return}
+ const matches=records.map((r,i)=>({r,i})).filter(({r})=>normalize((r.artist||'')+' '+(r.title||'')).includes(q)).sort((a,b)=>Number(normalize(a.r.artist).startsWith(q)===false)-Number(normalize(b.r.artist).startsWith(q)===false)).slice(0,12);
+ box.hidden=false;box.innerHTML=matches.length?matches.map(({r,i})=>'<div class="match"><div><div class="title">'+escapeHTML((r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="meta">'+escapeHTML([r.year,r.genre,fmt(r)].filter(Boolean).join(' · '))+'</div></div><button class="btn" type="button" data-add="'+i+'" '+(selected.includes(i)?'disabled':'')+'>'+(selected.includes(i)?'Added':'Add')+'</button></div>').join(''):'<div class="empty">No matching records. Try another artist or title.</div>';
+}
+$('recordSearch').addEventListener('input',showMatches);$('recordSearch').addEventListener('keydown',e=>{if(e.key==='Escape'){$('searchResults').hidden=true;$('recordSearch').blur()}});
+$('searchResults').addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;const i=Number(b.dataset.add);if(!Number.isInteger(i)||i<0||i>=records.length||selected.includes(i))return;commitPendingComments();selected.push(i);render();sync();showMatches();setStatus('Record added to your request.')});
+for(const id of formIds)$(id).addEventListener('input',sync);
+for(const id of ['emailSubject','emailBody'])$(id).addEventListener('input',()=>{dirty=true;setStatus('Custom email edits saved on this page. Use Regenerate to rebuild from form data.',true)});
+$('regenerate').addEventListener('click',()=>{commitPendingComments();composeDraft();persist();setStatus('Email draft regenerated.')});
+$('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Remove all selected records and their comments? Your contact details will stay.'))return;selected=[];notes={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
+$('copyDraft').addEventListener('click',async()=>{commitPendingComments();const body='To: keithterry@crosspulse.com\nCc: peterbonos@gmail.com'+(clean($('buyerEmail').value)?', '+clean($('buyerEmail').value):'')+'\nSubject: '+$('emailSubject').value+'\n\n'+$('emailBody').value;try{await navigator.clipboard.writeText(body);setStatus('Email copied. Paste it into your email app.')}catch{setStatus('Copy unavailable. Select and copy the email message above instead.',true)}});
+$('compose').addEventListener('click',()=>{
+ commitPendingComments();if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
+ if(!$('buyerEmail').checkValidity()||!clean($('buyerEmail').value)){$('buyerEmail').reportValidity();$('buyerEmail').focus();setStatus('Please enter a valid email address.',true);return}
+ const cc='peterbonos@gmail.com,'+clean($('buyerEmail').value),p=new URLSearchParams({cc,subject:$('emailSubject').value,body:$('emailBody').value});
+ persist();if(p.toString().length>6000){setStatus('This email is long. If your email application does not open it completely, use Copy email instead.',true)}else setStatus('Your email app should open an editable draft. Review and press Send there.');
+ window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
+});
+render();composeDraft();
+</script>
+</body></html>+amounts.total+(missing?' (plus '+missing+' record(s) to be quoted, with applicable tax)':''),'Please provide a price quote for the selected records, including sales tax and any shipping charges, and advise on condition and availability.');
+ lines.push('','Thank you,',name||'[Your name]');$('emailBody').value=lines.join('\n');dirty=false;
+}
+function sync(){persist();if(!dirty){composeDraft();setStatus('')}else setStatus('Your manual email edits are preserved. Regenerate the draft to include recent form changes.',true)}
+function render(){
+ $('recordCount').textContent=selected.length+' record'+(selected.length===1?'':'s');
+ $('items').innerHTML=selected.length?selected.map((idx,k)=>{
+  const r=records[idx];const img=r.cover?'<img loading="lazy" class="cover" alt="" src="'+escapeHTML(/^https?:/i.test(r.cover)?r.cover:'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover)+'">':'<div class="cover" aria-hidden="true"></div>';
+  return '<article class="release"><button type="button" class="remove-record" data-remove="'+idx+'" aria-label="Remove record"><span aria-hidden="true">×</span><span class="remove-tooltip" role="tooltip">Remove record</span></button>'+img+'<div><div class="record-title">'+escapeHTML((k+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="record-meta">'+escapeHTML([r.year,r.label,r.condition,fmt(r)].filter(Boolean).join(' · '))+'</div>'+(r.url?'<a class="inline-link" target="_blank" rel="noopener noreferrer" href="'+escapeHTML(r.url)+'">View release details ↗</a>':'')+'<label for="note-'+idx+'">Your comment <span class="optional">(optional)</span></label><textarea id="note-'+idx+'" data-note="'+idx+'" maxlength="1500" placeholder="Ask about this record...">'+escapeHTML(notes[idx]||'')+'</textarea><div class="actions"><button type="button" class="btn alt" data-edit="'+idx+'">'+'Edit comment'+'</button><button type="button" class="btn" data-save="'+idx+'">Save comment</button></div></div></article>';
+ }).join(''):'<div class="empty">No records selected yet. Search above to add a record, or just send a message.</div>';
+ const rr=selected.map(i=>records[i]),known=rr.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+ $('total').textContent=selected.length?'Estimated record value: $'+known.reduce((s,r)=>s+Number(r.value),0).toFixed(2)+(rr.length-known.length?' · '+(rr.length-known.length)+' with Value TBD':''):'Contact-only messages are welcome.';
+}
+function commitPendingComments(){
+ for(const t of $('items').querySelectorAll('textarea[data-note]:not([readonly])')){notes[t.dataset.note]=t.value;const id=t.dataset.note;const edit=$('items').querySelector('[data-edit="'+id+'"]'),save=$('items').querySelector('[data-save="'+id+'"]');if(edit){edit.hidden=false;edit.textContent=clean(t.value)?'Edit comment':'Add comment'}if(save)save.hidden=true}
+ sync();
+}
+$('items').addEventListener('input',e=>{const t=e.target.closest('textarea[data-note]');if(!t)return;notes[t.dataset.note]=t.value;const save=$('items').querySelector('[data-save="'+t.dataset.note+'"]');if(save)save.hidden=false;sync()});
+$('items').addEventListener('click',e=>{
+ const edit=e.target.closest('[data-edit]'),save=e.target.closest('[data-save]'),remove=e.target.closest('[data-remove]');
+ if(edit){const t=$('note-'+edit.dataset.edit);t.readOnly=false;t.focus();edit.hidden=true;$('items').querySelector('[data-save="'+edit.dataset.edit+'"]').hidden=false;return}
+ if(save){commitPendingComments();setStatus('Comment saved. The email draft was updated unless you edited it manually.');return}
+ if(remove){selected=selected.filter(i=>i!==Number(remove.dataset.remove));delete notes[remove.dataset.remove];render();sync();showMatches()}
+});
+function normalize(s){return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase()}
+function showMatches(){
+ const q=normalize(clean($('recordSearch').value)),box=$('searchResults');if(!q){box.hidden=true;box.innerHTML='';return}
+ const matches=records.map((r,i)=>({r,i})).filter(({r})=>normalize((r.artist||'')+' '+(r.title||'')).includes(q)).sort((a,b)=>Number(normalize(a.r.artist).startsWith(q)===false)-Number(normalize(b.r.artist).startsWith(q)===false)).slice(0,12);
+ box.hidden=false;box.innerHTML=matches.length?matches.map(({r,i})=>'<div class="match"><div><div class="title">'+escapeHTML((r.artist||'Unknown artist')+' — '+(r.title||'Untitled'))+'</div><div class="meta">'+escapeHTML([r.year,r.genre,fmt(r)].filter(Boolean).join(' · '))+'</div></div><button class="btn" type="button" data-add="'+i+'" '+(selected.includes(i)?'disabled':'')+'>'+(selected.includes(i)?'Added':'Add')+'</button></div>').join(''):'<div class="empty">No matching records. Try another artist or title.</div>';
+}
+$('recordSearch').addEventListener('input',showMatches);$('recordSearch').addEventListener('keydown',e=>{if(e.key==='Escape'){$('searchResults').hidden=true;$('recordSearch').blur()}});
+$('searchResults').addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;const i=Number(b.dataset.add);if(!Number.isInteger(i)||i<0||i>=records.length||selected.includes(i))return;commitPendingComments();selected.push(i);render();sync();showMatches();setStatus('Record added to your request.')});
+for(const id of formIds)$(id).addEventListener('input',sync);
+for(const id of ['emailSubject','emailBody'])$(id).addEventListener('input',()=>{dirty=true;setStatus('Custom email edits saved on this page. Use Regenerate to rebuild from form data.',true)});
+$('regenerate').addEventListener('click',()=>{commitPendingComments();composeDraft();persist();setStatus('Email draft regenerated.')});
+$('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Remove all selected records and their comments? Your contact details will stay.'))return;selected=[];notes={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
+$('copyDraft').addEventListener('click',async()=>{commitPendingComments();const body='To: keithterry@crosspulse.com\nCc: peterbonos@gmail.com'+(clean($('buyerEmail').value)?', '+clean($('buyerEmail').value):'')+'\nSubject: '+$('emailSubject').value+'\n\n'+$('emailBody').value;try{await navigator.clipboard.writeText(body);setStatus('Email copied. Paste it into your email app.')}catch{setStatus('Copy unavailable. Select and copy the email message above instead.',true)}});
+$('compose').addEventListener('click',()=>{
+ commitPendingComments();if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
+ if(!$('buyerEmail').checkValidity()||!clean($('buyerEmail').value)){$('buyerEmail').reportValidity();$('buyerEmail').focus();setStatus('Please enter a valid email address.',true);return}
+ const cc='peterbonos@gmail.com,'+clean($('buyerEmail').value),p=new URLSearchParams({cc,subject:$('emailSubject').value,body:$('emailBody').value});
+ persist();if(p.toString().length>6000){setStatus('This email is long. If your email application does not open it completely, use Copy email instead.',true)}else setStatus('Your email app should open an editable draft. Review and press Send there.');
+ window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
+});
+render();composeDraft();
+</script>
+</body></html>
