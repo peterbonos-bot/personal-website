@@ -121,8 +121,8 @@ try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInt
 cart=[...new Set(cart)];
 function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
 function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
-function cartButton(r){const i=records.indexOf(r);return '<button type="button" class="add-cart" data-record-index="'+i+'"'+(cart.includes(i)?' disabled':'')+'>'+(cart.includes(i)?'✓ Added':'Add to Request')+'</button>'}
-function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(!cart.includes(i))cart.push(i);saveCart();render();if(!document.getElementById('cartModal').hidden)renderCart()}
+function cartButton(r){const i=records.indexOf(r);return '<button type="button" class="add-cart" data-record-index="'+i+'"'+'>'+(cart.includes(i)?'✓ Added — click to cancel':'Add to Request')+'</button>'}
+function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();if(!document.getElementById('cartModal').hidden)renderCart()}
 function renderCart(){const box=document.getElementById('cartItems');box.innerHTML=cart.length?cart.map(i=>{const r=records[i];return '<div class="cart-row"><div><strong>'+esc(r.artist||'Unknown artist')+' — '+esc(r.title||'Untitled')+'</strong><br>'+formatValue(r.value)+'</div><button type="button" data-remove-index="'+i+'">Remove</button></div>'}).join(''):'<p>Your request list is empty.</p>';
 const priced=cart.map(i=>records[i]).filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
 const total=priced.reduce((sum,r)=>sum+Number(r.value),0);
