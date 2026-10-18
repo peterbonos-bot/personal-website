@@ -69,7 +69,7 @@ label{display:block;font-size:.91rem;font-weight:700;margin:13px 0 6px}label .op
 <p class="status" id="status" role="status" aria-live="polite"></p><p class="hint">Open an editable draft in Gmail in your browser, review it and press Send there. You can also use “Copy email” with another email service. Direct sending from this page is not connected yet.</p></section>
 <p class="hint">After providing the final offer or quote, the seller will arrange payment with you by follow-up email.</p><div class="footer">Keith Terry Record Collection · Additional fees or price adjustments may apply if a record’s condition is re-evaluated after your request. Viewing appointments require confirmation.</div>
 </main>
-<script src="records.js?v=sales-20261018"></script><script>(window.RECORDS||[]).forEach(r=>{if(r.genre==="Soundtracks, Cast & Stage")r.genre="Other / To Be Classified"});</script><script>(window.RECORDS||[]).forEach(r=>{if(r.genre==="Soundtracks, Cast & Stage")r.genre="Other / To Be Classified"});</script>
+<script src="records.js?v=sales-20261018"></script><script>(window.RECORDS||[]).forEach(r=>{if(r.genre==="Soundtracks, Cast & Stage")r.genre="Other / To Be Classified"});</script>
 <script>
 'use strict';
 const records=window.RECORDS||[],KEY='keith-terry-records-cart-v1',NOTES='keith-terry-record-notes-v1',FORM='keith-terry-request-form-v1',OFFERS='keith-terry-record-offers-v1';
@@ -154,12 +154,12 @@ document.querySelectorAll('[data-empty-cart]').forEach(b=>b.addEventListener('cl
 $('clear').addEventListener('click',()=>{if(!selected.length)return;if(!confirm('Empty your request basket and remove all comments and offers? Your contact details will stay.'))return;selected=[];notes={};offers={};render();sync();showMatches();setStatus('Records cleared. Your message and contact details were kept.')});
 $('copyDraft').addEventListener('click',async()=>{commitPendingComments();const body='To: keithterry@crosspulse.com\nCc: peterbonos@gmail.com'+(clean($('buyerEmail').value)?', '+clean($('buyerEmail').value):'')+'\nSubject: '+$('emailSubject').value+'\n\n'+$('emailBody').value;try{await navigator.clipboard.writeText(body);setStatus('Email copied. Paste it into your email app.')}catch{setStatus('Copy unavailable. Select and copy the email message above instead.',true)}});
 $('compose').addEventListener('click',()=>{
- commitPendingComments();const invalidOffer=$('items').querySelector('input[data-offer]:invalid');if(invalidOffer){invalidOffer.reportValidity();return}if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
+ commitPendingComments();const invalidOffer=$('items').querySelector('input[data-offer]:invalid');if(invalidOffer){const details=invalidOffer.closest('details');if(details)details.open=true;invalidOffer.reportValidity();return}if(!clean($('buyerName').value)){$('buyerName').focus();setStatus('Please enter your name.',true);return}
  if(!$('buyerEmail').checkValidity()||!clean($('buyerEmail').value)){$('buyerEmail').reportValidity();$('buyerEmail').focus();setStatus('Please enter a valid email address.',true);return}
  const cc='peterbonos@gmail.com,'+clean($('buyerEmail').value),p=new URLSearchParams({view:'cm',fs:'1',to:'keithterry@crosspulse.com',cc,su:$('emailSubject').value,body:$('emailBody').value});
  persist();if(p.toString().length>12000){setStatus('This request is too long for a browser email link. Use Copy email, then paste into your email service.',true);return}
  const draftUrl='https://mail.google.com/mail/?'+p.toString();window.open(draftUrl,'_blank','noopener,noreferrer');setStatus('A Gmail draft opens in a new tab. Review it and press Send there. If the new tab was blocked, use Copy email.');
 });
 render();composeDraft();showMatches();
-</script>
+function refreshSavedRequests(){selected=[...new Set(read(KEY,[]).filter(n=>Number.isInteger(n)&&n>=0&&n<records.length))];notes=read(NOTES,{});offers=read(OFFERS,{});render();sync();showMatches()}window.addEventListener('pageshow',e=>{if(e.persisted)refreshSavedRequests()});window.addEventListener('storage',e=>{if([KEY,NOTES,OFFERS,null].includes(e.key))refreshSavedRequests()});</script>
 </body></html>
