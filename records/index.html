@@ -49,6 +49,18 @@ header:after{display:none}
 .viewing-section{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:1.4rem;margin:2rem 0}
 .viewing-section p{color:var(--muted)}.viewing-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1rem}.viewing-form label{display:flex;flex-direction:column;gap:.3rem}.viewing-form input,.viewing-form textarea{width:100%;min-width:0;padding:.65rem;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink);font:inherit}.viewing-form textarea{min-height:100px;resize:vertical}.viewing-form .full{grid-column:1/-1}.viewing-form button,.viewing-link{display:inline-block;padding:.65rem 1rem;border-radius:5px;background:var(--accent2);color:#111;border:0;font:inherit;font-weight:bold;cursor:pointer;text-decoration:none}
 @media(max-width:600px){.viewing-form{grid-template-columns:1fr}}
+
+/* Readable catalog table; keep controls in normal flow in list view. */
+body.list-view .controls{position:relative;top:auto;background:var(--paper)}
+.record-list{font-size:1rem;line-height:1.5;background:var(--paper)}
+.record-list th{position:static;background:var(--card);font-weight:bold}
+.record-list td,.record-list th{padding:.9rem 1rem;vertical-align:top}
+.record-list .add-cart{font-size:.9rem;min-height:44px;margin-top:0}
+#summary{scroll-margin-top:1rem}
+@media(max-width:650px){
+.record-list td,.record-list th{padding:.8rem}
+.list-wrap .record-list{min-width:850px}
+}
 </style>
 </head>
 <body>
@@ -145,6 +157,7 @@ function compare(x,y){switch(sort.value){case 'title':return (x.title||'').local
 function featuredRender(){const picks=records.filter(r=>r.featured).sort((a,b)=>(b.value||0)-(a.value||0)).slice(0,12);featured.innerHTML='<h2 style="font-size:1.8rem">Featured & High-Value Records</h2><p class="summary">Highlights from the collection based on current estimated value. Popularity/demand data will be shown separately as verified Discogs collection and wantlist metadata is added.</p><div class="grid" style="margin-bottom:2.5rem">'+picks.map(r=>`<article class="card"><span class="badge">Featured · High Value</span><div class="cover">${r.cover?`<img src="${r.cover}" alt="Album cover for ${r.artist||'Unknown artist'} — ${r.title||'Untitled'}" loading="lazy" style="width:100%;height:100%;object-fit:contain">`:'Cover unavailable'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${r.genre||''}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${cartButton(r)}</article>`).join('')+'</div>';} featuredRender();
 function card(r){return `<article class="card"><div class="cover">${r.cover?`<img src="${r.cover}" alt="" style="width:100%;height:100%;object-fit:cover">`:'Cover'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${[r.year,r.label].filter(Boolean).join(' · ')}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${cartButton(r)}</article>`}
 function render(){
+ document.body.classList.toggle('list-view',listView);
  const term=q.value.trim().toLowerCase();
  const a=records.filter(r=>(!genre.value||r.genre===genre.value)&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
  summary.textContent=a.length+' of '+records.length+' records shown'+(listView?' · list view':' · cover view');
