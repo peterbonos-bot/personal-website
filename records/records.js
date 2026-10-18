@@ -1,4 +1,4 @@
-// Catalog with sheet-sourced disc and sleeve grades; release years verified against linked Discogs releases.
+// Disc/sleeve grades synced from collection sheet. Release years checked against linked Discogs releases on 2026-10-18.
 window.RECORDS = [
   {
     "artist": "Pharaoh Sanders",
@@ -82,7 +82,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1985
   },
   {
     "artist": "Bill Fontana",
@@ -98,7 +99,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1982
   },
   {
     "artist": "Peter Schickele",
@@ -114,7 +116,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1969
   },
   {
     "artist": "Joseph Bonner",
@@ -130,7 +133,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1981
   },
   {
     "artist": "Wings",
@@ -146,7 +150,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1976,
-    "featured": true
+    "featured": true,
+    "release_year": 1976
   },
   {
     "artist": "David Holland/ Barre Phillips",
@@ -162,7 +167,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1971
   },
   {
     "artist": "Santana",
@@ -178,7 +184,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1969
   },
   {
     "artist": "Steve Reich",
@@ -194,7 +201,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1978
   },
   {
     "artist": "Collin Walcott, Don Cherry, Nana Vasconcelos",
@@ -209,7 +217,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": null
   },
   {
     "artist": "Willis Alan Ramsey",
@@ -224,7 +233,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": null
   },
   {
     "artist": "Miles Davis",
@@ -240,7 +250,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": 1959,
-    "featured": true
+    "featured": true,
+    "release_year": 1977
   },
   {
     "artist": "Charles M. Bogert",
@@ -256,7 +267,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1958
   },
   {
     "artist": "John Hicks",
@@ -272,7 +284,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1984
   },
   {
     "artist": "Mike Nock / Bennie Maupin / Cecil McBee / Eddie Marshall ",
@@ -288,7 +301,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1977
   },
   {
     "artist": "John Cage",
@@ -304,7 +318,9 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": null,
+    "year_status": "Check release link"
   },
   {
     "artist": "Pygmées Bibayak",
@@ -320,7 +336,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": null
   },
   {
     "artist": "Harry Partch",
@@ -336,7 +353,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1971
   },
   {
     "artist": "Hozan Yamamoto",
@@ -352,7 +370,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": true
+    "featured": true,
+    "release_year": 1977
   },
   {
     "artist": "Jack DeJohnette",
@@ -368,7 +387,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1977
   },
   {
     "artist": "Billy Cobham",
@@ -384,7 +404,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": 1973,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Miles Davis",
@@ -400,7 +421,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Max Roach featuring Anthony Braxton",
@@ -416,7 +438,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1978
   },
   {
     "artist": "Billy Cobham",
@@ -432,7 +455,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "John Abercrombie, Jan Hammer, Jack De Johnette",
@@ -448,7 +472,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1975
   },
   {
     "artist": "The Beatles",
@@ -464,7 +489,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1964
   },
   {
     "artist": "Roland Kirk",
@@ -479,7 +505,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Jack DeJohnette's Directions",
@@ -495,7 +522,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1976
   },
   {
     "artist": "George Marsh",
@@ -511,7 +539,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1982
   },
   {
     "artist": "Lester Bowie Brass Fantasy",
@@ -527,7 +556,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "The Mothers of Invention (Frank Zappa)",
@@ -543,7 +573,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Henry Mancini",
@@ -559,7 +590,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Brian Eno, David Byrne",
@@ -575,7 +607,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1981,
-    "featured": false
+    "featured": false,
+    "release_year": 1981
   },
   {
     "artist": "The Mothers",
@@ -591,7 +624,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Simon and Garfunkel",
@@ -607,7 +641,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soul, Funk & R&B",
     "year": 1968,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "J.C. Burris",
@@ -622,7 +657,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Freddie Hubbard",
@@ -637,7 +673,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Sergio Mendes",
@@ -653,7 +690,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "Gary Burton, Chick Corea",
@@ -669,7 +707,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Joe Crocker",
@@ -685,7 +724,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Chicago",
@@ -701,7 +741,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "A Tribute To Thelonious Monk",
@@ -717,7 +758,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1984
   },
   {
     "artist": "Ken Nordine",
@@ -733,7 +775,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1957
   },
   {
     "artist": "Crosby, Stills, Nash & Young",
@@ -748,7 +791,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1970,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Palghat Raghu, V. V. Subramaniam*, K. V. Narayanaswamy",
@@ -764,7 +808,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Gregorio Paniaglia",
@@ -780,7 +825,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Chicago",
@@ -796,7 +842,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "Jesus Christ Superstar",
@@ -812,7 +859,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soundtracks, Cast & Stage",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "Miles Davis",
@@ -828,7 +876,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Peter Schickele And His Orchestra",
@@ -844,7 +893,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Paul Bley, Gary Peacock, Barry Altschul ",
@@ -860,7 +910,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1977
   },
   {
     "artist": "Ethic Folkways Library",
@@ -876,7 +927,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1950
   },
   {
     "artist": "Bud Powell",
@@ -891,7 +943,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Max Roach",
@@ -907,7 +960,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1980
   },
   {
     "artist": "Samuel A. Grimes",
@@ -923,7 +977,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1979
   },
   {
     "artist": "Miles Davis Quintet",
@@ -939,7 +994,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Ralph Towner / Gary Burton ",
@@ -955,7 +1011,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1975
   },
   {
     "artist": "Paul Draper",
@@ -970,7 +1027,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Take 6",
@@ -986,7 +1044,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1988
   },
   {
     "artist": "Bud Powell",
@@ -1002,7 +1061,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "Folk Music Of The United States",
@@ -1018,7 +1078,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Allman Brothers Band",
@@ -1034,7 +1095,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Jay Clayton, Jerry Granelli",
@@ -1050,7 +1112,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "George Marsh, John Abercrombie",
@@ -1066,7 +1129,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1984
   },
   {
     "artist": "Kirk Nurock",
@@ -1082,7 +1146,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1982
   },
   {
     "artist": "Paul Simon",
@@ -1098,7 +1163,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1986,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "Rufus Reid Trio",
@@ -1114,7 +1180,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1981
   },
   {
     "artist": "Various",
@@ -1130,7 +1197,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1962
   },
   {
     "artist": "John Handy, Ali Akbar Kahn",
@@ -1146,7 +1214,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1976
   },
   {
     "artist": "Joseph Spence",
@@ -1162,7 +1231,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Musiques De L'Afrique Traditionnelle – Vol. 2",
@@ -1178,7 +1248,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1976
   },
   {
     "artist": "James Gang",
@@ -1194,7 +1265,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Les McCann & Eddie Harris",
@@ -1210,7 +1282,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Blood, Sweat and Tears",
@@ -1226,7 +1299,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Paul Beaver & Bernard L. Krause",
@@ -1242,7 +1316,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Emerson, Lake and Palmer",
@@ -1258,7 +1333,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Michael Colombier",
@@ -1274,7 +1350,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Ron Frangipane and His Orchestra",
@@ -1289,7 +1366,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Watazumida-Shuso",
@@ -1304,7 +1382,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Spike Jones",
@@ -1320,7 +1399,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "B.W. Stevenson",
@@ -1336,7 +1416,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Barbra Streisand",
@@ -1352,7 +1433,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Frank Zappa",
@@ -1368,7 +1450,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Paul Motian",
@@ -1384,7 +1467,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1978
   },
   {
     "artist": "Cannonball Adderley Quintet",
@@ -1400,7 +1484,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1967
   },
   {
     "artist": "Bobby Bridger ",
@@ -1416,7 +1501,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Art Blakey / Max Roach / Elvin Jones / Philly Joe Jones",
@@ -1432,7 +1518,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Chicago",
@@ -1448,7 +1535,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "K.R.T. Wasitodipuro",
@@ -1464,7 +1552,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Aphrodite's Child",
@@ -1480,7 +1569,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1976
   },
   {
     "artist": "Blackearth Percussion Group",
@@ -1496,7 +1586,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "The Ghost Opera",
@@ -1511,7 +1602,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Weather Report",
@@ -1527,7 +1619,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Nat \"King\" Cole",
@@ -1543,7 +1636,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1957
   },
   {
     "artist": "James Taylor",
@@ -1559,7 +1653,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1970,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "Herb Alpert & the Tijuana Brass",
@@ -1574,7 +1669,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Buddy Rich Big Band",
@@ -1589,7 +1685,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "CTI All-Stars",
@@ -1604,7 +1701,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Leonard Bernstein / New York Philharmonic",
@@ -1619,7 +1717,8 @@ window.RECORDS = [
     "runout": "XSM-118130-3AB T",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "John Coltrane",
@@ -1635,7 +1734,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ray Charles",
@@ -1651,7 +1751,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Nina Simone",
@@ -1667,7 +1768,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1963
   },
   {
     "artist": "Jean Luc Ponty",
@@ -1683,7 +1785,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Various",
@@ -1699,7 +1802,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1982
   },
   {
     "artist": "John Bergamo",
@@ -1715,7 +1819,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "Roger Williams",
@@ -1731,7 +1836,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1958
   },
   {
     "artist": "Gamelan Semar Pegulingan",
@@ -1746,7 +1852,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ramsey Lewis",
@@ -1762,7 +1869,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1967
   },
   {
     "artist": "Tim Moore",
@@ -1778,7 +1886,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Paul Winter Consort",
@@ -1794,7 +1903,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Oregon",
@@ -1810,7 +1920,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1975
   },
   {
     "artist": "Blood, Sweat and Tears",
@@ -1826,7 +1937,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Gendèr Wayang From Teges Kanyinan, Pilatan, Bali*",
@@ -1842,7 +1954,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Bishop Norman Williams",
@@ -1858,7 +1971,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1979
   },
   {
     "artist": "Cal Tjader",
@@ -1874,7 +1988,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "Shostakovitch*, Artur Rodzinski Conducting The Cleveland Orchestra",
@@ -1890,7 +2005,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1977
   },
   {
     "artist": "Peter Schickele",
@@ -1906,7 +2022,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1979
   },
   {
     "artist": "The Nonesuch Explorer",
@@ -1922,7 +2039,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "The New Jersey Percussion Ensemble, Raymond DesRoches*, Varèse*, Colgrass*, Cowell*, Saperstein*, Oak*",
@@ -1938,7 +2056,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Southern Methodist University Band",
@@ -1954,7 +2073,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Richard Harris",
@@ -1970,7 +2090,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "The Rascals",
@@ -1986,7 +2107,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Mr. Acker Bilk",
@@ -2001,7 +2123,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Various Artists",
@@ -2016,7 +2139,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Carole King",
@@ -2031,7 +2155,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1971,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Neil Diamond",
@@ -2046,7 +2171,8 @@ window.RECORDS = [
     "runout": "TML",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Bernard Haitink / Concertgebouw Orchestra",
@@ -2061,7 +2187,8 @@ window.RECORDS = [
     "runout": "PHS-900-068 B-RFR-6 P17",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ahmad Jamal",
@@ -2077,7 +2204,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Spike Jones and his City Slickers",
@@ -2093,7 +2221,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "Walter Carlos",
@@ -2109,7 +2238,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Todd Rundgren's Utopia",
@@ -2125,7 +2255,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Edward Lee Natay",
@@ -2141,7 +2272,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1951
   },
   {
     "artist": "Red Star Singers",
@@ -2157,7 +2289,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Neil Young",
@@ -2173,7 +2306,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1972,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Bobby Hutcherson",
@@ -2189,7 +2323,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1978
   },
   {
     "artist": "The Firesign Theater",
@@ -2205,7 +2340,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Engelbert Humperdinck",
@@ -2220,7 +2356,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Virgil Fox",
@@ -2235,7 +2372,8 @@ window.RECORDS = [
     "runout": "XX CC-11022 SDA-1SS 111 P17",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Dave Brubeck Quartet",
@@ -2251,7 +2389,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1966
   },
   {
     "artist": "Gerry Niewood and Timepiece",
@@ -2267,7 +2406,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1977
   },
   {
     "artist": "Various",
@@ -2283,7 +2423,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "National Lampoon",
@@ -2299,7 +2440,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1975
   },
   {
     "artist": "Andy Narell",
@@ -2315,7 +2457,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1983
   },
   {
     "artist": "Chet Atkins",
@@ -2330,7 +2473,8 @@ window.RECORDS = [
     "runout": "K2WP-6033 1S",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Max Roach and Clifford Brown",
@@ -2346,7 +2490,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1973
   },
   {
     "artist": "Ira Sullivan",
@@ -2362,7 +2507,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1979
   },
   {
     "artist": "Tito Morano and His Orchestra",
@@ -2377,7 +2523,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Jack DeJohnette",
@@ -2393,7 +2540,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Andy Narell",
@@ -2409,7 +2557,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1981
   },
   {
     "artist": "Doc Severinsen And His Orchestra",
@@ -2425,7 +2574,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1961
   },
   {
     "artist": "Martin Denny",
@@ -2441,7 +2591,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1963
   },
   {
     "artist": "Hot, Butter and Soul",
@@ -2457,7 +2608,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "\"Oh! Calcutta!\" Original Cast",
@@ -2473,7 +2625,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soundtracks, Cast & Stage",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Fats Waller",
@@ -2489,7 +2642,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Lionel Hampton",
@@ -2505,7 +2659,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Various Artists",
@@ -2520,7 +2675,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Holiday",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Bruno Walter / Columbia Symphony Orchestra",
@@ -2535,7 +2691,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Glen Campbell",
@@ -2550,7 +2707,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": 1968,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "101 Strings",
@@ -2565,7 +2723,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ladysmith Black Mambazo",
@@ -2581,7 +2740,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1986
   },
   {
     "artist": "Bobby McFerrin",
@@ -2597,7 +2757,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1984
   },
   {
     "artist": "San Francisco Mime Troupe",
@@ -2613,7 +2774,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1983
   },
   {
     "artist": "Henry Mancini",
@@ -2629,7 +2791,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "West Indian Tobacco Desperadoes",
@@ -2645,7 +2808,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1977
   },
   {
     "artist": "Bill Evans Featuring Cannonball Adderley",
@@ -2661,7 +2825,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Buddy Rich Big Band",
@@ -2677,7 +2842,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "Count Basie",
@@ -2693,7 +2859,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1966
   },
   {
     "artist": "The Carpenters",
@@ -2709,7 +2876,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Oregon",
@@ -2725,7 +2893,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "The Louisville Orchestra",
@@ -2740,7 +2909,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Brownwood Stage Band",
@@ -2755,7 +2925,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Living Marimbas Plus Strings",
@@ -2770,7 +2941,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Original Soundtrack",
@@ -2785,7 +2957,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soundtracks, Cast & Stage",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "D’Artega",
@@ -2800,7 +2973,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Dorothy Lamour",
@@ -2815,7 +2989,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Bing Crosby",
@@ -2830,7 +3005,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Holiday",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "",
@@ -2845,7 +3021,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Dean Martin",
@@ -2860,7 +3037,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Pat Boone",
@@ -2875,7 +3053,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "David Oistrakh",
@@ -2890,7 +3069,8 @@ window.RECORDS = [
     "runout": "HOFS 503",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Grupo Santa Cecilia",
@@ -2905,7 +3085,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Billy Vaughn Singers",
@@ -2921,7 +3102,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "Manny Albam-Ernie Wikins and their Orchestra",
@@ -2936,7 +3118,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Beatles",
@@ -2952,7 +3135,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1965
   },
   {
     "artist": "Lambert, Hendricks & Ross",
@@ -2968,7 +3152,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Smothers Brothers",
@@ -2984,7 +3169,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1965
   },
   {
     "artist": "Loretta & Conway",
@@ -3000,7 +3186,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1976
   },
   {
     "artist": "Various",
@@ -3016,7 +3203,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1969
   },
   {
     "artist": "Flatt and Scruggs",
@@ -3032,7 +3220,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1972
   },
   {
     "artist": "Nancy Sinatra",
@@ -3048,7 +3237,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1967
   },
   {
     "artist": "Eddy Arnold",
@@ -3063,7 +3253,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Donovan",
@@ -3078,7 +3269,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Music for a While",
@@ -3094,7 +3286,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1974
   },
   {
     "artist": "Buddy Rich Big Band",
@@ -3110,7 +3303,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1968
   },
   {
     "artist": "P.D.Q. Bach",
@@ -3126,7 +3320,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1967
   },
   {
     "artist": "The Ventures",
@@ -3142,7 +3337,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1965
   },
   {
     "artist": "Billy Vaughn",
@@ -3158,7 +3354,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1959
   },
   {
     "artist": "Nino Rota / Original Soundtrack",
@@ -3173,7 +3370,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soundtracks, Cast & Stage",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Various Artists",
@@ -3188,7 +3386,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Gene Krupa & Buddy Rich",
@@ -3204,7 +3403,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1962
   },
   {
     "artist": "Elton John",
@@ -3220,7 +3420,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Rock & Pop",
     "year": 1970,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Phyllis Diller",
@@ -3236,7 +3437,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1962
   },
   {
     "artist": "Roger Williams",
@@ -3252,7 +3454,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "World & Traditional",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1957
   },
   {
     "artist": "Julian LaRosa",
@@ -3268,7 +3471,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1966
   },
   {
     "artist": "Robert Audy",
@@ -3284,7 +3488,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Tommy Dorsey",
@@ -3300,7 +3505,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1956
   },
   {
     "artist": "Alley Cat",
@@ -3316,7 +3522,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1962
   },
   {
     "artist": "Jonny Mathis",
@@ -3332,7 +3539,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1957
   },
   {
     "artist": "Doc Severinsen",
@@ -3348,7 +3556,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1967
   },
   {
     "artist": "Bent Fabric",
@@ -3363,7 +3572,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Lester Lanin And His Orchestra",
@@ -3379,7 +3589,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1958
   },
   {
     "artist": "Mitch Miller And The Gang",
@@ -3395,7 +3606,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1958
   },
   {
     "artist": "David Rose and his Orchestra",
@@ -3411,7 +3623,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1955
   },
   {
     "artist": "Sandy Nelson",
@@ -3426,7 +3639,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Million Seller",
@@ -3441,7 +3655,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Hap O’Hallihan",
@@ -3456,7 +3671,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Sandpipers",
@@ -3472,7 +3688,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1970
   },
   {
     "artist": "Boots Randolph",
@@ -3488,7 +3705,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1966
   },
   {
     "artist": "Don Ellis",
@@ -3503,7 +3721,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Kenny Loggins with Jim Messina",
@@ -3519,7 +3738,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1971
   },
   {
     "artist": "Chet Atkins",
@@ -3535,7 +3755,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": 1962
   },
   {
     "artist": "Mel Lewis",
@@ -3550,7 +3771,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "",
@@ -3565,7 +3787,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Various / John Jance",
@@ -3580,7 +3803,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ray Conniff",
@@ -3595,7 +3819,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Joan Baez",
@@ -3610,7 +3835,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Joan Baez",
@@ -3625,7 +3851,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Holiday",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Joan Baez",
@@ -3640,7 +3867,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Bee Gees / Various Artists",
@@ -3655,7 +3883,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Dave Brubeck Quartet",
@@ -3670,7 +3899,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Tex Beneke and His Orchestra",
@@ -3685,7 +3915,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ray Conniff",
@@ -3700,7 +3931,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Frank Carle, His Piano and Orchestra",
@@ -3715,7 +3947,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Southern Methodist University Band",
@@ -3730,7 +3963,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Southern Methodist University Band",
@@ -3745,7 +3979,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Ragtime Reinhold (Reinhold Svensson) and the Olson Brothers",
@@ -3760,7 +3995,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Original London Cast",
@@ -3775,7 +4011,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Soundtracks, Cast & Stage",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3790,7 +4027,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Burt Bacharach",
@@ -3805,7 +4043,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Buddy Rich Big Band",
@@ -3820,7 +4059,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Jazz",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3835,7 +4075,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Various / Unconfirmed",
@@ -3850,7 +4091,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3865,7 +4107,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3880,7 +4123,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3895,7 +4139,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Roger Williams",
@@ -3910,7 +4155,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Sammy Kaye",
@@ -3925,7 +4171,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Billy Vaughn",
@@ -3940,7 +4187,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Billy Vaughn",
@@ -3955,7 +4203,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Al Donahue and His Society Orchestra",
@@ -3970,7 +4219,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unconfirmed",
@@ -3985,7 +4235,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Mills Brothers",
@@ -4000,7 +4251,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Various Artists",
@@ -4015,7 +4267,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Holiday",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Marlo Thomas and Friends",
@@ -4030,7 +4283,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Les Brown",
@@ -4045,7 +4299,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Steve Allen",
@@ -4060,7 +4315,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Chuck Mangione",
@@ -4075,7 +4331,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Herb Alpert & the Tijuana Brass",
@@ -4090,7 +4347,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Orson Welles",
@@ -4105,7 +4363,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Comedy, Spoken Word & Novelty",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Al Hirt",
@@ -4120,7 +4379,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Pat Boone",
@@ -4135,7 +4395,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Country, Folk & Americana",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Billy Vaughn",
@@ -4150,7 +4411,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "The Four Aces",
@@ -4165,7 +4427,8 @@ window.RECORDS = [
     "runout": "",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Martin Denny",
@@ -4180,7 +4443,8 @@ window.RECORDS = [
     "runout": "LRP-3081 S2",
     "genre": "Easy Listening & Exotica",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Unidentified",
@@ -4195,7 +4459,8 @@ window.RECORDS = [
     "runout": "3441 Sire 4 SR2 WM-01",
     "genre": "Other / To Be Classified",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   },
   {
     "artist": "Jean Martinon / Orchestre de Paris",
@@ -4210,6 +4475,7 @@ window.RECORDS = [
     "runout": "MASTERED BY CAPITOL",
     "genre": "Classical & Contemporary",
     "year": null,
-    "featured": false
+    "featured": false,
+    "release_year": null
   }
 ];
