@@ -2673,7 +2673,7 @@ window.RECORDS = [
     "catalog": "P-12525",
     "matrix": "",
     "runout": "",
-    "genre": "Holiday",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3003,7 +3003,7 @@ window.RECORDS = [
     "catalog": "Decca DL 8128",
     "matrix": "",
     "runout": "",
-    "genre": "Holiday",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3849,7 +3849,7 @@ window.RECORDS = [
     "catalog": "VSD 2930",
     "matrix": "",
     "runout": "",
-    "genre": "Holiday",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4265,7 +4265,7 @@ window.RECORDS = [
     "catalog": "CSP-238S",
     "matrix": "",
     "runout": "",
-    "genre": "Holiday",
+    "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
     "release_year": null
