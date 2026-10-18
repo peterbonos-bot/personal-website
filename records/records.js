@@ -639,7 +639,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Soul, Funk & R&B",
+    "genre": "Rock & Pop",
     "year": 1968,
     "featured": false,
     "release_year": 1968
