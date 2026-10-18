@@ -72,6 +72,7 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 .home-button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;border:1px solid #78938c;border-radius:6px;color:#eaf2ee;background:#20383b;text-decoration:none;font:600 14px/1.2 system-ui,-apple-system,sans-serif;white-space:nowrap}.home-button:hover{background:#315052;color:#fff}.home-button:focus-visible{outline:3px solid #ffbd50;outline-offset:3px}.home-nav{padding:10px 6vw;background:#101d20}
 .sale-button{display:inline-flex;align-items:center;justify-content:center;width:100%;margin-top:8px;padding:8px 5px;border:1px solid #8db3a8;border-radius:5px;background:#203e35;color:#edf7ee!important;text-decoration:none;font:600 12px/1.25 system-ui,sans-serif}.sale-button:hover{background:#305746}.record-list .sale-button{width:auto;padding:7px 9px;white-space:nowrap}.match-actions{flex-wrap:wrap}.match-actions .sale-button{width:auto;margin-top:0}
 .controls .main-request-link{display:inline-flex;align-items:center;gap:6px;padding:12px 15px;background:#65c6c9;color:#102729;border:1px solid #65c6c9;border-radius:6px;font:700 15px/1.3 system-ui,sans-serif;text-decoration:none;min-height:46px}.controls .main-request-link:hover{background:#90d9d9}.viewing-secondary{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin:24px 0}.viewing-secondary a{color:var(--muted)}
+.contact-secondary{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--muted);font:500 14px/1.3 system-ui,sans-serif;text-decoration:none;min-height:40px}.contact-secondary:hover{color:var(--ink);border-color:var(--muted)}.viewing-secondary .contact-secondary{margin-right:12px}
 </style>
 </head>
 <body><nav class="home-nav" aria-label="Main navigation"><a class="home-button" href="./">Home</a></nav>
@@ -82,7 +83,7 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
 <button type="button" id="selectAllRecords">Select all records</button><button type="button" id="selectCurrentGenre" hidden>Select entire genre</button><button id="viewAllRecords" type="button">View All Records</button>
 
-<a class="cart-button main-request-link" id="openCart" href="requests.html#recordsHeading"><span aria-hidden="true">🛒</span> View my requests and contact us (<span id="cartCount">0</span>)</a>
+<a class="cart-button main-request-link" id="openCart" href="requests.html#recordsHeading"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 10 4-7 4 7M3 10h18l-2 11H5L3 10Z"/><path d="M9 13v5m6-5v5"/></svg> View my requests (<span id="cartCount">0</span>)</a><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a>
 <select id="sort">
 <option value="artist">Artist A–Z</option><option value="title">Album A–Z</option>
 <option value="year-desc">Year: newest</option><option value="year-asc">Year: oldest</option>
@@ -94,7 +95,7 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <section class="intro"><h2>Browse the Collection</h2><p class="summary">Search the complete catalog, explore genres, compare condition and estimated values, and follow release-reference links for pressing details.</p></section>
 <section id="featured"></section>
 <section><h2 style="font-size:1.8rem;margin-top:2rem">Browse by Genre</h2><p id="bulkStatus" role="status" aria-live="polite" style="color:var(--accent2)"></p><div id="summary" class="summary"></div><div class="shelf-label">Each genre has its own row. Scroll sideways within a row →</div><div id="grid"></div></section>
-<p class="viewing-secondary"><a href="requests.html#viewDate">Arrange an in-person viewing</a> · By appointment</p>
+<p class="viewing-secondary"><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a> <a href="requests.html#viewDate">Arrange an in-person viewing</a> · By appointment</p>
 <footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
 </main>
 <script src="records.js?v=6cd6d42f"></script>
