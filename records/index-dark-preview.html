@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="robots" content="noindex">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keith Terry Record Collection</title>
+<style>
+:root{--ink:#243047;--paper:#fff8e7;--card:#fffdf7;--accent:#d94f35;--accent2:#177e89;--accent3:#e9a23b;--muted:#657084;--line:#e7cfa4}
+[data-theme="dark"]{--ink:#f6efe3;--paper:#11151b;--card:#191f27;--accent:#ff7a45;--accent2:#65c6c9;--accent3:#f2bd58;--muted:#aeb7c3;--line:#303844}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:linear-gradient(135deg,var(--paper),color-mix(in srgb,var(--paper) 85%,#b8e3dc));color:var(--ink);min-height:100vh}
+header{padding:3rem 6vw 2rem;background:linear-gradient(120deg,#ef6a43,#e6a43a 48%,#238b8e);color:#fff;position:relative;overflow:hidden}
+[data-theme="dark"] header{background:linear-gradient(120deg,#141920,#222832 60%,#172b2c)}
+header:after{content:"";position:absolute;width:260px;height:260px;border:52px solid rgba(255,255,255,.12);border-radius:50%;right:6vw;top:-105px}h1{margin:.2rem 0;font-size:clamp(2rem,5vw,4.5rem)}
+header p{color:rgba(255,255,255,.9);max-width:760px}.theme-toggle{position:absolute;right:6vw;bottom:1.2rem;z-index:2;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.16);color:#fff;border-radius:999px;padding:.6rem 1rem;cursor:pointer;font:inherit}.controls{position:sticky;top:0;z-index:5;padding:1rem 6vw;background:color-mix(in srgb,var(--paper) 94%,transparent);border-bottom:1px solid var(--line);display:flex;gap:.6rem;flex-wrap:wrap}
+input,select,.controls button{padding:.7rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:4px;font:inherit}input{flex:1;min-width:220px}.controls button{cursor:pointer;white-space:nowrap}.controls button[aria-pressed="true"]{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+main{padding:2rem 6vw 5rem}.summary{color:var(--muted);margin-bottom:1.4rem}
+.genre-section{margin:2.2rem 0}.genre-head{display:flex;align-items:baseline;gap:.7rem;margin-bottom:.25rem}.genre-head h2{font-size:1.45rem;margin:0}.genre-count{font-size:.8rem;color:var(--muted)}
+.grid{display:flex;gap:.55rem;overflow-x:auto;padding:.8rem .25rem 1.2rem;scroll-behavior:smooth;scroll-snap-type:x proximity;scrollbar-width:thin}
+.grid::-webkit-scrollbar{height:8px}.grid::-webkit-scrollbar-thumb{background:var(--line);border-radius:20px}
+.grid .card{flex:0 0 132px;scroll-snap-align:start;padding:.45rem;box-shadow:0 5px 14px rgba(0,0,0,.1);transform:none}
+.grid .card:hover,.grid .card:focus-within{transform:translateY(-5px) scale(1.04);z-index:10;box-shadow:0 12px 24px rgba(0,0,0,.18)}
+.grid .cover{margin-bottom:.45rem;padding:.35rem}.grid .artist{font-size:.61rem}.grid h2{font-size:.8rem;line-height:1.08;margin:.18rem 0}.grid .meta{font-size:.68rem;line-height:1.2}.grid .price{font-size:.82rem;margin:.3rem 0}.grid a{font-size:.68rem}
+@media(max-width:650px){.grid .card{flex-basis:112px}.grid{gap:.4rem}}
+.card{background:var(--card);border:1px solid var(--line);padding:1rem;border-radius:7px;transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease;backface-visibility:hidden}.cover{aspect-ratio:1;background:linear-gradient(135deg,color-mix(in srgb,var(--accent3) 28%,var(--card)),color-mix(in srgb,var(--accent2) 22%,var(--card)));display:grid;place-items:center;color:#777;margin-bottom:1rem;text-align:center;padding:1rem}
+.intro{padding:1rem 0 1.5rem}.intro h2{font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:.4rem}.badge{display:inline-block;padding:.25rem .55rem;border-radius:999px;background:color-mix(in srgb,var(--accent3) 30%,var(--card));font-size:.75rem;margin-bottom:.5rem}.artist{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}h2{font-size:1.25rem;margin:.3rem 0}.meta{font-size:.9rem;color:var(--muted)}.price{font-size:1.2rem;margin:.7rem 0}
+a{color:var(--accent)}.empty{padding:3rem 0}.shelf-label{font-size:.82rem;color:var(--muted);margin-top:-.6rem;margin-bottom:.4rem}
+
+/* Vinyl-shop decorative atmosphere */
+header{background-image:linear-gradient(rgba(10,12,16,.48),rgba(10,12,16,.82)),url("Moody%20Vintage%20Vinyl%20Collection%20Collage.png");background-size:cover;background-position:center 38%;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.055;background:repeating-radial-gradient(circle at 88% 15%,transparent 0 5px,#fff 5.5px 6px,transparent 6.5px 9px);z-index:-1}
+.genre-section{position:relative;overflow:hidden}.genre-section:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,#3b2619,#9a6438,#40281a);opacity:.75}
+
+/* Display the complete generated artwork without cropping it behind the header text. */
+header{display:block;min-height:0;padding:0;background:#11151b!important}
+header:after{display:none}
+.hero-art{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;background:#11151b}
+.hero-copy{position:relative;padding:1.5rem 6vw 2rem;background:linear-gradient(120deg,#141920,#222832 60%,#172b2c)}
+.hero-copy h1{margin:.2rem 0}
+.hero-copy p{margin-bottom:0}
+@media(max-width:650px){.hero-copy{padding:1.25rem 5vw 1.8rem}.hero-art{max-height:none}}
+.record-list{width:100%;border-collapse:collapse;font-size:.95rem}.record-list th{text-align:left;background:var(--card);position:sticky;top:0}.record-list td,.record-list th{padding:.65rem .8rem;border-bottom:1px solid var(--line)}.record-list tr:hover{background:color-mix(in srgb,var(--accent2) 9%,transparent)}.record-list td a{white-space:nowrap}.list-wrap{overflow-x:auto}.list-wrap .record-list{min-width:650px}@media(max-width:650px){.record-list td,.record-list th{padding:.55rem}.list-wrap .record-list{min-width:580px}}
+
+.cart-button,.add-cart,.cart-actions button{cursor:pointer;border:1px solid var(--accent2);border-radius:5px;padding:.5rem .7rem;background:var(--accent2);color:#111;font:inherit;font-size:.82rem;font-weight:bold}
+.add-cart{width:100%;margin-top:.45rem}.add-cart[disabled]{opacity:.6;cursor:default}.grid .add-cart{font-size:.68rem;padding:.4rem .15rem}
+.cart-button{margin-left:auto}.cart-modal[hidden]{display:none}.cart-modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(0,0,0,.78);padding:1rem}
+.cart-panel{width:min(680px,100%);max-height:90vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.2rem;color:var(--ink)}
+.cart-header{display:flex;justify-content:space-between;align-items:center;gap:1rem}.cart-header h2{margin:0}.cart-close{background:transparent;border:1px solid var(--line);border-radius:5px;color:var(--ink);font:inherit;padding:.3rem .65rem;cursor:pointer}
+.cart-row{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--line)}.cart-row button{background:transparent;color:var(--accent);border:0;text-decoration:underline;cursor:pointer}.cart-total{font-size:1.3rem;font-weight:bold;text-align:right;margin:1rem 0}.cart-actions{display:flex;gap:.5rem;flex-wrap:wrap}.cart-actions button:disabled{opacity:.5;cursor:default}.cart-note{font-size:.88rem;color:var(--muted)}.cart-panel input{width:100%;margin:.35rem 0 .8rem;min-width:0}
+
+.viewing-section{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:1.4rem;margin:2rem 0}
+.viewing-section p{color:var(--muted)}.viewing-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1rem}.viewing-form label{display:flex;flex-direction:column;gap:.3rem}.viewing-form input,.viewing-form textarea{width:100%;min-width:0;padding:.65rem;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink);font:inherit}.viewing-form textarea{min-height:100px;resize:vertical}.viewing-form .full{grid-column:1/-1}.viewing-form button,.viewing-link{display:inline-block;padding:.65rem 1rem;border-radius:5px;background:var(--accent2);color:#111;border:0;font:inherit;font-weight:bold;cursor:pointer;text-decoration:none}
+@media(max-width:600px){.viewing-form{grid-template-columns:1fr}}
+
+/* Readable catalog table; keep controls in normal flow in list view. */
+body.list-view .controls{position:sticky;top:0;z-index:20;background:var(--paper)}
+.record-list{font-size:1rem;line-height:1.5;background:var(--paper)}
+.record-list th{position:static;background:var(--card);font-weight:bold}
+.record-list td,.record-list th{padding:.9rem 1rem;vertical-align:top}
+.record-list .add-cart{font-size:.9rem;min-height:44px;margin-top:0}
+#summary{scroll-margin-top:1rem}
+@media(max-width:650px){
+.record-list td,.record-list th{padding:.8rem}
+.list-wrap .record-list{min-width:850px}
+}
+
+/* Narrow banner using the collection photograph uploaded to the repository. */
+.hero-art{width:100%;height:clamp(120px,17vw,220px);max-height:220px;object-fit:cover;object-position:center 43%}
+@media(max-width:650px){.hero-art{height:120px;max-height:120px}}
+.select-genre{margin-left:auto;border:1px solid var(--accent2);border-radius:5px;background:transparent;color:var(--accent2);font:600 .8rem system-ui,sans-serif;padding:7px 10px;cursor:pointer;min-height:36px}.genre-head{flex-wrap:wrap}.controls button:disabled{opacity:.65;cursor:default}
+body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height,110px);z-index:10;background:var(--card)}body.list-view #summary{scroll-margin-top:calc(var(--catalog-controls-height,110px) + 12px)}
+.request-selected{position:relative}.request-selected .cancel-x{font:22px/1 sans-serif;margin-left:8px}.cancel-tooltip{display:none;position:absolute;right:0;bottom:calc(100% + 5px);background:#eee3d1;border:1px solid #dacdb8;border-radius:3px;padding:5px 8px;white-space:nowrap;color:#303b3c;font:12px/1.3 system-ui,-apple-system,sans-serif;box-shadow:0 2px 5px #0001;z-index:30;pointer-events:none}.request-selected:hover .cancel-tooltip,.request-selected:focus-visible .cancel-tooltip{display:block}.request-selected:hover{overflow:visible}.grid{padding-top:2.3rem}.match-actions{padding-top:1.5rem}
+.request-selected{display:flex!important;align-items:center;justify-content:flex-start;gap:8px;width:100%}.request-selected .cancel-x{margin-left:auto!important;flex:0 0 auto}.record-requested{background-color:color-mix(in srgb,var(--card,#fffdf8) 76%,#000)!important}.record-requested .cover,.record-requested .detail-cover{filter:brightness(.62)}.record-requested .record-title,.record-requested h2{opacity:.72}.release.record-requested{padding-left:10px;border-radius:8px}.detail-layout.record-requested{padding:14px;border-radius:10px}
+</style>
+</head>
+<body>
+<header><img class="hero-art" src="https://peterbonos-bot.github.io/keith-terry-records/Jazz%20Records.jpg" alt="Actual record spines from the Keith Terry collection"><div class="hero-copy"><div class="artist" style="color:#fff">Vinyl collection</div><h1>Keith Terry Record Collection</h1><p>Browse the collection by genre, artist, year, value, condition and popularity. Search across artist, album, genre, label, catalog number and notes.</p><p><a href="https://www.discogs.com/seller/moments_last/profile" target="_blank" rel="noopener noreferrer" style="color:#a9e6df">Shop moments_last on Discogs ↗</a></p></div></header>
+<div class="controls">
+<input id="q" type="search" placeholder="Search artist, album, genre, label…">
+<select id="genre"><option value="">All genres</option></select>
+<button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
+<button type="button" id="selectAllRecords">Select all records</button><button type="button" id="selectCurrentGenre" hidden>Select entire genre</button><button id="viewAllRecords" type="button">View All Records</button>
+<a class="viewing-link" href="#requestViewing">Request a Viewing</a>
+<button class="cart-button" id="openCart" type="button">My Requests (<span id="cartCount">0</span>)</button>
+<select id="sort">
+<option value="artist">Artist A–Z</option><option value="title">Album A–Z</option>
+<option value="year-desc">Year: newest</option><option value="year-asc">Year: oldest</option>
+<option value="value-desc">Value: high to low</option><option value="value-asc">Value: low to high</option>
+<option value="popularity">Popularity / demand</option>
+</select>
+</div>
+<main>
+<section class="intro"><h2>Browse the Collection</h2><p class="summary">Search the complete catalog, explore genres, compare condition and estimated values, and follow release-reference links for pressing details.</p></section>
+<section id="featured"></section>
+<section><h2 style="font-size:1.8rem;margin-top:2rem">Browse by Genre</h2><p id="bulkStatus" role="status" aria-live="polite" style="color:var(--accent2)"></p><div id="summary" class="summary"></div><div class="shelf-label">Each genre has its own row. Scroll sideways within a row →</div><div id="grid"></div></section>
+<section class="viewing-section" id="requestViewing" aria-labelledby="viewingTitle">
+<h2 id="viewingTitle">Request an Appointment to View the Collection</h2>
+<p>Interested in browsing the records in person? Suggest a date and time. Visits are by appointment only and subject to confirmation. The collection's location will be provided after your appointment is arranged.</p>
+<form id="viewingForm" class="viewing-form">
+<label>Full name<input name="visitorName" autocomplete="name" required maxlength="120"></label>
+<label>Email address<input name="visitorEmail" type="email" autocomplete="email" required maxlength="254"></label>
+<label>Phone number (optional)<input name="visitorPhone" type="tel" autocomplete="tel" maxlength="40"></label>
+<label>Preferred date<input name="preferredDate" type="date" required></label>
+<label>Preferred time<input name="preferredTime" type="time" required></label>
+<label>Alternate date / time (optional)<input name="alternateTime" placeholder="e.g. Sunday afternoon" maxlength="120"></label>
+<label class="full">Records of interest / additional notes (optional)<textarea name="visitorNotes" maxlength="2000"></textarea></label>
+<div class="full"><button type="submit">Prepare Viewing Request Email</button><p class="cart-note" id="viewingHelp" role="status">This opens your email app with a request addressed to Keith Terry, and copies you and Peter. You must press Send in your email app. Your appointment is not confirmed until Keith responds.</p></div>
+</form></section>
+<footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
+</main>
+<div class="cart-modal" id="cartModal" hidden role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+<div class="cart-panel"><div class="cart-header"><h2 id="cartTitle">Purchase Request</h2><button class="cart-close" id="closeCart" type="button" aria-label="Close cart">✕</button></div>
+<p class="cart-note">This is a request to purchase, not a checkout. No payment will be taken. Prices are estimates and availability must be confirmed. Some titles may not be available. Items marked Value TBD are priced upon request. Local purchases encouraged. Shipping and handling costs will be determined later after purchase consultation and are not included in the estimated total.</p>
+<div id="cartItems"></div><div class="cart-total" id="cartTotal"></div>
+<label for="buyerName">Your name</label><input id="buyerName" autocomplete="name" placeholder="Name">
+<label for="buyerEmail">Your email (for your copy)</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+<div class="cart-actions"><button id="requestPurchase" type="button">✉ Prepare purchase request</button><button id="clearCart" type="button">Clear request</button></div>
+<p class="cart-note" id="cartInstructions" role="status">Selecting “Send purchase request” opens your email app with the itemized request. Please press Send in your email app to submit it.</p>
+</div></div>
+<script src="records.js?v=6cd6d42f"></script>
+<script>
+const records=(window.RECORDS||[]).map(r=>({...r,cover:r.cover&&!/^https?:/i.test(r.cover)?'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover:r.cover}));
+const CART_KEY='keith-terry-records-cart-v1';
+let cart=[];
+try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInteger(i)&&i>=0&&i<records.length)}catch(e){cart=[]}
+cart=[...new Set(cart)];
+function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
+function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
+function cartButton(r){const i=records.indexOf(r),added=cart.includes(i);return '<button type="button" class="add-cart'+(added?' request-selected':'')+'" data-record-index="'+i+'" aria-label="'+(added?'Remove record':'Add to Request')+'" aria-pressed="'+String(added)+'">'+(added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request')+'</button>'}
+function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();if(!document.getElementById('cartModal').hidden)renderCart()}
+function renderCart(){const box=document.getElementById('cartItems');box.innerHTML=cart.length?cart.map(i=>{const r=records[i];return '<div class="cart-row"><div><strong>'+esc(r.artist||'Unknown artist')+' — '+esc(r.title||'Untitled')+'</strong><br>'+formatValue(r.value)+'</div><button type="button" data-remove-index="'+i+'">Remove</button></div>'}).join(''):'<p>Your request list is empty.</p>';
+const priced=cart.map(i=>records[i]).filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+const total=priced.reduce((sum,r)=>sum+Number(r.value),0);
+const missing=cart.length-priced.length;
+document.getElementById('cartTotal').textContent='Estimated record total (excluding shipping and handling): $'+total.toFixed(2)+(missing?' + '+missing+' item'+(missing===1?'':'s')+' (Value TBD)':'');
+document.getElementById('requestPurchase').disabled=!cart.length;}
+function requestPurchase(){if(!cart.length)return;const name=document.getElementById('buyerName').value.trim(),email=document.getElementById('buyerEmail').value.trim(),emailField=document.getElementById('buyerEmail');
+if(!name){document.getElementById('buyerName').focus();return}
+if(!emailField.checkValidity()||!email){emailField.reportValidity();return}
+const selected=cart.map(i=>records[i]);
+const valid=selected.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
+const total=valid.reduce((sum,r)=>sum+Number(r.value),0);
+const missing=selected.length-valid.length;
+const lines=selected.map((r,i)=>(i+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled')+' — '+formatValue(r.value)+(r.year?' ('+r.year+')':'')+(r.condition?' — Condition: '+r.condition:''));
+const body=['Keith Terry Record Collection — purchase request','','Buyer: '+name,'Buyer email: '+email,'','Requested records:',...lines,'','Estimated record total for priced items (excluding shipping and handling): $'+total.toFixed(2),...(missing?['Plus '+missing+' item(s) with Value TBD — final pricing to be confirmed upon request.']:[]),'','Shipping and handling costs will be determined later after purchase consultation and are not included in this total.','Some titles may not be available. Items marked Value TBD are priced upon request. Local purchases encouraged.','This is a purchase request only. Please confirm availability, final prices, shipping/handling and payment details before proceeding.'].join('\n');
+const subject='Record purchase request — '+name+' ('+cart.length+' records)';
+const params=new URLSearchParams({cc:'peterbonos@gmail.com,'+email,subject,body});
+window.location.href='mailto:keithterry@crosspulse.com?'+params.toString();
+document.getElementById('cartInstructions').textContent='Your email app should open with the request. Review it and press Send to submit; the website does not send emails itself.';
+}
+document.getElementById('openCart').addEventListener('click',()=>{window.location.href='requests.html'});
+document.getElementById('closeCart').addEventListener('click',()=>document.getElementById('cartModal').hidden=true);
+document.getElementById('cartModal').addEventListener('click',e=>{if(e.target.id==='cartModal')e.currentTarget.hidden=true});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('cartModal').hidden=true});
+document.getElementById('cartItems').addEventListener('click',e=>{const b=e.target.closest('[data-remove-index]');if(!b)return;cart=cart.filter(i=>i!==Number(b.dataset.removeIndex));saveCart();renderCart();render()});
+document.getElementById('clearCart').addEventListener('click',()=>{cart=[];saveCart();renderCart();render()});
+document.getElementById('requestPurchase').addEventListener('click',requestPurchase);
+document.addEventListener('click',e=>{const b=e.target.closest('.add-cart');if(b)addToCart(Number(b.dataset.recordIndex))});
+updateCartCount(); const featured=document.querySelector('#featured');
+document.documentElement.dataset.theme='dark';
+const q=document.querySelector('#q'), genre=document.querySelector('#genre'), sort=document.querySelector('#sort'), grid=document.querySelector('#grid'), summary=document.querySelector('#summary'), viewToggle=document.querySelector('#viewToggle');
+let listView=false;
+function formatValue(v){return v==null||String(v).trim()===''||!Number.isFinite(Number(v))?'Value TBD':'$'+Number(v).toFixed(2)}
+const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+function compare(x,y){switch(sort.value){case 'title':return (x.title||'').localeCompare(y.title||'');case 'year-desc':return (Number(y.release_year)||0)-(Number(x.release_year)||0);case 'year-asc':return (Number(x.release_year)||9999)-(Number(y.release_year)||9999);case 'value-desc':return (Number(y.value)||0)-(Number(x.value)||0);case 'value-asc':return (Number(x.value)||0)-(Number(y.value)||0);case 'popularity':return (Number(y.popularity)||0)-(Number(x.popularity)||0);default:return (x.artist||'').localeCompare(y.artist||'')||(x.title||'').localeCompare(y.title||'');}}
+[...new Set(records.map(r=>r.genre).filter(Boolean))].sort().forEach(g=>genre.add(new Option(g,g)));
+function featuredRender(){const picks=records.filter(r=>r.featured).sort((a,b)=>(b.value||0)-(a.value||0)).slice(0,12);featured.innerHTML='<h2 style="font-size:1.8rem">Featured & High-Value Records</h2><p class="summary">Highlights from the collection based on current estimated value. Popularity/demand data will be shown separately as verified Discogs collection and wantlist metadata is added.</p><div class="grid" style="margin-bottom:2.5rem">'+picks.map(r=>`<article class="card ${cart.includes(records.indexOf(r))?'record-requested':''}"><span class="badge">Featured · High Value</span><div class="cover">${r.cover?`<img src="${r.cover}" alt="Album cover for ${r.artist||'Unknown artist'} — ${r.title||'Untitled'}" loading="lazy" style="width:100%;height:100%;object-fit:contain">`:'Cover unavailable'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${r.genre||''}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${cartButton(r)}</article>`).join('')+'</div>';} featuredRender();
+function card(r){return `<article class="card ${cart.includes(records.indexOf(r))?'record-requested':''}"><div class="cover">${r.cover?`<img src="${r.cover}" alt="" style="width:100%;height:100%;object-fit:cover">`:'Cover'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${[r.release_year,r.label].filter(Boolean).join(' · ')}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${cartButton(r)}</article>`}
+function render(){
+ document.body.classList.toggle('list-view',listView);
+ const term=q.value.trim().toLowerCase();
+ const a=records.filter(r=>(!genre.value||r.genre===genre.value)&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
+ const allButton=document.getElementById('selectAllRecords');allButton.disabled=false;allButton.textContent=cart.length===records.length?'Cancel all selections':'Select all '+records.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent=records.filter(r=>r.genre===genre.value).every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value||'genre')+' records';
+ summary.textContent=a.length+' of '+records.length+' records shown'+(listView?' · list view':' · cover view');
+ featured.hidden=listView;
+ document.querySelector('.shelf-label').hidden=listView;
+ if(listView){
+  const sorted=[...a].sort(compare);
+  grid.innerHTML='<div class="list-wrap"><table class="record-list"><thead><tr><th>Artist</th><th>Album</th><th>Release year</th><th>Genre</th><th>Disc condition</th><th>Sleeve condition</th><th>Est. value</th><th>Details</th><th>Request</th></tr></thead><tbody>'+sorted.map(r=>'<tr class="'+(cart.includes(records.indexOf(r))?'record-requested':'')+'"><td>'+esc(r.artist||'Unknown artist')+'</td><td>'+esc(r.title||'Untitled')+'</td><td>'+esc(r.release_year||r.year_status||'Not verified')+'</td><td>'+esc(r.genre||'—')+'</td><td>'+esc(r.media||'Not graded')+'</td><td>'+esc(r.sleeve||'Not graded')+'</td><td>'+(formatValue(r.value))+'</td><td>'+'<a href="record.html?id='+records.indexOf(r)+'">Details</a>'+'</td><td>'+cartButton(r)+'</td></tr>').join('')+'</tbody></table></div>';
+ }else{
+  const groups=[...new Set(a.map(r=>r.genre||'Other / To Be Classified'))].sort();
+  grid.innerHTML=groups.map(g=>{
+   const rows=a.filter(r=>(r.genre||'Other / To Be Classified')===g).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
+   return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">'+(rows.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all')+'</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
+  }).join('')||'<div class="empty">No records match those filters.</div>';
+ }
+}
+viewToggle.addEventListener('click',()=>{listView=!listView;viewToggle.textContent=listView?'▦ Cover View':'☰ List View';viewToggle.setAttribute('aria-pressed',String(listView));render();});
+document.getElementById('viewAllRecords').addEventListener('click',()=>{
+ q.value='';genre.value='';listView=true;
+ viewToggle.textContent='▦ Cover View';viewToggle.setAttribute('aria-pressed','true');
+ render();document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'start'});
+});
+function selectMany(indices){const before=cart.length;const removing=indices.length&&indices.every(i=>cart.includes(i));cart=removing?cart.filter(i=>!indices.includes(i)):[...new Set([...cart,...indices])];saveCart();render();featuredRender();const status=document.getElementById('bulkStatus');status.textContent=(removing?(before-cart.length)+' selections cancelled. ':(cart.length-before)+' records added. ')+cart.length+' selected in total.'}
+document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i)));
+document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>records[i].genre===genre.value)));
+document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>(records[i].genre||'Other / To Be Classified')===b.dataset.selectGenre))});
+q.addEventListener('input',render);
+genre.addEventListener('change',render);
+sort.addEventListener('change',render);
+render();
+const catalogControls=document.querySelector('.controls');
+function measureCatalogControls(){document.documentElement.style.setProperty('--catalog-controls-height',catalogControls.getBoundingClientRect().height+'px')}
+new ResizeObserver(measureCatalogControls).observe(catalogControls);measureCatalogControls();
+const viewingForm=document.getElementById('viewingForm');
+viewingForm.elements.preferredDate.min=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);
+viewingForm.addEventListener('submit',event=>{
+ event.preventDefault();
+ if(!viewingForm.reportValidity())return;
+ const fields=new FormData(viewingForm);
+ const get=k=>String(fields.get(k)||'').trim();
+ const email=get('visitorEmail');
+ const body=['Keith Terry Record Collection — viewing appointment request','','Name: '+get('visitorName'),'Email: '+email,'Phone: '+(get('visitorPhone')||'Not provided'),'Preferred date: '+get('preferredDate'),'Preferred time: '+get('preferredTime'),'Alternative availability: '+(get('alternateTime')||'Not provided'),'Records of interest / notes: '+(get('visitorNotes')||'None'),'','Please let me know if an appointment can be arranged. I understand the date and time are subject to confirmation and the collection location will be shared after arrangements are made.'].join('\\n');
+ const p=new URLSearchParams({cc:'peterbonos@gmail.com,'+email,subject:'Request to view Keith Terry Record Collection — '+get('visitorName'),body});
+ window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
+ document.getElementById('viewingHelp').textContent='Your email app should open with the request. Please press Send there. The appointment is not yet confirmed.';
+});
+</script>
+</body>
+</html>
