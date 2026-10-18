@@ -71,6 +71,8 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 .request-selected{display:flex!important;align-items:center;justify-content:flex-start;gap:8px;width:100%}.request-selected .cancel-x{margin-left:auto!important;flex:0 0 auto}.record-requested{background-color:color-mix(in srgb,var(--card,#fffdf8) 76%,#000)!important}.record-requested .cover,.record-requested .detail-cover{filter:brightness(.62)}.record-requested .record-title,.record-requested h2{opacity:.72}.release.record-requested{padding-left:10px;border-radius:8px}.detail-layout.record-requested{padding:14px;border-radius:10px}
 .home-button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;border:1px solid #78938c;border-radius:6px;color:#eaf2ee;background:#20383b;text-decoration:none;font:600 14px/1.2 system-ui,-apple-system,sans-serif;white-space:nowrap}.home-button:hover{background:#315052;color:#fff}.home-button:focus-visible{outline:3px solid #ffbd50;outline-offset:3px}.home-nav{padding:10px 6vw;background:#101d20}
 .sale-button{display:inline-flex;align-items:center;justify-content:center;width:100%;margin-top:8px;padding:8px 5px;border:1px solid #8db3a8;border-radius:5px;background:#203e35;color:#edf7ee!important;text-decoration:none;font:600 12px/1.25 system-ui,sans-serif}.sale-button:hover{background:#305746}.record-list .sale-button{width:auto;padding:7px 9px;white-space:nowrap}.match-actions{flex-wrap:wrap}.match-actions .sale-button{width:auto;margin-top:0}
+.controls .main-request-link{display:inline-flex;align-items:center;gap:6px;padding:12px 15px;background:#65c6c9;color:#102729;border:1px solid #65c6c9;border-radius:6px;font:700 15px/1.3 system-ui,sans-serif;text-decoration:none;min-height:46px}.controls .main-request-link:hover{background:#90d9d9}.viewing-secondary{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin:24px 0}.viewing-secondary a{color:var(--muted)}
+.contact-secondary{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--muted);font:500 14px/1.3 system-ui,sans-serif;text-decoration:none;min-height:40px}.contact-secondary:hover{color:var(--ink);border-color:var(--muted)}.viewing-secondary .contact-secondary{margin-right:12px}
 </style>
 </head>
 <body><nav class="home-nav" aria-label="Main navigation"><a class="home-button" href="./">Home</a></nav>
@@ -80,8 +82,8 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <select id="genre"><option value="">All genres</option></select>
 <button id="viewToggle" type="button" aria-pressed="false">☰ List View</button>
 <button type="button" id="selectAllRecords">Select all records</button><button type="button" id="selectCurrentGenre" hidden>Select entire genre</button><button id="viewAllRecords" type="button">View All Records</button>
-<a class="viewing-link" href="#requestViewing">Request a Viewing</a>
-<button class="cart-button" id="openCart" type="button">My Requests (<span id="cartCount">0</span>)</button>
+
+<a class="cart-button main-request-link" id="openCart" href="requests.html#recordsHeading"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 10 4-7 4 7M3 10h18l-2 11H5L3 10Z"/><path d="M9 13v5m6-5v5"/></svg> View my requests (<span id="cartCount">0</span>)</a><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a>
 <select id="sort">
 <option value="artist">Artist A–Z</option><option value="title">Album A–Z</option>
 <option value="year-desc">Year: newest</option><option value="year-asc">Year: oldest</option>
@@ -93,30 +95,9 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <section class="intro"><h2>Browse the Collection</h2><p class="summary">Search the complete catalog, explore genres, compare condition and estimated values, and follow release-reference links for pressing details.</p></section>
 <section id="featured"></section>
 <section><h2 style="font-size:1.8rem;margin-top:2rem">Browse by Genre</h2><p id="bulkStatus" role="status" aria-live="polite" style="color:var(--accent2)"></p><div id="summary" class="summary"></div><div class="shelf-label">Each genre has its own row. Scroll sideways within a row →</div><div id="grid"></div></section>
-<section class="viewing-section" id="requestViewing" aria-labelledby="viewingTitle">
-<h2 id="viewingTitle">Request an Appointment to View the Collection</h2>
-<p>Interested in browsing the records in person? Suggest a date and time. Visits are by appointment only and subject to confirmation. The collection's location will be provided after your appointment is arranged.</p>
-<form id="viewingForm" class="viewing-form">
-<label>Full name<input name="visitorName" autocomplete="name" required maxlength="120"></label>
-<label>Email address<input name="visitorEmail" type="email" autocomplete="email" required maxlength="254"></label>
-<label>Phone number (optional)<input name="visitorPhone" type="tel" autocomplete="tel" maxlength="40"></label>
-<label>Preferred date<input name="preferredDate" type="date" required></label>
-<label>Preferred time<input name="preferredTime" type="time" required></label>
-<label>Alternate date / time (optional)<input name="alternateTime" placeholder="e.g. Sunday afternoon" maxlength="120"></label>
-<label class="full">Records of interest / additional notes (optional)<textarea name="visitorNotes" maxlength="2000"></textarea></label>
-<div class="full"><button type="submit">Prepare Viewing Request Email</button><p class="cart-note" id="viewingHelp" role="status">This opens your email app with a request addressed to Keith Terry, and copies you and Peter. You must press Send in your email app. Your appointment is not confirmed until Keith responds.</p></div>
-</form></section>
+<p class="viewing-secondary"><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a> <a href="requests.html#viewDate">Arrange an in-person viewing</a> · By appointment</p>
 <footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
 </main>
-<div class="cart-modal" id="cartModal" hidden role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-<div class="cart-panel"><div class="cart-header"><h2 id="cartTitle">Purchase Request</h2><button class="cart-close" id="closeCart" type="button" aria-label="Close cart">✕</button></div>
-<p class="cart-note">This is a request to purchase, not a checkout. No payment will be taken. Prices are estimates and availability must be confirmed. Some titles may not be available. Items marked Value TBD are priced upon request. Local purchases encouraged. Shipping and handling costs will be determined later after purchase consultation and are not included in the estimated total.</p>
-<div id="cartItems"></div><div class="cart-total" id="cartTotal"></div>
-<label for="buyerName">Your name</label><input id="buyerName" autocomplete="name" placeholder="Name">
-<label for="buyerEmail">Your email (for your copy)</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
-<div class="cart-actions"><button id="requestPurchase" type="button">✉ Prepare purchase request</button><button id="clearCart" type="button">Clear request</button></div>
-<p class="cart-note" id="cartInstructions" role="status">Selecting “Send purchase request” opens your email app with the itemized request. Please press Send in your email app to submit it.</p>
-</div></div>
 <script src="records.js?v=6cd6d42f"></script>
 <script>
 const records=(window.RECORDS||[]).map(r=>({...r,cover:r.cover&&!/^https?:/i.test(r.cover)?'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover:r.cover}));
@@ -127,34 +108,7 @@ cart=[...new Set(cart)];
 function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
 function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
 function cartButton(r){const i=records.indexOf(r),added=cart.includes(i);return '<button type="button" class="add-cart'+(added?' request-selected':'')+'" data-record-index="'+i+'" aria-label="'+(added?'Remove record':'Add to Request')+'" aria-pressed="'+String(added)+'">'+(added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request')+'</button>'}
-function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();if(!document.getElementById('cartModal').hidden)renderCart()}
-function renderCart(){const box=document.getElementById('cartItems');box.innerHTML=cart.length?cart.map(i=>{const r=records[i];return '<div class="cart-row"><div><strong>'+esc(r.artist||'Unknown artist')+' — '+esc(r.title||'Untitled')+'</strong><br>'+formatValue(r.value)+'</div><button type="button" data-remove-index="'+i+'">Remove</button></div>'}).join(''):'<p>Your request list is empty.</p>';
-const priced=cart.map(i=>records[i]).filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
-const total=priced.reduce((sum,r)=>sum+Number(r.value),0);
-const missing=cart.length-priced.length;
-document.getElementById('cartTotal').textContent='Estimated record total (excluding shipping and handling): $'+total.toFixed(2)+(missing?' + '+missing+' item'+(missing===1?'':'s')+' (Value TBD)':'');
-document.getElementById('requestPurchase').disabled=!cart.length;}
-function requestPurchase(){if(!cart.length)return;const name=document.getElementById('buyerName').value.trim(),email=document.getElementById('buyerEmail').value.trim(),emailField=document.getElementById('buyerEmail');
-if(!name){document.getElementById('buyerName').focus();return}
-if(!emailField.checkValidity()||!email){emailField.reportValidity();return}
-const selected=cart.map(i=>records[i]);
-const valid=selected.filter(r=>r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value)));
-const total=valid.reduce((sum,r)=>sum+Number(r.value),0);
-const missing=selected.length-valid.length;
-const lines=selected.map((r,i)=>(i+1)+'. '+(r.artist||'Unknown artist')+' — '+(r.title||'Untitled')+' — '+formatValue(r.value)+(r.year?' ('+r.year+')':'')+(r.condition?' — Condition: '+r.condition:''));
-const body=['Keith Terry Record Collection — purchase request','','Buyer: '+name,'Buyer email: '+email,'','Requested records:',...lines,'','Estimated record total for priced items (excluding shipping and handling): $'+total.toFixed(2),...(missing?['Plus '+missing+' item(s) with Value TBD — final pricing to be confirmed upon request.']:[]),'','Shipping and handling costs will be determined later after purchase consultation and are not included in this total.','Some titles may not be available. Items marked Value TBD are priced upon request. Local purchases encouraged.','This is a purchase request only. Please confirm availability, final prices, shipping/handling and payment details before proceeding.'].join('\n');
-const subject='Record purchase request — '+name+' ('+cart.length+' records)';
-const params=new URLSearchParams({cc:'peterbonos@gmail.com,'+email,subject,body});
-window.location.href='mailto:keithterry@crosspulse.com?'+params.toString();
-document.getElementById('cartInstructions').textContent='Your email app should open with the request. Review it and press Send to submit; the website does not send emails itself.';
-}
-document.getElementById('openCart').addEventListener('click',()=>{window.location.href='requests.html'});
-document.getElementById('closeCart').addEventListener('click',()=>document.getElementById('cartModal').hidden=true);
-document.getElementById('cartModal').addEventListener('click',e=>{if(e.target.id==='cartModal')e.currentTarget.hidden=true});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('cartModal').hidden=true});
-document.getElementById('cartItems').addEventListener('click',e=>{const b=e.target.closest('[data-remove-index]');if(!b)return;cart=cart.filter(i=>i!==Number(b.dataset.removeIndex));saveCart();renderCart();render()});
-document.getElementById('clearCart').addEventListener('click',()=>{cart=[];saveCart();renderCart();render()});
-document.getElementById('requestPurchase').addEventListener('click',requestPurchase);
+function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();render();featuredRender();}
 document.addEventListener('click',e=>{const b=e.target.closest('.add-cart');if(b)addToCart(Number(b.dataset.recordIndex))});
 updateCartCount(); const featured=document.querySelector('#featured');
 document.documentElement.dataset.theme='dark';
@@ -203,19 +157,6 @@ render();
 const catalogControls=document.querySelector('.controls');
 function measureCatalogControls(){document.documentElement.style.setProperty('--catalog-controls-height',catalogControls.getBoundingClientRect().height+'px')}
 new ResizeObserver(measureCatalogControls).observe(catalogControls);measureCatalogControls();
-const viewingForm=document.getElementById('viewingForm');
-viewingForm.elements.preferredDate.min=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);
-viewingForm.addEventListener('submit',event=>{
- event.preventDefault();
- if(!viewingForm.reportValidity())return;
- const fields=new FormData(viewingForm);
- const get=k=>String(fields.get(k)||'').trim();
- const email=get('visitorEmail');
- const body=['Keith Terry Record Collection — viewing appointment request','','Name: '+get('visitorName'),'Email: '+email,'Phone: '+(get('visitorPhone')||'Not provided'),'Preferred date: '+get('preferredDate'),'Preferred time: '+get('preferredTime'),'Alternative availability: '+(get('alternateTime')||'Not provided'),'Records of interest / notes: '+(get('visitorNotes')||'None'),'','Please let me know if an appointment can be arranged. I understand the date and time are subject to confirmation and the collection location will be shared after arrangements are made.'].join('\\n');
- const p=new URLSearchParams({cc:'peterbonos@gmail.com,'+email,subject:'Request to view Keith Terry Record Collection — '+get('visitorName'),body});
- window.location.href='mailto:keithterry@crosspulse.com?'+p.toString();
- document.getElementById('viewingHelp').textContent='Your email app should open with the request. Please press Send there. The appointment is not yet confirmed.';
-});
 </script>
 </body>
 </html>
