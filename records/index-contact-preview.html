@@ -120,7 +120,7 @@ updateCartCount(); const featured=document.querySelector('#featured');
 document.documentElement.dataset.theme='dark';
 const q=document.querySelector('#q'), genre=document.querySelector('#genre'), sort=document.querySelector('#sort'), grid=document.querySelector('#grid'), summary=document.querySelector('#summary'), viewToggle=document.querySelector('#viewToggle');
 let listView=false;
-function formatValue(v){return v==null||String(v).trim()===''||!Number.isFinite(Number(v))?'Value TBD':'$'+Number(v).toFixed(2)}
+function formatValue(v){return v==null||String(v).trim()===''||(!Number.isFinite(Number(v))||Number(v)<=0)?'Price TBD':'$'+Number(v).toFixed(2)}
 const esc=v=>String(v??'').replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
 function compare(x,y){switch(sort.value){case 'title':return (x.title||'').localeCompare(y.title||'');case 'year-desc':return (Number(y.release_year)||0)-(Number(x.release_year)||0);case 'year-asc':return (Number(x.release_year)||9999)-(Number(y.release_year)||9999);case 'value-desc':return (Number(y.value)||0)-(Number(x.value)||0);case 'value-asc':return (Number(x.value)||0)-(Number(y.value)||0);case 'popularity':return (Number(y.popularity)||0)-(Number(x.popularity)||0);default:return (x.artist||'').localeCompare(y.artist||'')||(x.title||'').localeCompare(y.title||'');}}
 function isBargain(r){return r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value))&&Number(r.value)>0&&Number(r.value)<5}
