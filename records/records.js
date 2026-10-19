@@ -50,7 +50,7 @@ window.RECORDS = [
     "catalog": "T-2047",
     "matrix": "T-X1-2047",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1964,
     "featured": true,
     "release_year": 1964
@@ -67,7 +67,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": true,
     "release_year": 1975
@@ -84,7 +84,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1985
@@ -101,7 +101,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1982
@@ -118,7 +118,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1969
@@ -154,7 +154,7 @@ window.RECORDS = [
     "catalog": "PAS 10010",
     "matrix": "YEX 953 / YEX 954",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1976,
     "featured": true,
     "release_year": 1976
@@ -190,7 +190,7 @@ window.RECORDS = [
     "catalog": "CS 9781",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": true,
     "release_year": 1969
@@ -207,7 +207,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1978
@@ -239,7 +239,7 @@ window.RECORDS = [
     "catalog": "Shelter SRL-52013",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": true,
     "release_year": null
@@ -275,7 +275,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": true,
     "release_year": 1958
@@ -328,7 +328,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": null,
@@ -346,7 +346,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": true,
     "release_year": null
@@ -363,7 +363,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1971
@@ -380,7 +380,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": true,
     "release_year": 1977
@@ -509,7 +509,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1964
@@ -597,7 +597,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": null
@@ -614,7 +614,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -631,7 +631,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1981,
     "featured": false,
     "release_year": 1981
@@ -648,7 +648,7 @@ window.RECORDS = [
     "catalog": "MS 2093",
     "matrix": "31450 / 31451",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -665,7 +665,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1968,
     "featured": false,
     "release_year": 1968
@@ -734,7 +734,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -751,7 +751,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -801,7 +801,7 @@ window.RECORDS = [
     "catalog": "Atlantic SD-7200",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1970,
     "featured": false,
     "release_year": null
@@ -818,7 +818,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -835,7 +835,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -852,7 +852,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1970
@@ -869,7 +869,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1970
@@ -905,7 +905,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -941,7 +941,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1950
@@ -991,7 +991,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1979
@@ -1043,7 +1043,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1094,7 +1094,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1111,7 +1111,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1181,7 +1181,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1986,
     "featured": false,
     "release_year": 1986
@@ -1249,7 +1249,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1266,7 +1266,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -1283,7 +1283,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1317,7 +1317,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -1334,7 +1334,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1351,7 +1351,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1368,7 +1368,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1384,7 +1384,7 @@ window.RECORDS = [
     "catalog": "MRL 304",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1400,7 +1400,7 @@ window.RECORDS = [
     "catalog": "Everest SDBR 3289",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1417,7 +1417,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1434,7 +1434,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1973
@@ -1451,7 +1451,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -1468,7 +1468,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1521,7 +1521,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1555,7 +1555,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1572,7 +1572,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1589,7 +1589,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -1606,7 +1606,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -1656,7 +1656,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -1673,7 +1673,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1970,
     "featured": false,
     "release_year": 1970
@@ -1689,7 +1689,7 @@ window.RECORDS = [
     "catalog": "A&M LP-110",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1737,7 +1737,7 @@ window.RECORDS = [
     "catalog": "M 31834",
     "matrix": "XSM 118130",
     "runout": "XSM-118130-3AB T",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1773,7 +1773,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1790,7 +1790,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1963
@@ -1841,7 +1841,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1986,
@@ -1860,7 +1860,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1958
@@ -1876,7 +1876,7 @@ window.RECORDS = [
     "catalog": "Nonesuch H-72046",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1893,7 +1893,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -1910,7 +1910,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -1927,7 +1927,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1961,7 +1961,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1973
@@ -1978,7 +1978,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2029,7 +2029,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1977
@@ -2046,7 +2046,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1979
@@ -2063,7 +2063,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -2114,7 +2114,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1968
@@ -2131,7 +2131,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2147,7 +2147,7 @@ window.RECORDS = [
     "catalog": "Atco SD 33-129",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2163,7 +2163,7 @@ window.RECORDS = [
     "catalog": "K-Tel NU 1990",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2179,7 +2179,7 @@ window.RECORDS = [
     "catalog": "Ode SP-77009",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1971,
     "featured": false,
     "release_year": null
@@ -2195,7 +2195,7 @@ window.RECORDS = [
     "catalog": "MCA-2106",
     "matrix": "MCA-450 W2",
     "runout": "TML",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2211,7 +2211,7 @@ window.RECORDS = [
     "catalog": "PHS 900-068",
     "matrix": "",
     "runout": "PHS-900-068 B-RFR-6 P17",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2245,7 +2245,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1986
@@ -2262,7 +2262,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -2279,7 +2279,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2296,7 +2296,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1951
@@ -2313,7 +2313,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2330,7 +2330,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1972,
     "featured": false,
     "release_year": 1972
@@ -2366,7 +2366,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -2382,7 +2382,7 @@ window.RECORDS = [
     "catalog": "Parrot XPAS 71048",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2398,7 +2398,7 @@ window.RECORDS = [
     "catalog": "CC 11022 SD",
     "matrix": "",
     "runout": "XX CC-11022 SDA-1SS 111 P17",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2449,7 +2449,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1973
@@ -2466,7 +2466,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1975
@@ -2499,7 +2499,7 @@ window.RECORDS = [
     "catalog": "LPM-2161",
     "matrix": "K2WP-6033",
     "runout": "K2WP-6033 1S",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2549,7 +2549,7 @@ window.RECORDS = [
     "catalog": "SF-8000",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2619,7 +2619,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1963
@@ -2653,7 +2653,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2670,7 +2670,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2703,7 +2703,7 @@ window.RECORDS = [
     "catalog": "P-12525",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2719,7 +2719,7 @@ window.RECORDS = [
     "catalog": "Columbia Masterworks ML 5113",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2735,7 +2735,7 @@ window.RECORDS = [
     "catalog": "ST-103",
     "matrix": "ST2-103",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": 1968,
     "featured": false,
     "release_year": null
@@ -2751,7 +2751,7 @@ window.RECORDS = [
     "catalog": "P-7000",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2768,7 +2768,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1986
@@ -2802,7 +2802,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1983
@@ -2819,7 +2819,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2836,7 +2836,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1977
@@ -2904,7 +2904,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -2937,7 +2937,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2969,7 +2969,7 @@ window.RECORDS = [
     "catalog": "RCA Camden CAS-2329",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2985,7 +2985,7 @@ window.RECORDS = [
     "catalog": "RCA Victor LOC-1032",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3001,7 +3001,7 @@ window.RECORDS = [
     "catalog": "Design DLP-25",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3017,7 +3017,7 @@ window.RECORDS = [
     "catalog": "Design DLP-45",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3033,7 +3033,7 @@ window.RECORDS = [
     "catalog": "Decca DL 8128",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3049,7 +3049,7 @@ window.RECORDS = [
     "catalog": "Columbia CL 700",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3065,7 +3065,7 @@ window.RECORDS = [
     "catalog": "Reprise RS-6301",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3081,7 +3081,7 @@ window.RECORDS = [
     "catalog": "DLP-3118",
     "matrix": "LPM-50063 RE",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3097,7 +3097,7 @@ window.RECORDS = [
     "catalog": "HOFS 503 S",
     "matrix": "",
     "runout": "HOFS 503",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3113,7 +3113,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3130,7 +3130,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1968
@@ -3146,7 +3146,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3163,7 +3163,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1965
@@ -3197,7 +3197,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1965
@@ -3214,7 +3214,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -3231,7 +3231,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -3248,7 +3248,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -3265,7 +3265,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -3281,7 +3281,7 @@ window.RECORDS = [
     "catalog": "RCA Camden CAS-471(e)",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3297,7 +3297,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3314,7 +3314,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -3348,7 +3348,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -3365,7 +3365,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1965
@@ -3382,7 +3382,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1959
@@ -3398,7 +3398,7 @@ window.RECORDS = [
     "catalog": "Capitol ST-2993",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3414,7 +3414,7 @@ window.RECORDS = [
     "catalog": "Columbia B3P 10173",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3448,7 +3448,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock & Pop",
+    "genre": "Rock/Pop",
     "year": 1970,
     "featured": false,
     "release_year": 1971
@@ -3465,7 +3465,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1962
@@ -3482,7 +3482,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -3499,7 +3499,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1966
@@ -3516,7 +3516,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3550,7 +3550,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1962
@@ -3567,7 +3567,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -3600,7 +3600,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3617,7 +3617,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1958
@@ -3634,7 +3634,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1958
@@ -3651,7 +3651,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1955
@@ -3667,7 +3667,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3683,7 +3683,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3699,7 +3699,7 @@ window.RECORDS = [
     "catalog": "Kapp K-108",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3716,7 +3716,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1970
@@ -3733,7 +3733,7 @@ window.RECORDS = [
     "catalog": "SLP18066",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1966
@@ -3766,7 +3766,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -3783,7 +3783,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1962
@@ -3815,7 +3815,7 @@ window.RECORDS = [
     "catalog": "T 739",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3831,7 +3831,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3847,7 +3847,7 @@ window.RECORDS = [
     "catalog": "CS-9319",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3863,7 +3863,7 @@ window.RECORDS = [
     "catalog": "VSD 79240",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3879,7 +3879,7 @@ window.RECORDS = [
     "catalog": "VSD 2930",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3895,7 +3895,7 @@ window.RECORDS = [
     "catalog": "VSD 79-275",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3911,7 +3911,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3943,7 +3943,7 @@ window.RECORDS = [
     "catalog": "CAL 316",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3959,7 +3959,7 @@ window.RECORDS = [
     "catalog": "CS 9661",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3975,7 +3975,7 @@ window.RECORDS = [
     "catalog": "CAS-2277",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4023,7 +4023,7 @@ window.RECORDS = [
     "catalog": "Regent MG-6009",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4039,7 +4039,7 @@ window.RECORDS = [
     "catalog": "Columbia Masterworks OS 2015",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4055,7 +4055,7 @@ window.RECORDS = [
     "catalog": "T-175-2",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4071,7 +4071,7 @@ window.RECORDS = [
     "catalog": "SP-4131",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4103,7 +4103,7 @@ window.RECORDS = [
     "catalog": "T6 S-2000-11DA",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4119,7 +4119,7 @@ window.RECORDS = [
     "catalog": "P-17900",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4135,7 +4135,7 @@ window.RECORDS = [
     "catalog": "212A",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4151,7 +4151,7 @@ window.RECORDS = [
     "catalog": "CSS 836",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4167,7 +4167,7 @@ window.RECORDS = [
     "catalog": "CSS-671",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4183,7 +4183,7 @@ window.RECORDS = [
     "catalog": "KLW-2 1062",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4199,7 +4199,7 @@ window.RECORDS = [
     "catalog": "CL-1-107",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4215,7 +4215,7 @@ window.RECORDS = [
     "catalog": "DLP-3119",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4231,7 +4231,7 @@ window.RECORDS = [
     "catalog": "DLP-25841",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4247,7 +4247,7 @@ window.RECORDS = [
     "catalog": "DLP-51",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4263,7 +4263,7 @@ window.RECORDS = [
     "catalog": "734837",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4279,7 +4279,7 @@ window.RECORDS = [
     "catalog": "DLP-25338",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4295,7 +4295,7 @@ window.RECORDS = [
     "catalog": "CSP-238S",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4311,7 +4311,7 @@ window.RECORDS = [
     "catalog": "AL-4003",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4343,7 +4343,7 @@ window.RECORDS = [
     "catalog": "DLP-25515",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4375,7 +4375,7 @@ window.RECORDS = [
     "catalog": "A&M SP-4119",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4391,7 +4391,7 @@ window.RECORDS = [
     "catalog": "41-2",
     "matrix": "",
     "runout": "",
-    "genre": "Comedy, Spoken Word & Novelty",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4423,7 +4423,7 @@ window.RECORDS = [
     "catalog": "DLP-3030",
     "matrix": "",
     "runout": "",
-    "genre": "Traditional",
+    "genre": "World Music/Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4439,7 +4439,7 @@ window.RECORDS = [
     "catalog": "DLP-3100",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4455,7 +4455,7 @@ window.RECORDS = [
     "catalog": "DL-8693",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4471,7 +4471,7 @@ window.RECORDS = [
     "catalog": "LRP-3081",
     "matrix": "",
     "runout": "LRP-3081 S2",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4487,7 +4487,7 @@ window.RECORDS = [
     "catalog": "WM-01",
     "matrix": "",
     "runout": "3441 Sire 4 SR2 WM-01",
-    "genre": "Other / To Be Classified",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4503,7 +4503,7 @@ window.RECORDS = [
     "catalog": "S 37149-1",
     "matrix": "",
     "runout": "MASTERED BY CAPITOL",
-    "genre": "Classical & Contemporary",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
