@@ -12,7 +12,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": true,
     "release_year": 1983,
@@ -750,7 +750,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Rock & Pop",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2011,7 +2011,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Easy Listening & Exotica",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1979
