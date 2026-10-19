@@ -67,7 +67,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": true,
     "release_year": 1975
@@ -239,7 +239,7 @@ window.RECORDS = [
     "catalog": "Shelter SRL-52013",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": true,
     "release_year": null
@@ -275,7 +275,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": true,
     "release_year": 1958
@@ -346,7 +346,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": true,
     "release_year": null
@@ -380,7 +380,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": true,
     "release_year": 1977
@@ -614,7 +614,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -818,7 +818,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -941,7 +941,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1950
@@ -1266,7 +1266,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -1400,7 +1400,7 @@ window.RECORDS = [
     "catalog": "Everest SDBR 3289",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1572,7 +1572,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1622,7 +1622,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1773,7 +1773,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1807,7 +1807,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1876,7 +1876,7 @@ window.RECORDS = [
     "catalog": "Nonesuch H-72046",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1893,7 +1893,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -1978,7 +1978,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2063,7 +2063,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -2735,7 +2735,7 @@ window.RECORDS = [
     "catalog": "ST-103",
     "matrix": "ST2-103",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": 1968,
     "featured": false,
     "release_year": null
@@ -2768,7 +2768,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1986
@@ -2819,7 +2819,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2836,7 +2836,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1977
@@ -2969,7 +2969,7 @@ window.RECORDS = [
     "catalog": "RCA Camden CAS-2329",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3081,7 +3081,7 @@ window.RECORDS = [
     "catalog": "DLP-3118",
     "matrix": "LPM-50063 RE",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3214,7 +3214,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -3248,7 +3248,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -3281,7 +3281,7 @@ window.RECORDS = [
     "catalog": "RCA Camden CAS-471(e)",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3365,7 +3365,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1965
@@ -3414,7 +3414,7 @@ window.RECORDS = [
     "catalog": "Columbia B3P 10173",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3482,7 +3482,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -4423,7 +4423,7 @@ window.RECORDS = [
     "catalog": "DLP-3030",
     "matrix": "",
     "runout": "",
-    "genre": "Country, Folk & Americana",
+    "genre": "Traditional",
     "year": null,
     "featured": false,
     "release_year": null
