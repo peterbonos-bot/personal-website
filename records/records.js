@@ -2483,7 +2483,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1983
@@ -2585,7 +2585,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1981
