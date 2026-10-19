@@ -171,7 +171,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": true,
     "release_year": 1971,
@@ -669,22 +669,6 @@ window.RECORDS = [
     "year": 1968,
     "featured": false,
     "release_year": 1968
-  },
-  {
-    "artist": "J.C. Burris",
-    "title": "One of these Mornings",
-    "value": 30,
-    "sleeve": "VG+",
-    "media": "VG+",
-    "url": "",
-    "note": "Signed",
-    "catalog": "",
-    "matrix": "",
-    "runout": "",
-    "genre": "Other / To Be Classified",
-    "year": null,
-    "featured": false,
-    "release_year": null
   },
   {
     "artist": "Freddie Hubbard",
