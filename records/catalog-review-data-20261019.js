@@ -211,7 +211,9 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": true,
-    "release_year": 1978
+    "release_year": 1978,
+    "excluded": true,
+    "exclusion_reason": "Removed from website at Peter’s request, 2026-10-19"
   },
   {
     "artist": "Collin Walcott, Don Cherry, Nana Vasconcelos",
@@ -1237,7 +1239,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1976
+    "release_year": 1976,
+    "excluded": true,
+    "exclusion_reason": "Removed from website at Peter’s request, 2026-10-19"
   },
   {
     "artist": "Joseph Spence",
