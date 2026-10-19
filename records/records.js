@@ -67,7 +67,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": true,
     "release_year": 1975
@@ -275,7 +275,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": true,
     "release_year": 1958
@@ -346,7 +346,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": true,
     "release_year": null
@@ -380,7 +380,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": true,
     "release_year": 1977
@@ -818,7 +818,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -941,7 +941,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1950
@@ -1266,7 +1266,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1976
@@ -1400,7 +1400,7 @@ window.RECORDS = [
     "catalog": "Everest SDBR 3289",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1485,7 +1485,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1978
@@ -1572,7 +1572,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1876,7 +1876,7 @@ window.RECORDS = [
     "catalog": "Nonesuch H-72046",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1978,7 +1978,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1969
@@ -2063,7 +2063,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -2768,7 +2768,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1986
@@ -2836,7 +2836,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1977
@@ -3248,7 +3248,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -3482,7 +3482,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World & Traditional",
+    "genre": "World Music",
     "year": null,
     "featured": false,
     "release_year": 1957
