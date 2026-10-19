@@ -1689,7 +1689,7 @@ window.RECORDS = [
     "catalog": "A&M LP-110",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1927,7 +1927,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -4375,7 +4375,7 @@ window.RECORDS = [
     "catalog": "A&M SP-4119",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
