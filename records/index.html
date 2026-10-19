@@ -98,23 +98,25 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <p class="viewing-secondary"><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a> <a href="requests.html#viewDate">Request a phone consultation time</a> · By appointment</p>
 <footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
 </main>
-<script src="records.js?v=discogs-20261019"></script>
+<script src="records.js?v=schickele-20261019"></script>
 <script>
 const records=(window.RECORDS||[]).map(r=>({...r,cover:r.cover&&!/^https?:/i.test(r.cover)?'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover:r.cover}));
+const availableRecords=records.filter(r=>!r.excluded);
+function inGenre(r,g){return (g==='__schickele'||g==='Peter Schickele')?r.subcategory==='Peter Schickele':r.genre===g;}
 const CART_KEY='keith-terry-records-cart-v1';
 let cart=[];
-try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInteger(i)&&i>=0&&i<records.length)}catch(e){cart=[]}
+try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInteger(i)&&i>=0&&i<records.length&&!records[i].excluded)}catch(e){cart=[]}
 cart=[...new Set(cart)];
 function saveCart(){try{localStorage.setItem(CART_KEY,JSON.stringify(cart))}catch(e){}updateCartCount()}
 function updateCartCount(){document.getElementById('cartCount').textContent=cart.length}
 function cartButton(r){const i=records.indexOf(r),added=cart.includes(i);return '<button type="button" class="add-cart'+(added?' request-selected':'')+'" data-record-index="'+i+'" aria-label="'+(added?'Remove record':'Add to Request')+'" aria-pressed="'+String(added)+'">'+(added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request')+'</button>'}
 function refreshSelectionUI(){
  document.querySelectorAll('.add-cart[data-record-index]').forEach(b=>{const added=cart.includes(Number(b.dataset.recordIndex));b.classList.toggle('request-selected',added);b.setAttribute('aria-label',added?'Remove record':'Add to Request');b.setAttribute('aria-pressed',String(added));b.innerHTML=added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request';const row=b.closest('article,tr');if(row)row.classList.toggle('record-requested',added)});
- const all=document.getElementById('selectAllRecords');all.textContent=cart.length===records.length?'Cancel all selections':'Select all '+records.length+' records';
- const current=document.getElementById('selectCurrentGenre');current.hidden=!genre.value;const group=records.filter(r=>genre.value==='__bargain'?isBargain(r):r.genre===genre.value);current.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value==='__bargain'?'Bargain Bin':genre.value||'genre')+' records';
- document.querySelectorAll('[data-select-genre]').forEach(b=>{const group=records.filter(r=>b.dataset.selectGenre==='Bargain Bin'?isBargain(r):r.genre===b.dataset.selectGenre&&!isBargain(r));b.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all'});
+ const all=document.getElementById('selectAllRecords');all.textContent=cart.length===availableRecords.length?'Cancel all selections':'Select all '+availableRecords.length+' records';
+ const current=document.getElementById('selectCurrentGenre');current.hidden=!genre.value;const group=availableRecords.filter(r=>genre.value==='__bargain'?isBargain(r):inGenre(r,genre.value));current.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value==='__bargain'?'Bargain Bin':genre.value==='__schickele'?'Peter Schickele':genre.value||'genre')+' records';
+ document.querySelectorAll('[data-select-genre]').forEach(b=>{const group=availableRecords.filter(r=>b.dataset.selectGenre==='Bargain Bin'?isBargain(r):inGenre(r,b.dataset.selectGenre)&&!isBargain(r));b.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all'});
 }
-function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();refreshSelectionUI();}
+function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length||records[i].excluded)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();refreshSelectionUI();}
 document.addEventListener('click',e=>{const b=e.target.closest('.add-cart');if(b)addToCart(Number(b.dataset.recordIndex))});
 updateCartCount(); const featured=document.querySelector('#featured');
 document.documentElement.dataset.theme='dark';
@@ -126,26 +128,27 @@ function compare(x,y){switch(sort.value){case 'title':return (x.title||'').local
 function isBargain(r){return r.value!=null&&String(r.value).trim()!==''&&Number.isFinite(Number(r.value))&&Number(r.value)>0&&Number(r.value)<5}
 document.getElementById('emptyCartTop').addEventListener('click',()=>{if(!cart.length)return;if(!confirm('Empty your request basket and remove all comments and offers?'))return;cart=[];localStorage.removeItem('keith-terry-record-notes-v1');localStorage.removeItem('keith-terry-record-offers-v1');saveCart();refreshSelectionUI()});
 ['Jazz','World Music/International','Country/Folk','Rock/Pop','Classical/New Music','Other/Miscellaneous'].forEach(g=>genre.add(new Option(g,g)));
+genre.add(new Option('Peter Schickele · subcategory','__schickele'));
 genre.add(new Option('Bargain Bin · under $5','__bargain'));
 function saleButton(r){return r.discogs_sale_url&&/^https:\/\/www.discogs.com\/sell\/item\/\d+$/.test(r.discogs_sale_url)?'<a class="sale-button" href="'+esc(r.discogs_sale_url)+'" target="_blank" rel="noopener noreferrer">Buy on Discogs ↗</a>':''}
-function featuredRender(){const picks=records.filter(r=>r.featured).sort((a,b)=>(b.value||0)-(a.value||0)).slice(0,12);featured.innerHTML='<h2 style="font-size:1.8rem">High Value</h2><p class="summary">Highlights from the collection based on current estimated value. Popularity/demand data will be shown separately as verified Discogs collection and wantlist metadata is added.</p><div class="grid" style="margin-bottom:2.5rem">'+picks.map(r=>`<article class="card ${cart.includes(records.indexOf(r))?'record-requested':''}"><span class="badge">High Value</span><div class="cover">${r.cover?`<img src="${r.cover}" alt="Album cover for ${r.artist||'Unknown artist'} — ${r.title||'Untitled'}" loading="lazy" style="width:100%;height:100%;object-fit:contain">`:'Cover unavailable'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${r.genre||''}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${saleButton(r)}${cartButton(r)}</article>`).join('')+'</div>';} featuredRender();
+function featuredRender(){const picks=availableRecords.filter(r=>r.featured).sort((a,b)=>(b.value||0)-(a.value||0)).slice(0,12);featured.innerHTML='<h2 style="font-size:1.8rem">High Value</h2><p class="summary">Highlights from the collection based on current estimated value. Popularity/demand data will be shown separately as verified Discogs collection and wantlist metadata is added.</p><div class="grid" style="margin-bottom:2.5rem">'+picks.map(r=>`<article class="card ${cart.includes(records.indexOf(r))?'record-requested':''}"><span class="badge">High Value</span><div class="cover">${r.cover?`<img src="${r.cover}" alt="Album cover for ${r.artist||'Unknown artist'} — ${r.title||'Untitled'}" loading="lazy" style="width:100%;height:100%;object-fit:contain">`:'Cover unavailable'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${r.genre||''}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${saleButton(r)}${cartButton(r)}</article>`).join('')+'</div>';} featuredRender();
 function card(r){return `<article class="card ${cart.includes(records.indexOf(r))?'record-requested':''}"><div class="cover">${r.cover?`<img src="${r.cover}" alt="" style="width:100%;height:100%;object-fit:cover">`:'Cover'}</div><div class="artist">${r.artist||'Unknown artist'}</div><h2>${r.title||'Untitled'}</h2><div class="meta">${[r.release_year,r.label].filter(Boolean).join(' · ')}</div><div class="price">${formatValue(r.value)}</div>${r.url?`<a href="record.html?id=${records.indexOf(r)}">Details</a>`:''}${saleButton(r)}${cartButton(r)}</article>`}
-const navParams=new URLSearchParams(location.search);if(navParams.get('genre')==='__bargain')genre.value='__bargain';if(navParams.get('view')==='all')listView=true;
+const navParams=new URLSearchParams(location.search);if(['__bargain','__schickele'].includes(navParams.get('genre')))genre.value=navParams.get('genre');if(navParams.get('view')==='all')listView=true;
 function render(){
  document.body.classList.toggle('list-view',listView);
  const term=q.value.trim().toLowerCase();
- const a=records.filter(r=>(!genre.value||(genre.value==='__bargain'?isBargain(r):r.genre===genre.value))&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
- const allButton=document.getElementById('selectAllRecords');allButton.disabled=false;allButton.textContent=cart.length===records.length?'Cancel all selections':'Select all '+records.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent=records.filter(r=>genre.value==='__bargain'?isBargain(r):r.genre===genre.value).every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value==='__bargain'?'Bargain Bin':genre.value||'genre')+' records';
- summary.textContent=a.length+' of '+records.length+' records shown'+(listView?' · list view':' · cover view');
+ const a=availableRecords.filter(r=>(!genre.value||(genre.value==='__bargain'?isBargain(r):inGenre(r,genre.value)))&&(!term||Object.values(r).join(' ').toLowerCase().includes(term)));
+ const allButton=document.getElementById('selectAllRecords');allButton.disabled=false;allButton.textContent=cart.length===availableRecords.length?'Cancel all selections':'Select all '+availableRecords.length+' records';const genreButton=document.getElementById('selectCurrentGenre');genreButton.hidden=!genre.value;genreButton.textContent=availableRecords.filter(r=>genre.value==='__bargain'?isBargain(r):inGenre(r,genre.value)).every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value==='__bargain'?'Bargain Bin':genre.value==='__schickele'?'Peter Schickele':genre.value||'genre')+' records';
+ summary.textContent=a.length+' of '+availableRecords.length+' records shown'+(listView?' · list view':' · cover view');
  featured.hidden=listView;
  document.querySelector('.shelf-label').hidden=listView;
  if(listView){
   const sorted=[...a].sort(compare);
   grid.innerHTML='<div class="list-wrap"><table class="record-list"><thead><tr><th>Artist</th><th>Album</th><th>Release year</th><th>Genre</th><th>Disc condition</th><th>Sleeve condition</th><th>Est. value</th><th>Details</th><th>Request</th></tr></thead><tbody>'+sorted.map(r=>'<tr class="'+(cart.includes(records.indexOf(r))?'record-requested':'')+'"><td>'+esc(r.artist||'Unknown artist')+'</td><td>'+esc(r.title||'Untitled')+'</td><td>'+esc(r.release_year||r.year_status||'Not verified')+'</td><td>'+esc(r.genre||'—')+'</td><td>'+esc(r.media||'Not graded')+'</td><td>'+esc(r.sleeve||'Not graded')+'</td><td>'+(formatValue(r.value))+'</td><td>'+'<a href="record.html?id='+records.indexOf(r)+'">Details</a>'+saleButton(r)+'</td><td>'+cartButton(r)+'</td></tr>').join('')+'</tbody></table></div>';
  }else{
-  const groups=['Jazz','World Music/International','Country/Folk','Rock/Pop','Classical/New Music','Other/Miscellaneous','Bargain Bin'].filter(g=>a.some(r=>g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)));
+  const groups=(genre.value==='__schickele'?['Peter Schickele']:['Jazz','World Music/International','Country/Folk','Rock/Pop','Classical/New Music','Other/Miscellaneous','Bargain Bin']).filter(g=>a.some(r=>g==='Peter Schickele'?r.subcategory==='Peter Schickele':g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)));
   grid.innerHTML=groups.map(g=>{
-   const rows=a.filter(r=>g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
+   const rows=a.filter(r=>g==='Peter Schickele'?r.subcategory==='Peter Schickele':g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
    return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">'+(rows.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all')+'</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
   }).join('')||'<div class="empty">No records match those filters.</div>';
  }
@@ -157,9 +160,9 @@ document.getElementById('viewAllRecords').addEventListener('click',()=>{
  render();document.getElementById('summary').scrollIntoView({behavior:'smooth',block:'start'});
 });
 function selectMany(indices){const before=cart.length;const removing=indices.length&&indices.every(i=>cart.includes(i));cart=removing?cart.filter(i=>!indices.includes(i)):[...new Set([...cart,...indices])];saveCart();refreshSelectionUI();const status=document.getElementById('bulkStatus');status.textContent=(removing?(before-cart.length)+' selections cancelled. ':(cart.length-before)+' records added. ')+cart.length+' selected in total.'}
-document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i)));
-document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>(genre.value==='__bargain'?isBargain(records[i]):records[i].genre===genre.value))));
-document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>(b.dataset.selectGenre==='Bargain Bin'?isBargain(records[i]):records[i].genre===b.dataset.selectGenre&&!isBargain(records[i]))))});
+document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded)));
+document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded).filter(i=>(genre.value==='__bargain'?isBargain(records[i]):inGenre(records[i],genre.value)))));
+document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded).filter(i=>(b.dataset.selectGenre==='Bargain Bin'?isBargain(records[i]):inGenre(records[i],b.dataset.selectGenre)&&!isBargain(records[i]))))});
 q.addEventListener('input',render);
 genre.addEventListener('change',render);
 sort.addEventListener('change',render);
@@ -167,6 +170,6 @@ render();
 const catalogControls=document.querySelector('.controls');
 function measureCatalogControls(){document.documentElement.style.setProperty('--catalog-controls-height',catalogControls.getBoundingClientRect().height+'px')}
 new ResizeObserver(measureCatalogControls).observe(catalogControls);measureCatalogControls();
-function refreshSavedBasket(){try{cart=[...new Set(JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(n=>Number.isInteger(n)&&n>=0&&n<records.length))]}catch{cart=[]}updateCartCount();refreshSelectionUI()}window.addEventListener('pageshow',refreshSavedBasket);window.addEventListener('storage',e=>{if(e.key===CART_KEY||e.key===null)refreshSavedBasket()});</script>
+function refreshSavedBasket(){try{cart=[...new Set(JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(n=>Number.isInteger(n)&&n>=0&&n<records.length&&!records[n].excluded))]}catch{cart=[]}updateCartCount();refreshSelectionUI()}window.addEventListener('pageshow',refreshSavedBasket);window.addEventListener('storage',e=>{if(e.key===CART_KEY||e.key===null)refreshSavedBasket()});</script>
 </body>
 </html>
