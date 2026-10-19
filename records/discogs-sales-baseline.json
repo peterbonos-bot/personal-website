@@ -1,7 +1,61 @@
 {
   "seller": "moments_last",
-  "checked_at": "2026-10-18T15:22:38.054Z",
+  "checked_at": "2026-10-19T15:08:06.003Z",
   "listings": [
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418535117",
+      "media": "Near Mint (NM or M-)",
+      "price": "42.00",
+      "release_url": "https://www.discogs.com/release/817919-John-Hicks-John-Hicks",
+      "sleeve": "Near Mint (NM or M-)",
+      "title": "John Hicks - John Hicks (LP, Album)"
+    },
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418534427",
+      "media": "Near Mint (NM or M-)",
+      "price": "15.00",
+      "release_url": "https://www.discogs.com/release/28849336-Keith-Jarrett-Jack-DeJohnette-Ruta-And-Daitya",
+      "sleeve": "Near Mint (NM or M-)",
+      "title": "Keith Jarrett & Jack DeJohnette - Ruta And Daitya (LP, Album, RP)"
+    },
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418533812",
+      "media": "Very Good Plus (VG+)",
+      "price": "7.50",
+      "release_url": "https://www.discogs.com/release/1065995-Bobby-Hutcherson-Highway-One",
+      "sleeve": "Very Good Plus (VG+)",
+      "title": "Bobby Hutcherson - Highway One (LP, Album, Pit)"
+    },
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418532921",
+      "media": "Near Mint (NM or M-)",
+      "price": "50.00",
+      "release_url": "https://www.discogs.com/release/461282-David-Holland-Barre-Phillips-Music-From-Two-Basses",
+      "sleeve": "Very Good Plus (VG+)",
+      "title": "David Holland* / Barre Phillips - Music From Two Basses (LP, Album)"
+    },
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418530683",
+      "media": "Near Mint (NM or M-)",
+      "price": "33.00",
+      "release_url": "https://www.discogs.com/release/498582-Jack-DeJohnettes-Directions-Untitled",
+      "sleeve": "Near Mint (NM or M-)",
+      "title": "Jack DeJohnette's Directions - Untitled (LP, Album)"
+    },
+    {
+      "comment": "",
+      "listing_url": "https://www.discogs.com/sell/item/4418530047",
+      "media": "Near Mint (NM or M-)",
+      "price": "36.00",
+      "release_url": "https://www.discogs.com/release/498592-Jack-DeJohnette-Pictures",
+      "sleeve": "Near Mint (NM or M-)",
+      "title": "Jack DeJohnette - Pictures (LP, Album)"
+    },
     {
       "listing_url": "https://www.discogs.com/sell/item/4413294006",
       "release_url": "https://www.discogs.com/release/17400106-Miles-Davis-Kind-Of-Blue",
