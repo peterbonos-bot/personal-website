@@ -101,7 +101,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": true,
     "release_year": 1982
@@ -118,7 +118,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": true,
     "release_year": 1969
@@ -207,7 +207,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": true,
     "release_year": 1978
@@ -328,7 +328,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": true,
     "release_year": null,
@@ -363,7 +363,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": true,
     "release_year": 1971
@@ -835,7 +835,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1334,7 +1334,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1606,7 +1606,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -1737,7 +1737,7 @@ window.RECORDS = [
     "catalog": "M 31834",
     "matrix": "XSM 118130",
     "runout": "XSM-118130-3AB T",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -1841,7 +1841,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1986,
@@ -2046,7 +2046,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1979
@@ -2211,7 +2211,7 @@ window.RECORDS = [
     "catalog": "PHS 900-068",
     "matrix": "",
     "runout": "PHS-900-068 B-RFR-6 P17",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2262,7 +2262,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -2398,7 +2398,7 @@ window.RECORDS = [
     "catalog": "CC 11022 SD",
     "matrix": "",
     "runout": "XX CC-11022 SDA-1SS 111 P17",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2719,7 +2719,7 @@ window.RECORDS = [
     "catalog": "Columbia Masterworks ML 5113",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2937,7 +2937,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3049,7 +3049,7 @@ window.RECORDS = [
     "catalog": "Columbia CL 700",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3097,7 +3097,7 @@ window.RECORDS = [
     "catalog": "HOFS 503 S",
     "matrix": "",
     "runout": "HOFS 503",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3314,7 +3314,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -3348,7 +3348,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -4503,7 +4503,7 @@ window.RECORDS = [
     "catalog": "S 37149-1",
     "matrix": "",
     "runout": "MASTERED BY CAPITOL",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": null
