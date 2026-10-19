@@ -121,7 +121,8 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": true,
-    "release_year": 1969
+    "release_year": 1969,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joseph Bonner",
@@ -908,7 +909,8 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1969
+    "release_year": 1969,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Paul Bley, Gary Peacock, Barry Altschul ",
@@ -2051,7 +2053,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": 1979
+    "release_year": 1979,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "The Nonesuch Explorer",
@@ -2942,7 +2945,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Brownwood Stage Band",
@@ -3353,7 +3357,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": 1967
+    "release_year": 1967,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "The Ventures",
@@ -3868,7 +3873,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joan Baez",
@@ -3884,7 +3890,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joan Baez",
@@ -3900,7 +3907,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Bee Gees / Various Artists",
