@@ -84,7 +84,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "World Music/International",
     "year": null,
     "featured": true,
     "release_year": 1985
@@ -275,7 +275,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music/International",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": true,
     "release_year": 1958
@@ -991,7 +991,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock/Pop",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1979
@@ -1249,7 +1249,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "World Music/International",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1283,7 +1283,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -1521,7 +1521,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Country/Folk",
     "year": null,
     "featured": false,
     "release_year": 1972
@@ -1656,7 +1656,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock/Pop",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -1790,7 +1790,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock/Pop",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1963
@@ -1910,7 +1910,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2029,7 +2029,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1977
@@ -2080,7 +2080,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Jazz",
+    "genre": "Classical/New Music",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2147,7 +2147,7 @@ window.RECORDS = [
     "catalog": "Atco SD 33-129",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2279,7 +2279,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1974
@@ -2296,7 +2296,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "World Music/International",
     "year": null,
     "featured": false,
     "release_year": 1951
@@ -2670,7 +2670,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Rock/Pop",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -2969,7 +2969,7 @@ window.RECORDS = [
     "catalog": "RCA Camden CAS-2329",
     "matrix": "",
     "runout": "",
-    "genre": "Country/Folk",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3081,7 +3081,7 @@ window.RECORDS = [
     "catalog": "DLP-3118",
     "matrix": "LPM-50063 RE",
     "runout": "",
-    "genre": "Country/Folk",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3113,7 +3113,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "World Music/International",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3146,7 +3146,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3265,7 +3265,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -3482,7 +3482,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music/International",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": 1957
@@ -3716,7 +3716,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": 1970
@@ -3766,7 +3766,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Country/Folk",
     "year": null,
     "featured": false,
     "release_year": 1971
@@ -3911,7 +3911,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3943,7 +3943,7 @@ window.RECORDS = [
     "catalog": "CAL 316",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4423,7 +4423,7 @@ window.RECORDS = [
     "catalog": "DLP-3030",
     "matrix": "",
     "runout": "",
-    "genre": "Country/Folk",
+    "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
     "release_year": null
