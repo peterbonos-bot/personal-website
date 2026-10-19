@@ -1893,7 +1893,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "World Music/Traditional",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -4343,7 +4343,7 @@ window.RECORDS = [
     "catalog": "DLP-25515",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
