@@ -10,3 +10,5 @@ Peter authorizes assuming records matching his Keith Terry collection sheet are 
 - Preserve catalog estimates and grading/notes; seller price uses separate sale fields.
 - Read complete inventory before removing absent sale links; absence does not prove sold.
 - Test draft changes and verify live behavior.
+
+- Entries marked `excluded: true` are retained only to preserve stable record IDs. They are not active catalog/ownership allowlist entries: skip them during matching and never reactivate them without Peter’s instruction.
