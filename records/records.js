@@ -2602,7 +2602,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical & Contemporary",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1961
@@ -3180,7 +3180,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -3584,7 +3584,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": 1967
@@ -3749,7 +3749,7 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
@@ -4359,7 +4359,7 @@ window.RECORDS = [
     "catalog": "SRM-2-800",
     "matrix": "",
     "runout": "",
-    "genre": "Other / To Be Classified",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
