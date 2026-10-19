@@ -142,13 +142,13 @@ function render(){
  summary.textContent=a.length+' of '+availableRecords.length+' records shown'+(listView?' · list view':' · cover view');
  featured.hidden=listView;
  document.querySelector('.shelf-label').hidden=listView;
- if(listView||genre.value==='__schickele'){
+ if(listView){
   const sorted=[...a].sort(compare);
   grid.innerHTML='<div class="list-wrap"><table class="record-list"><thead><tr><th>Artist</th><th>Album</th><th>Release year</th><th>Genre</th><th>Disc condition</th><th>Sleeve condition</th><th>Est. value</th><th>Details</th><th>Request</th></tr></thead><tbody>'+sorted.map(r=>'<tr class="'+(cart.includes(records.indexOf(r))?'record-requested':'')+'"><td>'+esc(r.artist||'Unknown artist')+'</td><td>'+esc(r.title||'Untitled')+'</td><td>'+esc(r.release_year||r.year_status||'Not verified')+'</td><td>'+esc(r.genre||'—')+'</td><td>'+esc(r.media||'Not graded')+'</td><td>'+esc(r.sleeve||'Not graded')+'</td><td>'+(formatValue(r.value))+'</td><td>'+'<a href="record.html?id='+records.indexOf(r)+'">Details</a>'+saleButton(r)+'</td><td>'+cartButton(r)+'</td></tr>').join('')+'</tbody></table></div>';
  }else{
-  const groups=['Jazz','World Music/International','Country/Folk','Rock/Pop','Classical/New Music','Other/Miscellaneous','Bargain Bin'].filter(g=>a.some(r=>g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)));
+  const groups=(genre.value==='__schickele'?['Peter Schickele']:['Jazz','World Music/International','Country/Folk','Rock/Pop','Classical/New Music','Other/Miscellaneous','Bargain Bin']).filter(g=>a.some(r=>g==='Peter Schickele'?r.subcategory==='Peter Schickele':g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)));
   grid.innerHTML=groups.map(g=>{
-   const rows=a.filter(r=>g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
+   const rows=a.filter(r=>g==='Peter Schickele'?r.subcategory==='Peter Schickele':g==='Bargain Bin'?isBargain(r):r.genre===g&&!isBargain(r)).sort((x,y)=>{const xv=x.value==null||String(x.value).trim()===''?null:Number(x.value),yv=y.value==null||String(y.value).trim()===''?null:Number(y.value);return (Number.isFinite(yv)?yv:-Infinity)-(Number.isFinite(xv)?xv:-Infinity)||(x.artist||'').localeCompare(y.artist||'');});
    return '<section class="genre-section"><div class="genre-head"><h2>'+esc(g)+'</h2><span class="genre-count">'+rows.length+' records</span><button class="select-genre" type="button" data-select-genre="'+esc(g)+'" aria-label="Select all records in '+esc(g)+'">'+(rows.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all')+'</button></div><div class="grid">'+rows.map(card).join('')+'</div></section>';
   }).join('')||'<div class="empty">No records match those filters.</div>';
  }
