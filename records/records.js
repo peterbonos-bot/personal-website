@@ -174,7 +174,9 @@ window.RECORDS = [
     "genre": "Other / To Be Classified",
     "year": null,
     "featured": true,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418532921",
+    "discogs_sale_price": 50
   },
   {
     "artist": "Santana",
@@ -293,7 +295,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": true,
-    "release_year": 1984
+    "release_year": 1984,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418535117",
+    "discogs_sale_price": 42
   },
   {
     "artist": "Mike Nock / Bennie Maupin / Cecil McBee / Eddie Marshall ",
@@ -396,7 +400,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1977
+    "release_year": 1977,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418530047",
+    "discogs_sale_price": 36
   },
   {
     "artist": "Billy Cobham",
@@ -539,7 +545,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1976
+    "release_year": 1976,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418530683",
+    "discogs_sale_price": 33
   },
   {
     "artist": "George Marsh",
@@ -2358,7 +2366,9 @@ window.RECORDS = [
     "genre": "Other / To Be Classified",
     "year": null,
     "featured": false,
-    "release_year": 1978
+    "release_year": 1978,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418533812",
+    "discogs_sale_price": 7.5
   },
   {
     "artist": "The Firesign Theater",
@@ -2575,7 +2585,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1974
+    "release_year": 1974,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4418534427",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Andy Narell",
