@@ -118,10 +118,11 @@ window.RECORDS = [
     "catalog": "",
     "matrix": "",
     "runout": "",
-    "genre": "Classical/New Music",
+    "genre": "Rock/Pop",
     "year": null,
     "featured": true,
-    "release_year": 1969
+    "release_year": 1969,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joseph Bonner",
@@ -908,7 +909,8 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1969
+    "release_year": 1969,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Paul Bley, Gary Peacock, Barry Altschul ",
@@ -1575,7 +1577,9 @@ window.RECORDS = [
     "genre": "World Music/International",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "excluded": true,
+    "exclusion_reason": "Grey-marked in source catalog; removed at owner request 2026-10-19"
   },
   {
     "artist": "Aphrodite's Child",
@@ -2049,7 +2053,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": 1979
+    "release_year": 1979,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "The Nonesuch Explorer",
@@ -2940,7 +2945,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Brownwood Stage Band",
@@ -3351,7 +3357,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": 1967
+    "release_year": 1967,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "The Ventures",
@@ -3866,7 +3873,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joan Baez",
@@ -3882,7 +3890,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Joan Baez",
@@ -3898,7 +3907,8 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "subcategory": "Peter Schickele"
   },
   {
     "artist": "Bee Gees / Various Artists",
@@ -4504,6 +4514,56 @@ window.RECORDS = [
     "matrix": "",
     "runout": "MASTERED BY CAPITOL",
     "genre": "Classical/New Music",
+    "year": null,
+    "featured": false,
+    "release_year": null
+  },
+  {
+    "artist": "Steve Reich",
+    "title": "Drumming, Music for Mallet Instruments, Voices and Organ, Six Pianos",
+    "value": 127.01,
+    "media": "NM",
+    "sleeve": "VG",
+    "url": "https://www.discogs.com/release/249712-Steve-Reich-Drumming-Music-For-Mallet-Instruments-Voices-And-Organ-Six-Pianos",
+    "cover": "covers/249712.jpg",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Classical/New Music",
+    "year": null,
+    "featured": true,
+    "release_year": null
+  },
+  {
+    "artist": "Centrafrique Anthologie De La Musique Des Pygmées Aka",
+    "title": "Aka",
+    "value": 93,
+    "media": "VG+",
+    "sleeve": "NM",
+    "url": "https://www.discogs.com/release/8482810-Aka-Centrafrique-Anthologie-De-La-Musique-Des-Pygm%C3%A9es-Aka",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "World Music/International",
+    "year": null,
+    "featured": true,
+    "release_year": null
+  },
+  {
+    "artist": "Golden Rain - Music of Bali",
+    "title": "Ketjak: The Ramayana Monkey Chant",
+    "value": 9,
+    "media": "VG+",
+    "sleeve": "VG",
+    "url": "https://www.discogs.com/release/12101346-Various-Golden-Rain-Balinese-Gamelan-Music-Ketjak-The-Ramayana-Monkey-Chant",
+    "cover": "covers/12101346.jpg",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "World Music/International",
     "year": null,
     "featured": false,
     "release_year": null
