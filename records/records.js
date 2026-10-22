@@ -3866,7 +3866,7 @@ window.RECORDS = [
   {
     "artist": "Joan Baez",
     "title": "Joan",
-    "value": null,
+    "value": 20,
     "sleeve": "",
     "media": "",
     "url": "https://www.discogs.com/search/?q=Joan+Baez+Joan+VSD+79240&type=release",
@@ -3883,7 +3883,7 @@ window.RECORDS = [
   {
     "artist": "Joan Baez",
     "title": "Noel",
-    "value": null,
+    "value": 10,
     "sleeve": "",
     "media": "",
     "url": "https://www.discogs.com/search/?q=Joan+Baez+Noel+VSD+2930&type=release",
@@ -3900,7 +3900,7 @@ window.RECORDS = [
   {
     "artist": "Joan Baez",
     "title": "Baptism",
-    "value": null,
+    "value": 15,
     "sleeve": "",
     "media": "",
     "url": "https://www.discogs.com/search/?q=Joan+Baez+Baptism+VSD+79-275&type=release",
