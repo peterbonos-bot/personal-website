@@ -3869,7 +3869,7 @@ window.RECORDS = [
     "value": null,
     "sleeve": "",
     "media": "",
-    "url": "https://www.discogs.com/search/?q=Joan+Baez+Joan+VSD+79240&type=release",
+    "url": "https://www.discogs.com/release/2237517-Joan-Baez-Joan",
     "note": "Stereo",
     "catalog": "VSD 79240",
     "matrix": "",
@@ -3878,7 +3878,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "subcategory": "Peter Schickele"
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424899479",
+    "discogs_sale_price": 20
   },
   {
     "artist": "Joan Baez",
@@ -3886,7 +3888,7 @@ window.RECORDS = [
     "value": null,
     "sleeve": "",
     "media": "",
-    "url": "https://www.discogs.com/search/?q=Joan+Baez+Noel+VSD+2930&type=release",
+    "url": "https://www.discogs.com/release/15566571-Joan-Baez-No%C3%ABl",
     "note": "Stereo",
     "catalog": "VSD 2930",
     "matrix": "",
@@ -3895,7 +3897,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "subcategory": "Peter Schickele"
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424901906",
+    "discogs_sale_price": 10
   },
   {
     "artist": "Joan Baez",
@@ -3903,7 +3907,7 @@ window.RECORDS = [
     "value": null,
     "sleeve": "",
     "media": "",
-    "url": "https://www.discogs.com/search/?q=Joan+Baez+Baptism+VSD+79-275&type=release",
+    "url": "https://www.discogs.com/release/38441736-Joan-Baez-Baptism",
     "note": "Stereo",
     "catalog": "VSD 79-275",
     "matrix": "",
@@ -3912,7 +3916,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "subcategory": "Peter Schickele"
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424903499",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Bee Gees / Various Artists",
@@ -4571,5 +4577,62 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null
+  },
+  {
+    "artist": "P.D.Q. Bach",
+    "title": "Report From Hoople: P.D.Q. Bach On The Air",
+    "value": 5,
+    "media": "VG+",
+    "sleeve": "VG+",
+    "url": "https://www.discogs.com/release/3152549-PDQ-Bach-Report-From-Hoople-PDQ-Bach-On-The-Air",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Classical/New Music",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424898360",
+    "discogs_sale_price": 5
+  },
+  {
+    "artist": "Peter Schickele Presenting P.D.Q. Bach",
+    "title": "Peter Schickele Presenting P.D.Q. Bach (1807–1742)?",
+    "value": 5,
+    "media": "M",
+    "sleeve": "",
+    "url": "https://www.discogs.com/release/22896512-Peter-Schickele-Presenting-PDQ-Bach-Chamber-Orchestra-Under-The-Direction-Of-Jorge-Mester-Peter-Schi",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Classical/New Music",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424897130",
+    "discogs_sale_price": 5
+  },
+  {
+    "artist": "P.D.Q. Bach",
+    "title": "The Intimate P.D.Q. Bach",
+    "value": 5.25,
+    "media": "VG+",
+    "sleeve": "VG+",
+    "url": "https://www.discogs.com/release/9526032-PDQ-Bach-The-Intimate-PDQ-Bach",
+    "note": "",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Classical/New Music",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4424895027",
+    "discogs_sale_price": 5.25
   }
 ];
