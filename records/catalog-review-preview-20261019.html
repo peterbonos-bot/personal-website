@@ -98,11 +98,11 @@ body.list-view .record-list th{position:sticky;top:var(--catalog-controls-height
 <p class="viewing-secondary"><a class="contact-secondary" href="requests.html#contactHeading">Contact us</a> <a href="requests.html#viewDate">Request a phone consultation time</a> · By appointment</p>
 <footer style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--line)"><strong>Keith Terry Record Collection</strong><p class="summary">Inventory, grading and valuations are works in progress. Release links are references and do not necessarily represent active listings.</p></footer>
 </main>
-<script src="catalog-review-data-20261019.js?v=remove-2"></script>
+<script src="catalog-review-data-20261019.js?v=approved-six-20261022"></script>
 <script>
 const records=(window.RECORDS||[]).map(r=>({...r,cover:r.cover&&!/^https?:/i.test(r.cover)?'https://peterbonos-bot.github.io/keith-terry-records/'+r.cover:r.cover}));
 const availableRecords=records.filter(r=>!r.excluded);
-function inGenre(r,g){return g==='__schickele'?r.subcategory==='Peter Schickele':r.genre===g;}
+function inGenre(r,g){return (g==='__schickele'||g==='Peter Schickele')?r.subcategory==='Peter Schickele':r.genre===g;}
 const CART_KEY='keith-terry-records-cart-v1';
 let cart=[];
 try{cart=JSON.parse(localStorage.getItem(CART_KEY)||'[]').filter(i=>Number.isInteger(i)&&i>=0&&i<records.length&&!records[i].excluded)}catch(e){cart=[]}
@@ -114,7 +114,7 @@ function refreshSelectionUI(){
  document.querySelectorAll('.add-cart[data-record-index]').forEach(b=>{const added=cart.includes(Number(b.dataset.recordIndex));b.classList.toggle('request-selected',added);b.setAttribute('aria-label',added?'Remove record':'Add to Request');b.setAttribute('aria-pressed',String(added));b.innerHTML=added?'✓ Added <span class="cancel-x" aria-hidden="true">×</span><span class="cancel-tooltip" role="tooltip">Remove record</span>':'Add to Request';const row=b.closest('article,tr');if(row)row.classList.toggle('record-requested',added)});
  const all=document.getElementById('selectAllRecords');all.textContent=cart.length===availableRecords.length?'Cancel all selections':'Select all '+availableRecords.length+' records';
  const current=document.getElementById('selectCurrentGenre');current.hidden=!genre.value;const group=availableRecords.filter(r=>genre.value==='__bargain'?isBargain(r):inGenre(r,genre.value));current.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all '+(genre.value==='__bargain'?'Bargain Bin':genre.value==='__schickele'?'Peter Schickele':genre.value||'genre')+' records';
- document.querySelectorAll('[data-select-genre]').forEach(b=>{const group=availableRecords.filter(r=>b.dataset.selectGenre==='Bargain Bin'?isBargain(r):inGenre(r,b.dataset.selectGenre)&&!isBargain(r));b.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all'});
+ document.querySelectorAll('[data-select-genre]').forEach(b=>{const group=availableRecords.filter(r=>b.dataset.selectGenre==='Bargain Bin'?isBargain(r):inGenre(r,b.dataset.selectGenre)&&(b.dataset.selectGenre==='Peter Schickele'||!isBargain(r)));b.textContent=group.length&&group.every(r=>cart.includes(records.indexOf(r)))?'Cancel genre selections':'Select all'});
 }
 function addToCart(i){if(!Number.isInteger(i)||i<0||i>=records.length||records[i].excluded)return;if(cart.includes(i))cart=cart.filter(n=>n!==i);else cart.push(i);saveCart();refreshSelectionUI();}
 document.addEventListener('click',e=>{const b=e.target.closest('.add-cart');if(b)addToCart(Number(b.dataset.recordIndex))});
@@ -162,7 +162,7 @@ document.getElementById('viewAllRecords').addEventListener('click',()=>{
 function selectMany(indices){const before=cart.length;const removing=indices.length&&indices.every(i=>cart.includes(i));cart=removing?cart.filter(i=>!indices.includes(i)):[...new Set([...cart,...indices])];saveCart();refreshSelectionUI();const status=document.getElementById('bulkStatus');status.textContent=(removing?(before-cart.length)+' selections cancelled. ':(cart.length-before)+' records added. ')+cart.length+' selected in total.'}
 document.getElementById('selectAllRecords').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded)));
 document.getElementById('selectCurrentGenre').addEventListener('click',()=>selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded).filter(i=>(genre.value==='__bargain'?isBargain(records[i]):inGenre(records[i],genre.value)))));
-document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded).filter(i=>(b.dataset.selectGenre==='Bargain Bin'?isBargain(records[i]):inGenre(records[i],b.dataset.selectGenre)&&!isBargain(records[i]))))});
+document.addEventListener('click',event=>{const b=event.target.closest('[data-select-genre]');if(b)selectMany(records.map((r,i)=>i).filter(i=>!records[i].excluded).filter(i=>(b.dataset.selectGenre==='Bargain Bin'?isBargain(records[i]):inGenre(records[i],b.dataset.selectGenre)&&(b.dataset.selectGenre==='Peter Schickele'||!isBargain(records[i])))))});
 q.addEventListener('input',render);
 genre.addEventListener('change',render);
 sort.addEventListener('change',render);
