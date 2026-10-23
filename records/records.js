@@ -4427,7 +4427,8 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "sale_status": "For Sale"
   },
   {
     "artist": "Herb Alpert & the Tijuana Brass",
