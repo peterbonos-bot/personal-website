@@ -4187,11 +4187,11 @@ window.RECORDS = [
     "release_year": null
   },
   {
-    "artist": "Unconfirmed",
+    "artist": "Various Artists",
     "title": "Music Til Dawn (second volume)",
     "value": null,
     "sleeve": "",
-    "media": "",
+    "media": "VG",
     "url": "",
     "note": "",
     "catalog": "CSS-671",
@@ -4200,7 +4200,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Roger Williams",
