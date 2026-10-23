@@ -4425,18 +4425,19 @@ window.RECORDS = [
   {
     "artist": "Herb Alpert & the Tijuana Brass",
     "title": "S.R.O.",
-    "value": null,
-    "sleeve": "",
-    "media": "",
+    "value": 5,
+    "sleeve": "VG+",
+    "media": "VG",
     "url": "https://www.discogs.com/search/?q=Herb+Alpert+%26+the+Tijuana+Brass+S.R.O.+A%26M+SP-4119&type=release",
     "note": "",
     "catalog": "A&M SP-4119",
     "matrix": "",
-    "runout": "",
+    "runout": "△9800-X; side unspecified, owner transcription.",
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": false
   },
   {
     "artist": "Orson Welles",
