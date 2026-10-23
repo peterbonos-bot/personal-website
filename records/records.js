@@ -3560,7 +3560,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1956
+    "release_year": 1956,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Alley Cat",
