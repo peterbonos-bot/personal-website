@@ -198,7 +198,7 @@ window.RECORDS = [
   },
   {
     "artist": "Steve Reich",
-    "title": "Music for 16 Musicians",
+    "title": "Music for 18 Musicians",
     "value": 51,
     "sleeve": "NM",
     "media": "VG+",
@@ -211,9 +211,7 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": true,
-    "release_year": 1978,
-    "excluded": true,
-    "exclusion_reason": "Removed from website at Peter’s request, 2026-10-19"
+    "release_year": 1978
   },
   {
     "artist": "Collin Walcott, Don Cherry, Nana Vasconcelos",
@@ -1239,9 +1237,7 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1976,
-    "excluded": true,
-    "exclusion_reason": "Removed from website at Peter’s request, 2026-10-19"
+    "release_year": 1976
   },
   {
     "artist": "Joseph Spence",
