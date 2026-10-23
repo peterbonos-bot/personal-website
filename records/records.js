@@ -2396,7 +2396,7 @@ window.RECORDS = [
     "title": "At the Organ Plays Johann Sebastian Bach",
     "value": 8,
     "sleeve": "VG",
-    "media": "VG+",
+    "media": "VG",
     "url": "https://www.discogs.com/search/?q=Virgil+Fox+At+the+Organ+Plays+Johann+Sebastian+Bach+CC+11022+SD&type=release",
     "note": "Gatefold; estimated $6–10.",
     "catalog": "CC 11022 SD",
@@ -2405,7 +2405,8 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": false
   },
   {
     "artist": "Dave Brubeck Quartet",
