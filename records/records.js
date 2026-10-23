@@ -2883,7 +2883,7 @@ window.RECORDS = [
   {
     "artist": "Count Basie",
     "title": "Basie Swinging'-Voices Singing",
-    "value": 5,
+    "value": 6,
     "sleeve": "NM",
     "media": "VG",
     "url": "https://www.discogs.com/release/5132140",
