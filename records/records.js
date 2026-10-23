@@ -4132,7 +4132,7 @@ window.RECORDS = [
     "release_year": null
   },
   {
-    "artist": "Unconfirmed",
+    "artist": "Various Artists",
     "title": "Giant Cliffs presents 21 Cliff Classics Vol. 1",
     "value": null,
     "sleeve": "",
@@ -4145,7 +4145,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Various / Unconfirmed",
