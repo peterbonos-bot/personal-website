@@ -3781,14 +3781,17 @@ window.RECORDS = [
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/master/113903-Don-Ellis-Don-Ellis-At-Fillmore?format=LP&label=1866&country=US",
-    "note": "Missing disc 2",
+    "note": "Missing disc 2 | Set aside; incomplete set. Do not sell or donate.",
     "catalog": "",
     "matrix": "",
     "runout": "",
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Set aside — incomplete 2-LP set (missing one disc). Not for sale or donation.",
+    "sale_status": "Set Aside"
   },
   {
     "artist": "Kenny Loggins with Jim Messina",
