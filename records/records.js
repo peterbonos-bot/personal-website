@@ -4025,15 +4025,15 @@ window.RECORDS = [
   {
     "artist": "Ragtime Reinhold (Reinhold Svensson) and the Olson Brothers",
     "title": "Ragtime",
-    "value": null,
+    "value": 6,
     "sleeve": "VG",
     "media": "G+",
     "url": "https://www.discogs.com/search/?q=Ragtime+Reinhold+%28Reinhold+Svensson%29+and+the+Olson+Brothers+Ragtime+Regent+MG-6009&type=release",
-    "note": "",
+    "note": "Asking price estimated from a $12 VG+ comparable listing; G+ record / VG sleeve.",
     "catalog": "Regent MG-6009",
     "matrix": "",
     "runout": "",
-    "genre": "Other/Miscellaneous",
+    "genre": "Jazz",
     "year": null,
     "featured": false,
     "release_year": null
