@@ -1711,7 +1711,8 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "sale_status": "For Sale"
   },
   {
     "artist": "CTI All-Stars",
@@ -2881,8 +2882,7 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1968,
-    "excluded": true,
-    "exclusion_reason": "Donate"
+    "sale_status": "For Sale"
   },
   {
     "artist": "Count Basie",
@@ -3356,7 +3356,8 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1968
+    "release_year": 1968,
+    "sale_status": "For Sale"
   },
   {
     "artist": "P.D.Q. Bach",
@@ -3457,7 +3458,8 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1962
+    "release_year": 1962,
+    "sale_status": "For Sale"
   },
   {
     "artist": "Elton John",
@@ -4135,7 +4137,8 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "sale_status": "For Sale"
   },
   {
     "artist": "Various Artists",
