@@ -4607,15 +4607,16 @@ window.RECORDS = [
   {
     "artist": "The Wilburn Brothers",
     "title": "I Walk the Line",
-    "value": null,
-    "media": "VG+",
+    "value": 6,
+    "media": "NM",
     "sleeve": "VG",
     "catalog": "Vocalion VL-73889",
     "genre": "Country/Folk",
     "url": "",
     "cover": "",
-    "note": "Disc corrected to VG+ by owner; cover VG. Price pending reassessment.",
+    "note": "Owner confirms NM disc; cover previously VG. Provisional $6 asking price, not verified sold value. Runouts transcribed as spoken; exact pressing unconfirmed.",
     "excluded": false,
-    "featured": false
+    "featured": false,
+    "runout": "Owner transcription: Side 1: 7121542 X2; Side 2: 7121552 and 2; punctuation unconfirmed."
   }
 ];
