@@ -4091,7 +4091,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Burt Bacharach",
