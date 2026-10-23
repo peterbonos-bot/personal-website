@@ -3801,7 +3801,9 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Chet Atkins",
