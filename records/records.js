@@ -4603,5 +4603,19 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null
+  },
+  {
+    "artist": "The Wilburn Brothers",
+    "title": "I Walk the Line",
+    "value": null,
+    "media": "VG+",
+    "sleeve": "VG",
+    "catalog": "Vocalion VL-73889",
+    "genre": "Country/Folk",
+    "url": "",
+    "cover": "",
+    "note": "Disc corrected to VG+ by owner; cover VG. Price pending reassessment.",
+    "excluded": false,
+    "featured": false
   }
 ];
