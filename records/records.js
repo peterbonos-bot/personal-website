@@ -3270,7 +3270,9 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": 1972
+    "release_year": 1972,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Nancy Sinatra",
@@ -3810,7 +3812,9 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": 1962
+    "release_year": 1962,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Mel Lewis",
@@ -4323,7 +4327,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "excluded": true,
-    "exclusion_reason": "Donate"
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "Various Artists",
