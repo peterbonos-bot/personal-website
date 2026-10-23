@@ -3663,7 +3663,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1958
+    "release_year": 1958,
+    "excluded": true,
+    "exclusion_reason": "Owner requested removal from website"
   },
   {
     "artist": "David Rose and his Orchestra",
