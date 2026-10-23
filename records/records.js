@@ -3945,11 +3945,11 @@ window.RECORDS = [
   {
     "artist": "Tex Beneke and His Orchestra",
     "title": "Stardust",
-    "value": null,
+    "value": 6,
     "sleeve": "",
     "media": "",
     "url": "https://www.discogs.com/search/?q=Tex+Beneke+and+His+Orchestra+Stardust+CAL+316&type=release",
-    "note": "",
+    "note": "Provisional $6 asking price from current comparable listings; verify disc and sleeve grades before final pricing.",
     "catalog": "CAL 316",
     "matrix": "",
     "runout": "",
