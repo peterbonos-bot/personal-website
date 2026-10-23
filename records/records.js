@@ -1,4 +1,4 @@
-// Sale links matched by exact Discogs release ID; catalog estimates preserved.
+// Donation and discarded records remain indexed but are excluded from public listings.
 window.RECORDS = [
   {
     "artist": "Pharaoh Sanders",
@@ -2557,7 +2557,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Discarded or donation"
   },
   {
     "artist": "Jack DeJohnette",
@@ -2878,7 +2880,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1968
+    "release_year": 1968,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Count Basie",
@@ -2994,7 +2998,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "D’Artega",
@@ -3026,7 +3032,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Bing Crosby",
@@ -3042,7 +3050,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "",
@@ -3074,7 +3084,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Pat Boone",
@@ -3475,7 +3487,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1962
+    "release_year": 1962,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Roger Williams",
@@ -3709,7 +3723,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Discarded or donation"
   },
   {
     "artist": "The Sandpipers",
@@ -3972,7 +3988,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Frank Carle, His Piano and Orchestra",
@@ -4196,7 +4214,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Sammy Kaye",
@@ -4228,7 +4248,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Billy Vaughn",
@@ -4244,7 +4266,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Al Donahue and His Society Orchestra",
@@ -4260,7 +4284,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Discarded or donation"
   },
   {
     "artist": "Unconfirmed",
@@ -4292,7 +4318,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Various Artists",
@@ -4340,7 +4368,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Steve Allen",
@@ -4356,7 +4386,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Donate"
   },
   {
     "artist": "Chuck Mangione",
