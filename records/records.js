@@ -4634,5 +4634,21 @@ window.RECORDS = [
     "excluded": false,
     "featured": false,
     "runout": "Owner transcription: Side 1: 7121542 X2; Side 2: 7121552 and 2; punctuation unconfirmed."
+  },
+  {
+    "artist": "The Four Lads with Ray Ellis",
+    "title": "Four on the Aisle",
+    "genre": "Jazz",
+    "cover": "",
+    "url": "",
+    "catalog": "Columbia CL-1111",
+    "featured": false,
+    "value": 5,
+    "media": "VG",
+    "sleeve": "VG",
+    "excluded": false,
+    "matrix": "XLP 42971 / XLP 42972",
+    "runout": "Side 1: XLP 42971-1A; Side 2: XLP 42972-1A",
+    "note": "Red Columbia six-eye label. Provisional $5 asking price; exact pressing unconfirmed."
   }
 ];
