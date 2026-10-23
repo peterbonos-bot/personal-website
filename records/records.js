@@ -1,4 +1,3 @@
-// Donation and discarded records remain indexed but are excluded from public listings.
 window.RECORDS = [
   {
     "artist": "Pharaoh Sanders",
@@ -4445,18 +4444,19 @@ window.RECORDS = [
   {
     "artist": "Al Hirt",
     "title": "The Best of Al Hirt",
-    "value": 6,
+    "value": 3,
     "sleeve": "VG+",
     "media": "G+",
     "url": "https://www.discogs.com/search/?q=Al+Hirt+The+Best+of+Al+Hirt+LSP-3309&type=release",
-    "note": "",
+    "note": "Black RCA Victor label; Hollywood pressing suspected, unconfirmed. Provisional $3 asking price for G+ vinyl/VG+ sleeve.",
     "catalog": "LSP-3309",
-    "matrix": "",
-    "runout": "",
+    "matrix": "RPRS-7103 / RPRS-7104",
+    "runout": "Side A: RPRS-7103-1S H; Side B: RPRS-7104-1S H",
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": false
   },
   {
     "artist": "Pat Boone",
