@@ -223,7 +223,7 @@
 
 /* Calendar expanded details: portrait image left, text uses space to the right */
 @media (min-width:721px){
-  .calendar-event .event-details:not([hidden]){
+  .calendar-event .event-details:has(> .event-image):not([hidden]){
     display:grid!important;
     grid-template-columns:minmax(180px,300px) minmax(0,1fr);
     column-gap:24px;
@@ -239,7 +239,7 @@
     object-position:top left;
     margin:14px 0 0!important;
   }
-  .calendar-event .event-details > :not(.event-image){grid-column:2}
+  .calendar-event .event-details:has(> .event-image) > :not(.event-image){grid-column:2}
 }
 @media (max-width:720px){
   .calendar-event .event-details .event-image{margin-left:0!important;margin-right:0!important}
