@@ -160,7 +160,7 @@
         }
       });
       actions.append(shareButton, status, manualLink);
-      article.querySelector('.event-info').append(actions);
+      article.querySelector('.event-details').append(actions);
     });
     list.querySelectorAll('.calendar-toggle').forEach((button, index) => {
       const details = button.closest('.calendar-event').querySelector('.event-details');
