@@ -6,7 +6,7 @@
   const status = root.querySelector('.euphonos-status');
   const names = ['Full ensemble', 'Trumpet and percussion', 'Clarinet and bass', 'Accordion and bass'];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let current = 0, paused = reduced.matches, timer, rollTimer, rollDelay, rolling = false;
+  let current = 0, paused = reduced.matches, timer, rollTimer, rolling = 0;
   function render(announce = false) {
     panels.forEach((panel, index) => {
       const slot = (index - current + panels.length) % panels.length;
@@ -30,25 +30,32 @@
   root.querySelector('[data-next]').addEventListener('click', () => step(1));
   pause.addEventListener('click', () => { paused = !paused; render(); schedule(); });
   function stopRolling() {
-    clearTimeout(rollDelay); clearInterval(rollTimer); rolling = false; schedule();
+    clearInterval(rollTimer); rolling = 0; schedule();
   }
   function startRolling(direction) {
-    stopRolling();
-    if (!matchMedia('(hover: hover)').matches || reduced.matches) return;
-    rolling = true; clearInterval(timer);
-    rollDelay = setTimeout(() => { step(direction); rollTimer = setInterval(() => step(direction), 1300); }, 450);
+    if (rolling === direction) return;
+    clearInterval(rollTimer); clearInterval(timer); rolling = direction;
+    step(direction);
+    rollTimer = setInterval(() => step(direction), 1300);
   }
-  const rollButtons = [...root.querySelectorAll('[data-roll]')];
-  rollButtons.forEach(button => {
-    const direction = Number(button.dataset.roll);
-    button.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') startRolling(direction); });
-    button.addEventListener('pointerleave', stopRolling);
-    button.addEventListener('click', () => { stopRolling(); step(direction); });
+  const stage = root.querySelector('.euphonos-stage');
+  function followMouse(event) {
+    const bounds = stage.getBoundingClientRect();
+    const position = (event.clientX - bounds.left) / bounds.width;
+    if (position < .45) startRolling(-1);
+    else if (position > .55) startRolling(1);
+    else stopRolling();
+  }
+  stage.addEventListener('mouseenter', followMouse);
+  stage.addEventListener('mousemove', followMouse);
+  stage.addEventListener('mouseleave', stopRolling);
+  root.querySelectorAll('[data-roll]').forEach(button => {
+    button.addEventListener('click', () => { stopRolling(); step(Number(button.dataset.roll)); });
   });
   for (const [selector, direction] of [['[data-previous]', -1], ['[data-next]', 1]]) {
     const button = root.querySelector(selector);
-    button.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') startRolling(direction); });
-    button.addEventListener('pointerleave', stopRolling);
+    button.addEventListener('mouseenter', () => startRolling(direction));
+    button.addEventListener('mouseleave', stopRolling);
   }
   root.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); step(event.key === 'ArrowLeft' ? -1 : 1); }
