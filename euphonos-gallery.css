@@ -15,13 +15,21 @@
 @media(max-width:620px){.euphonos-stage{height:clamp(190px,65vw,360px);perspective:1000px}.euphonos-panel{width:84%}.euphonos-panel[data-slot="0"]{transform:translate(-50%,-50%)}.euphonos-controls{gap:8px}.euphonos-controls button{padding:9px 14px}}
 @media(prefers-reduced-motion:reduce){.euphonos-panel{transition:none}}
 
-/* Keep header portraits clear of the title and booking links at every width. */
-.euphonos-page .branch-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);min-height:0!important;align-items:center;padding:36px max(18px,calc((100vw - 1180px)/2));gap:28px}
-.euphonos-page .branch-hero .hero-slideshow{position:relative;inset:auto;grid-column:2;grid-row:1;width:100%;aspect-ratio:4/3}
-.euphonos-page .branch-hero .hero-slide img{object-fit:contain;object-position:center;filter:none;transform:none;animation:none}
-.euphonos-page .branch-hero .hero-shade{display:none}
-.euphonos-page .branch-hero .hero-overlay{grid-column:1;grid-row:1;min-height:0!important;width:100%;margin:0;padding:0}
-.euphonos-page .branch-hero h1{font-size:clamp(2.8rem,5.5vw,5.5rem)}
-@media(max-width:760px){.euphonos-page .branch-hero{grid-template-columns:1fr;padding-top:18px;gap:22px}.euphonos-page .branch-hero .hero-slideshow{grid-column:1;grid-row:1;aspect-ratio:4/3}.euphonos-page .branch-hero .hero-overlay{grid-column:1;grid-row:2}}
 
-
+/* Title followed immediately by the live-photo carousel. */
+.euphonos-page .branch-hero{min-height:0!important;padding:36px 0 8px}
+.euphonos-page .branch-hero .hero-overlay{min-height:0!important;padding:0}
+.euphonos-page .branch-hero .hero-copy{max-width:100%;padding:0}
+.euphonos-page .branch-hero h1{font-size:clamp(2.8rem,5.5vw,5rem);margin:.1em 0}
+.euphonos-page .branch-hero h1 br{display:none}
+.euphonos-page .branch-hero h1 br:after{content:' '}
+.euphonos-page .branch-hero .lede{max-width:880px}
+.euphonos-top-gallery{padding:0!important}
+.euphonos-top-gallery .euphonos-carousel{margin:0 0 28px}
+.euphonos-top-gallery .euphonos-stage{height:clamp(230px,43vw,510px)}
+.euphonos-roll{position:absolute;top:15%;height:70%;width:14%;z-index:8;border:0;background:transparent;color:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;touch-action:manipulation}
+.euphonos-roll-left{left:0}.euphonos-roll-right{right:0}
+.euphonos-roll span{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#071925d9;border:1px solid var(--line);font:38px/1 Arial,sans-serif;transition:background .2s,transform .2s}
+.euphonos-roll:hover span,.euphonos-roll:focus-visible span{background:var(--blue);transform:scale(1.08)}
+.euphonos-roll:focus-visible{outline:2px solid var(--yellow);outline-offset:-3px}
+@media(max-width:620px){.euphonos-page .branch-hero{padding-top:24px}.euphonos-top-gallery .euphonos-stage{height:clamp(190px,63vw,340px)}.euphonos-roll{width:10%}.euphonos-roll span{width:30px;height:38px;font-size:30px}.euphonos-page .branch-hero .buttons{gap:8px}}
