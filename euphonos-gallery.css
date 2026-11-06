@@ -1,13 +1,13 @@
 /* Clean photo viewports remove screenshot borders and playback UI. */
 .euphonos-carousel{margin:28px 0 64px;outline-offset:6px}
 .euphonos-stage{position:relative;height:clamp(250px,48vw,550px);perspective:1400px;overflow:hidden;isolation:isolate}
-.euphonos-panel{position:absolute;left:50%;top:50%;width:70%;max-width:760px;margin:0;aspect-ratio:16/9;background:#040e16;border:1px solid var(--line);border-radius:12px;box-shadow:0 20px 45px #0007;transition:transform 1.15s ease,opacity 1.15s ease;transform-origin:center;overflow:hidden}
+.euphonos-panel{position:absolute;left:50%;top:50%;width:70%;max-width:760px;margin:0;aspect-ratio:16/9;background:#071925;border:1px solid var(--line);border-radius:12px;box-shadow:0 20px 45px #0007;transition:transform .7s ease,filter .7s ease;transform-origin:center;overflow:hidden}
 .euphonos-panel a{display:block;width:100%;height:100%}
 .euphonos-panel img{width:100%;height:100%;object-fit:contain;object-position:center;filter:none}
 .euphonos-panel[data-slot="0"]{transform:translate(-50%,-50%) translateZ(70px);z-index:4;opacity:1}
-.euphonos-panel[data-slot="1"]{transform:translate(9%,-50%) translateZ(-160px) rotateY(-32deg) scale(.82);z-index:2;opacity:.65;pointer-events:none}
-.euphonos-panel[data-slot="2"]{transform:translate(-50%,-59%) translateZ(-360px) scale(.76);z-index:1;opacity:.35;pointer-events:none}
-.euphonos-panel[data-slot="3"]{transform:translate(-109%,-50%) translateZ(-160px) rotateY(32deg) scale(.82);z-index:2;opacity:.65;pointer-events:none}
+.euphonos-panel[data-slot="1"]{transform:translate(9%,-50%) translateZ(-160px) rotateY(-32deg) scale(.82);z-index:2;opacity:1;filter:brightness(.7);pointer-events:none}
+.euphonos-panel[data-slot="2"]{transform:translate(-50%,-59%) translateZ(-360px) scale(.76);z-index:1;opacity:1;filter:brightness(.5);pointer-events:none}
+.euphonos-panel[data-slot="3"]{transform:translate(-109%,-50%) translateZ(-160px) rotateY(32deg) scale(.82);z-index:2;opacity:1;filter:brightness(.7);pointer-events:none}
 .euphonos-controls{display:flex;justify-content:center;gap:12px;position:relative;z-index:5;margin-top:18px;flex-wrap:wrap}
 .euphonos-controls button{font:inherit;font-weight:700;color:var(--cream);background:var(--navy2);border:1px solid var(--line);border-radius:999px;padding:10px 19px;min-height:44px;cursor:pointer}
 .euphonos-controls button:hover,.euphonos-controls button:focus-visible{background:var(--blue);border-color:var(--yellow)}
@@ -24,4 +24,4 @@
 .euphonos-page .branch-hero h1{font-size:clamp(2.8rem,5.5vw,5.5rem)}
 @media(max-width:760px){.euphonos-page .branch-hero{grid-template-columns:1fr;padding-top:18px;gap:22px}.euphonos-page .branch-hero .hero-slideshow{grid-column:1;grid-row:1;aspect-ratio:4/3}.euphonos-page .branch-hero .hero-overlay{grid-column:1;grid-row:2}}
 
-.euphonos-panel:has(img[src*="trumpet-clean"]){aspect-ratio:1980/1062}
+
