@@ -716,7 +716,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1973
+    "release_year": 1973,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Joe Crocker",
@@ -1008,7 +1010,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Ralph Towner / Gary Burton ",
@@ -1092,7 +1096,9 @@ window.RECORDS = [
     "genre": "Country/Folk",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Allman Brothers Band",
@@ -1230,7 +1236,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1976
+    "release_year": 1976,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Joseph Spence",
@@ -1572,7 +1580,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1971,
     "excluded": true,
-    "exclusion_reason": "Grey-marked in source catalog; removed at owner request 2026-10-19"
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Aphrodite's Child",
@@ -1755,7 +1763,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Ray Charles",
@@ -4586,7 +4596,9 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": true,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Centrafrique Anthologie De La Musique Des Pygmées Aka",
@@ -4602,7 +4614,9 @@ window.RECORDS = [
     "genre": "World Music/International",
     "year": null,
     "featured": true,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
   },
   {
     "artist": "Golden Rain - Music of Bali",
