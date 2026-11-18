@@ -21,8 +21,15 @@ Peter requests keeping https://peterbonos.com/records/ updated when the collecti
 - Keep confirmed sold, removed, donated, or retained/not-for-sale records out of public browsing and requests. Preserve array positions/stable record IDs using `excluded: true`; use `status: "sold"` only for a confirmed sale. Do not reactivate an excluded item merely because a shop listing exists.
 - A previously linked exact sale copy absent after a complete successful seller inventory read may have its sale link removed and website availability suspended pending confirmation. Absence alone does not prove a sale: record the reason as availability unconfirmed, not sold. A partial or blocked read must never trigger removal or baseline replacement.
 - Match catalog/sheet records by exact numeric release ID, or exact listing ID when the sheet reference is a sale-item URL. Never substitute a different pressing or guess between multiple copies. New sheet entries are ownership-authorized; unfamiliar shop-only items still require Peter's confirmation.
-- Column N, `Listed on Discogs`, indicates a verified current public listing, not historical listing or sale status. Refresh it only from a complete inventory read; retain explanatory notes for ambiguity.
+- The column headed `Listed on Discogs` (currently F; locate it by header), indicates a verified current public listing, not historical listing or sale status. Refresh it only from a complete inventory read; retain explanatory notes for ambiguity.
 - Preserve separate catalog value estimates and Discogs sale prices. Apply explicit sheet grading/notes changes to the catalog, but report differing seller grades/comments without silently replacing sheet data.
 - Do not publish buyer identities, sale proceeds, commission shares, or private accounting from the archive. Never modify Discogs inventory, purchases, messages, or access.
 - Read fresh site files and preserve concurrent changes. Test public catalog edits on a noindex draft, verify published behavior and request/buy buttons, and bump all affected records.js cache versions. Replace the Discogs comparison baseline only after a complete successful inventory read.
 - Notify Peter of meaningful site updates, source ambiguities, or blockers; remain silent when nothing meaningful changed.
+
+## Sale-item URLs in the sheet (authorized 2026-11-18)
+
+- Resolve columns by current header names before every read/write. As of this update, Catalog F is `Listed on Discogs` and G is `URL`; columns may move again.
+- For each uniquely verified current moments_last sale copy matching the sheet, replace its release/search URL in the URL column with the canonical `https://www.discogs.com/sell/item/LISTING_ID` URL. Preserve the previous URL and verified release ID in a cell note for future matching. Existing sale URLs should use this canonical form, without tracking parameters.
+- Exact release IDs or existing sale listing IDs authorize automatic replacement. A search URL/title match alone does not establish the pressing; request confirmation when uncertain, and retain the current URL with a note describing the candidate.
+- Keep sale URLs synchronized with current inventory and the website's separate Buy-this-copy link. Preserve concurrent sheet changes and never overwrite unrelated cells.
