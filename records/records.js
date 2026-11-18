@@ -103,7 +103,10 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": true,
-    "release_year": 1982
+    "release_year": 1982,
+    "excluded": true,
+    "exclusion_reason": "Sold; confirmed by owner 2026-11-18",
+    "status": "sold"
   },
   {
     "artist": "Peter Schickele",
