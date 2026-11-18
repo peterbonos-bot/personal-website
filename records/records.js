@@ -105,7 +105,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1982,
     "excluded": true,
-    "exclusion_reason": "Sold; confirmed by owner 2026-11-18",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18",
     "status": "sold"
   },
   {
@@ -262,7 +262,10 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": 1959,
     "featured": true,
-    "release_year": 1977
+    "release_year": 1977,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Charles M. Bogert",
@@ -1768,7 +1771,8 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "excluded": true,
-    "exclusion_reason": "Grey-highlighted source record confirmed no longer for sale; owner-approved removal 2026-11-16"
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18",
+    "status": "sold"
   },
   {
     "artist": "Ray Charles",
@@ -2192,7 +2196,10 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": 1971,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Neil Diamond",
@@ -2241,7 +2248,10 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Spike Jones and his City Slickers",
@@ -3295,7 +3305,10 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": false,
-    "release_year": 1967
+    "release_year": 1967,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Eddy Arnold",
@@ -3534,7 +3547,10 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1966
+    "release_year": 1966,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Robert Audy",
@@ -3604,7 +3620,10 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1957
+    "release_year": 1957,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "Doc Severinsen",
@@ -4352,7 +4371,8 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "excluded": true,
-    "exclusion_reason": "Owner requested removal from website"
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18",
+    "status": "sold"
   },
   {
     "artist": "Various Artists",
@@ -4649,9 +4669,11 @@ window.RECORDS = [
     "url": "",
     "cover": "",
     "note": "Owner confirms NM disc; cover previously VG. Provisional $6 asking price, not verified sold value. Runouts transcribed as spoken; exact pressing unconfirmed.",
-    "excluded": false,
+    "excluded": true,
     "featured": false,
-    "runout": "Owner transcription: Side 1: 7121542 X2; Side 2: 7121552 and 2; punctuation unconfirmed."
+    "runout": "Owner transcription: Side 1: 7121542 X2; Side 2: 7121552 and 2; punctuation unconfirmed.",
+    "status": "sold",
+    "exclusion_reason": "Sold; confirmed in collection sheet and removed from public availability 2026-11-18"
   },
   {
     "artist": "The Four Lads with Ray Ellis",
