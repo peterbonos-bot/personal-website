@@ -262,8 +262,9 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": null,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4494148283",
-    "discogs_sale_price": 21.25
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sale confirmed by Discogs order/payment email (2026-11-19)"
   },
   {
     "artist": "Miles Davis",
@@ -396,7 +397,9 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": true,
-    "release_year": 1971
+    "release_year": 1971,
+    "excluded": true,
+    "exclusion_reason": "Moved from Catalog to Sold & Removed; disposition unconfirmed (2026-11-20)"
   },
   {
     "artist": "Hozan Yamamoto",
@@ -883,7 +886,9 @@ window.RECORDS = [
     "genre": "World Music/International",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "excluded": true,
+    "exclusion_reason": "Moved from Catalog to Sold & Removed; disposition unconfirmed (2026-11-20)"
   },
   {
     "artist": "Gregorio Paniaglia",
@@ -900,7 +905,9 @@ window.RECORDS = [
     "genre": "Classical/New Music",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499065317",
+    "discogs_sale_price": 28
   },
   {
     "artist": "Chicago",
@@ -922,7 +929,7 @@ window.RECORDS = [
   {
     "artist": "Jesus Christ Superstar",
     "title": "A Rock Opera",
-    "value": 29,
+    "value": 30,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/3883400",
@@ -934,12 +941,14 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1970
+    "release_year": 1970,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499067570",
+    "discogs_sale_price": 30
   },
   {
     "artist": "Miles Davis",
     "title": "At Fillmore",
-    "value": 26.28,
+    "value": null,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/10595158-Miles-Davis-Miles-Davis-At-Fillmore",
@@ -958,9 +967,9 @@ window.RECORDS = [
   {
     "artist": "Peter Schickele And His Orchestra",
     "title": "Good-Time Ticket",
-    "value": 25.5,
-    "sleeve": "NM",
-    "media": "VG+",
+    "value": 20,
+    "sleeve": "VG+",
+    "media": "NM",
     "url": "https://www.discogs.com/release/4474402-Peter-Schickele-And-His-Orchestra-Good-Time-Ticket",
     "cover": "covers/4474402.jpg",
     "note": "",
@@ -971,7 +980,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1969,
-    "subcategory": "Peter Schickele"
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499146866",
+    "discogs_sale_price": 20
   },
   {
     "artist": "Paul Bley, Gary Peacock, Barry Altschul",
@@ -993,11 +1004,11 @@ window.RECORDS = [
     "discogs_sale_price": 25
   },
   {
-    "artist": "Ethic Folkways Library",
+    "artist": "Ethnic Folkways Library",
     "title": "Music of Equatorial Africa",
     "value": 25,
-    "sleeve": "VG+",
-    "media": "VG+",
+    "sleeve": "NM",
+    "media": "NM",
     "url": "https://www.discogs.com/release/4580858-Various-Music-Of-Equatorial-Africa",
     "cover": "covers/4580858.jpg",
     "note": "",
@@ -1007,7 +1018,9 @@ window.RECORDS = [
     "genre": "World Music/International",
     "year": null,
     "featured": false,
-    "release_year": 1950
+    "release_year": 1950,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499152896",
+    "discogs_sale_price": 30
   },
   {
     "artist": "Bud Powell",
@@ -1023,14 +1036,16 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499149878",
+    "discogs_sale_price": 25
   },
   {
     "artist": "Max Roach",
     "title": "It's Time",
-    "value": 24.34,
+    "value": 30,
     "sleeve": "VG",
-    "media": "VG",
+    "media": "VG+",
     "url": "https://www.discogs.com/release/7265302-Max-Roach-His-Chorus-And-Orchestra-Its-Time",
     "cover": "covers/7265302.jpg",
     "note": "",
@@ -1040,7 +1055,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1980
+    "release_year": 1980,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499155761",
+    "discogs_sale_price": 30
   },
   {
     "artist": "Samuel A. Grimes",
@@ -1057,7 +1074,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1979
+    "release_year": 1979,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499157423",
+    "discogs_sale_price": 21
   },
   {
     "artist": "Miles Davis Quintet",
@@ -1081,9 +1100,9 @@ window.RECORDS = [
   {
     "artist": "Ralph Towner / Gary Burton",
     "title": "Matchbook",
-    "value": 23,
-    "sleeve": "NM",
-    "media": "VG+",
+    "value": 14,
+    "sleeve": "VG+",
+    "media": "NM",
     "url": "https://www.discogs.com/release/35199130-Ralph-Towner-Gary-Burton-Matchbook",
     "cover": "covers/35199130.jpg",
     "note": "",
@@ -1093,7 +1112,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1975
+    "release_year": 1975,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499167113",
+    "discogs_sale_price": 14
   },
   {
     "artist": "Paul Draper",
@@ -1116,7 +1137,7 @@ window.RECORDS = [
     "title": "S/T",
     "value": 23,
     "sleeve": "VG+",
-    "media": "VG+",
+    "media": "NM",
     "url": "https://www.discogs.com/release/9842774-Take-6-Take-6",
     "cover": "covers/9842774.jpg",
     "note": "",
@@ -1126,14 +1147,16 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1988
+    "release_year": 1988,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499280489",
+    "discogs_sale_price": 23
   },
   {
     "artist": "Bud Powell",
     "title": "Paris, 1961",
-    "value": 22,
-    "sleeve": "VG+",
-    "media": "VG",
+    "value": 25,
+    "sleeve": "VG",
+    "media": "NM",
     "url": "https://www.discogs.com/release/14262946-Earl-Bud-Powell-Blue-Note-Caf%C3%A9-Paris-1961",
     "cover": "covers/14262946.jpg",
     "note": "",
@@ -1143,7 +1166,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1968
+    "release_year": 1968,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499368536",
+    "discogs_sale_price": 25
   },
   {
     "artist": "Folk Music Of The United States",
@@ -1169,10 +1194,10 @@ window.RECORDS = [
     "title": "At Fillmore East",
     "value": 22,
     "sleeve": "G+",
-    "media": "VG",
+    "media": "F",
     "url": "https://www.discogs.com/release/3078778-The-Allman-Brothers-Band-The-Allman-Brothers-Band-At-Fillmore-East",
     "cover": "covers/3078778.jpg",
-    "note": "",
+    "note": "Lock groove at the very end of side 2. Would otherwise be G+",
     "catalog": "",
     "matrix": "",
     "runout": "",
@@ -1203,7 +1228,7 @@ window.RECORDS = [
   {
     "artist": "George Marsh, John Abercrombie",
     "title": "Drum Strum",
-    "value": 22,
+    "value": 16,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/4208210-George-Marsh-John-Abercrombie-Drum-Strum",
@@ -1215,14 +1240,16 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1984
+    "release_year": 1984,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499370969",
+    "discogs_sale_price": 16
   },
   {
     "artist": "Kirk Nurock",
     "title": "Natural Sound",
     "value": 22,
-    "sleeve": "NM",
-    "media": "VG+",
+    "sleeve": "VG",
+    "media": "NM",
     "url": "https://www.discogs.com/release/2455868-Kirk-Nurock-Natural-Sound",
     "cover": "covers/2455868.jpg",
     "note": "",
@@ -1232,14 +1259,16 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1982
+    "release_year": 1982,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499375601",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Paul Simon",
     "title": "Graceland",
-    "value": 20,
-    "sleeve": "VG",
-    "media": "VG",
+    "value": 18,
+    "sleeve": "VG+",
+    "media": "VG+",
     "url": "https://www.discogs.com/release/11338773",
     "cover": "covers/11338773.jpg",
     "note": "",
@@ -1249,7 +1278,9 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": 1986,
     "featured": false,
-    "release_year": 1986
+    "release_year": 1986,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499425011",
+    "discogs_sale_price": 18
   },
   {
     "artist": "Rufus Reid Trio",
@@ -2955,7 +2986,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1968,
-    "sale_status": "For Sale"
+    "sale_status": "For Sale",
+    "excluded": true,
+    "exclusion_reason": "Designated for donation in collection sheet (2026-11-20)"
   },
   {
     "artist": "Count Basie",
@@ -3981,7 +4014,7 @@ window.RECORDS = [
     "artist": "Joan Baez",
     "title": "Joan",
     "value": 20,
-    "sleeve": "M",
+    "sleeve": "NM",
     "media": "M",
     "url": "https://www.discogs.com/search/?q=Joan+Baez+Joan+VSD+79240&type=release",
     "note": "Rare Collector Item: This copy was acquired from composer and conductor Peter Schickele's private merch inventory.",
@@ -3992,7 +4025,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "subcategory": "Peter Schickele"
+    "subcategory": "Peter Schickele",
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4499379852",
+    "discogs_sale_price": 20
   },
   {
     "artist": "Joan Baez",
@@ -4055,7 +4090,7 @@ window.RECORDS = [
     "sleeve": "VG",
     "media": "G+",
     "url": "https://www.discogs.com/search/?q=Dave+Brubeck+Quartet+Time+Further+Out+CS+8490&type=release",
-    "note": "Stereo",
+    "note": "",
     "catalog": "CS 8490",
     "matrix": "",
     "runout": "",
@@ -4067,9 +4102,9 @@ window.RECORDS = [
   {
     "artist": "Tex Beneke and His Orchestra",
     "title": "Stardust",
-    "value": 6,
-    "sleeve": "VG+",
-    "media": "VG+",
+    "value": null,
+    "sleeve": "",
+    "media": "",
     "url": "https://www.discogs.com/search/?q=Tex+Beneke+and+His+Orchestra+Stardust+CAL+316&type=release",
     "note": "",
     "catalog": "CAL 316",
@@ -4149,11 +4184,11 @@ window.RECORDS = [
   {
     "artist": "Ragtime Reinhold (Reinhold Svensson) and the Olson Brothers",
     "title": "Ragtime",
-    "value": 6,
+    "value": null,
     "sleeve": "VG",
     "media": "G+",
     "url": "https://www.discogs.com/search/?q=Ragtime+Reinhold+%28Reinhold+Svensson%29+and+the+Olson+Brothers+Ragtime+Regent+MG-6009&type=release",
-    "note": "Asking price estimated from a $12 VG+ comparable listing; G+ record / VG sleeve.",
+    "note": "",
     "catalog": "Regent MG-6009",
     "matrix": "",
     "runout": "",
@@ -4809,5 +4844,53 @@ window.RECORDS = [
     "subcategory": "Peter Schickele",
     "discogs_sale_url": "https://www.discogs.com/sell/item/4424898360",
     "discogs_sale_price": 5
+  },
+  {
+    "artist": "Julie London",
+    "title": "Feeling Good",
+    "value": 7,
+    "media": "G+",
+    "sleeve": "No jacket",
+    "url": "",
+    "note": "Estimated $3–$10 for G+ vinyl without jacket (not verified sales); Liberty LRP-3416.",
+    "catalog": "LRP-3416",
+    "matrix": "",
+    "runout": "",
+    "genre": "Jazz",
+    "year": null,
+    "featured": false,
+    "release_year": null
+  },
+  {
+    "artist": "Mel Tillis",
+    "title": "After All This Time",
+    "value": 16,
+    "media": "VG+",
+    "sleeve": "VG+",
+    "url": "",
+    "note": "Owner reports signed copy; signature not authenticated. Provisional unsigned estimate $8, doubled to $16 at owner's instruction for signature; asking price, not verified sold value.",
+    "catalog": "MCA-5378",
+    "matrix": "",
+    "runout": "",
+    "genre": "Country/Folk",
+    "year": null,
+    "featured": false,
+    "release_year": null
+  },
+  {
+    "artist": "Skitch Henderson",
+    "title": "Tonight!",
+    "value": 2,
+    "media": "G",
+    "sleeve": "NM",
+    "url": "",
+    "note": "Owner reports red Columbia two-eye label. Provisional $2 asking-price estimate for G disc/NM sleeve; not verified sold value.",
+    "catalog": "Columbia CS-9167",
+    "matrix": "",
+    "runout": "",
+    "genre": "Other/Miscellaneous",
+    "year": null,
+    "featured": false,
+    "release_year": null
   }
 ];
