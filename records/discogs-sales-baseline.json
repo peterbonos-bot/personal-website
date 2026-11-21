@@ -1,6 +1,6 @@
 {
   "seller": "moments_last",
-  "checked_at": "2026-11-20T16:12:47.448Z",
+  "checked_at": "2026-11-21T15:54:15.057Z",
   "listings": [
     {
       "listing_url": "https://www.discogs.com/sell/item/2380870675",
@@ -2388,15 +2388,6 @@
       "comment": "Clean copy, sounds great, just a little scratch audible on the beginning of side 2 track 1. Moderate ringwear and a 1 cm scratch on sleeve front cover."
     },
     {
-      "listing_url": "https://www.discogs.com/sell/item/4494152654",
-      "release_url": "https://www.discogs.com/release/8081013",
-      "title": "Charles M. Bogert - Sounds Of North American Frogs (LP)",
-      "price": "35.00",
-      "media": "Very Good Plus (VG+)",
-      "sleeve": "Near Mint (NM or M-)",
-      "comment": "Just a few scuffs on disc, otherwise perfect copy. Tiny bit of wear on spine."
-    },
-    {
       "listing_url": "https://www.discogs.com/sell/item/4494158075",
       "release_url": "https://www.discogs.com/release/2873693",
       "title": "Mike Nock / Bennie Maupin / Cecil McBee / Eddie Marshall (2) - Almanac (LP, Album)",
@@ -2701,6 +2692,24 @@
       "media": "Very Good Plus (VG+)",
       "sleeve": "Very Good Plus (VG+)",
       "comment": "NM- disc. Outer sleeve has a few small creases and a tiny bit of ringwear. Inner sleeve/lyric sheet is split at bottom 3\"."
+    },
+    {
+      "listing_url": "https://www.discogs.com/sell/item/4503027282",
+      "release_url": "https://www.discogs.com/release/14913403",
+      "title": "Steven Dayvid McKellar* - ETHIO (LP, Ltd, S/Edition)",
+      "price": "10.00",
+      "media": "Near Mint (NM or M-)",
+      "sleeve": "Near Mint (NM or M-)",
+      "comment": ""
+    },
+    {
+      "listing_url": "https://www.discogs.com/sell/item/4503050538",
+      "release_url": "https://www.discogs.com/release/9892140",
+      "title": "Νίκος Γούναρης - The Golden Hits of Nikos Gounaris (LP, Album)",
+      "price": "7.50",
+      "media": "Very Good (VG)",
+      "sleeve": "Very Good (VG)",
+      "comment": ""
     }
   ]
 }

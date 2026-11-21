@@ -302,8 +302,9 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1958,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4494152654",
-    "discogs_sale_price": 35
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold on Discogs; confirmed in collection sheet (2026-11-21)"
   },
   {
     "artist": "John Hicks",
