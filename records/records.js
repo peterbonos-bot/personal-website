@@ -4895,5 +4895,21 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null
+  },
+  {
+    "artist": "Fred Raulston",
+    "title": "Open Stream",
+    "value": 11.24,
+    "media": "NM",
+    "sleeve": "NM",
+    "url": "https://www.discogs.com/release/5576389-Fred-Raulston-Open-Stream",
+    "note": "4 copies in collection",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Jazz",
+    "year": null,
+    "featured": false,
+    "release_year": 1979
   }
 ];
