@@ -2,7 +2,7 @@ window.RECORDS = [
   {
     "artist": "Pharaoh Sanders",
     "title": "Heart is a Melody",
-    "value": 100,
+    "value": 75,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/1148102",
@@ -16,12 +16,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1983,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4406554818",
-    "discogs_sale_price": 100
+    "discogs_sale_price": 75
   },
   {
     "artist": "John Coltrane",
     "title": "Expression",
-    "value": 100,
+    "value": 50,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/1045223-John-Coltrane-Expression",
@@ -35,12 +35,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1967,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413281856",
-    "discogs_sale_price": 100
+    "discogs_sale_price": 50
   },
   {
     "artist": "The Beatles",
     "title": "Meet the Beatles",
-    "value": 105,
+    "value": 15,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/833736-The-Beatles-Meet-The-Beatles",
@@ -54,12 +54,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1964,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494101489",
-    "discogs_sale_price": 105
+    "discogs_sale_price": 15
   },
   {
     "artist": "Fela & the Africa '70",
     "title": "Question Jam Answer, Vol. 2",
-    "value": 93,
+    "value": 55,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/10598956-Fela-The-Africa-70-Music-Of-Fela-Roforofo-Fight",
@@ -73,12 +73,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1975,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494102788",
-    "discogs_sale_price": 93
+    "discogs_sale_price": 55
   },
   {
     "artist": "The Indestructible Beat Of Soweto",
     "title": "The Indestructible Beat Of Soweto",
-    "value": 60,
+    "value": 30,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/1864031-Various-The-Indestructible-Beat-Of-Soweto",
@@ -92,7 +92,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1985,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494103856",
-    "discogs_sale_price": 60
+    "discogs_sale_price": 30
   },
   {
     "artist": "Bill Fontana",
@@ -117,7 +117,7 @@ window.RECORDS = [
   {
     "artist": "Peter Schickele",
     "title": "The Open Window",
-    "value": 50,
+    "value": 25,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/sell/release/4714792",
@@ -137,7 +137,7 @@ window.RECORDS = [
   {
     "artist": "Joseph Bonner",
     "title": "Impressions of Copenhagen",
-    "value": 70,
+    "value": 45,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/2388494",
@@ -151,12 +151,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1981,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413252747",
-    "discogs_sale_price": 70
+    "discogs_sale_price": 45
   },
   {
     "artist": "Wings",
     "title": "At the Speed of Sound",
-    "value": 60,
+    "value": 10,
     "sleeve": "NM",
     "media": "VG",
     "url": "https://www.discogs.com/release/5679668-Wings-Wings-At-The-Speed-Of-Sound",
@@ -170,12 +170,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1976,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494106931",
-    "discogs_sale_price": 60
+    "discogs_sale_price": 10
   },
   {
     "artist": "David Holland/ Barre Phillips",
     "title": "Music From Two Basses",
-    "value": 50,
+    "value": 30,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/461282-David-Holland-Barre-Phillips-Music-From-Two-Basses",
@@ -194,7 +194,7 @@ window.RECORDS = [
   {
     "artist": "Santana",
     "title": "S/T",
-    "value": 45,
+    "value": 8,
     "sleeve": "G+",
     "media": "G+",
     "url": "https://www.discogs.com/release/737224-Santana-Santana",
@@ -208,12 +208,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1969,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494125801",
-    "discogs_sale_price": 45
+    "discogs_sale_price": 8
   },
   {
     "artist": "Steve Reich",
     "title": "Music for 18 Musicians",
-    "value": 100,
+    "value": 45,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/1164585-Steve-Reich-Music-For-18-Musicians",
@@ -227,12 +227,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1978,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494143039",
-    "discogs_sale_price": 110
+    "discogs_sale_price": 45
   },
   {
     "artist": "Collin Walcott, Don Cherry, Nana Vasconcelos",
     "title": "Codona",
-    "value": 60,
+    "value": 30,
     "sleeve": "NM",
     "media": "NM",
     "url": "",
@@ -245,7 +245,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494137228",
-    "discogs_sale_price": 60
+    "discogs_sale_price": 30
   },
   {
     "artist": "Willis Alan Ramsey",
@@ -309,7 +309,7 @@ window.RECORDS = [
   {
     "artist": "John Hicks",
     "title": "S/T",
-    "value": 42,
+    "value": 20,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/817919-John-Hicks-John-Hicks",
@@ -323,12 +323,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1984,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4418535117",
-    "discogs_sale_price": 42
+    "discogs_sale_price": 20
   },
   {
     "artist": "Mike Nock / Bennie Maupin / Cecil McBee / Eddie Marshall",
     "title": "Almanac",
-    "value": 40,
+    "value": 25,
     "sleeve": "VG",
     "media": "NM",
     "url": "https://www.discogs.com/release/2873693-Mike-Nock-Bennie-Maupin-Cecil-McBee-Eddie-Marshall-Almanac",
@@ -342,12 +342,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1977,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494158075",
-    "discogs_sale_price": 40
+    "discogs_sale_price": 25
   },
   {
     "artist": "John Cage",
     "title": "Etcetera",
-    "value": 37,
+    "value": 25,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/2578438",
@@ -362,12 +362,12 @@ window.RECORDS = [
     "release_year": null,
     "year_status": "Check release link",
     "discogs_sale_url": "https://www.discogs.com/sell/item/4495967432",
-    "discogs_sale_price": 37
+    "discogs_sale_price": 25
   },
   {
     "artist": "Pygmées Bibayak",
     "title": "Gabon: Musique Des Pygmées Bibayak",
-    "value": 38,
+    "value": 25,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/17312428-Pygm%C3%A9es-Bibayak-Gabon-Musique-Des-Pygm%C3%A9es-Bibayak",
@@ -381,7 +381,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4495983692",
-    "discogs_sale_price": 38
+    "discogs_sale_price": 25
   },
   {
     "artist": "Harry Partch",
@@ -405,7 +405,7 @@ window.RECORDS = [
   {
     "artist": "Hozan Yamamoto",
     "title": "Silver World",
-    "value": 38,
+    "value": 24,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/4070980-%E5%B1%B1%E6%9C%AC%E9%82%A6%E5%B1%B1-%E9%8A%80%E7%95%8C-Silver-World",
@@ -419,12 +419,12 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1977,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4494167453",
-    "discogs_sale_price": 38
+    "discogs_sale_price": 24
   },
   {
     "artist": "Jack DeJohnette",
     "title": "Pictures",
-    "value": 36,
+    "value": 18,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/498592",
@@ -438,12 +438,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1977,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4418530047",
-    "discogs_sale_price": 36
+    "discogs_sale_price": 20
   },
   {
     "artist": "Billy Cobham",
     "title": "Spectrum",
-    "value": 39,
+    "value": 15,
     "sleeve": "VG+",
     "media": "VG",
     "url": "https://www.discogs.com/release/4388849-Billy-Cobham-Spectrum",
@@ -457,12 +457,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1973,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413262443",
-    "discogs_sale_price": 39
+    "discogs_sale_price": 15
   },
   {
     "artist": "Miles Davis",
     "title": "Get Up with It",
-    "value": 38,
+    "value": 30,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/35882428-Miles-Davis-Get-Up-With-It",
@@ -476,12 +476,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1974,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413284061",
-    "discogs_sale_price": 38
+    "discogs_sale_price": 30
   },
   {
     "artist": "Max Roach featuring Anthony Braxton",
     "title": "Birth and Rebirth",
-    "value": 35,
+    "value": 18,
     "sleeve": "VG",
     "media": "NM",
     "url": "https://www.discogs.com/release/1441455-Max-Roach-Featuring-Anthony-Braxton-Birth-And-Rebirth",
@@ -495,12 +495,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1978,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4495993172",
-    "discogs_sale_price": 35
+    "discogs_sale_price": 18
   },
   {
     "artist": "Billy Cobham",
     "title": "Crosswinds",
-    "value": 33,
+    "value": 20,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/537821-Billy-Cobham-Crosswinds",
@@ -514,12 +514,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1974,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413264159",
-    "discogs_sale_price": 33
+    "discogs_sale_price": 20
   },
   {
     "artist": "John Abercrombie, Jan Hammer, Jack De Johnette",
     "title": "Timeless",
-    "value": 35,
+    "value": 15,
     "sleeve": "NM",
     "media": "VG+",
     "url": "https://www.discogs.com/release/1995273-John-Abercrombie-Jan-Hammer-Jack-De-Johnette-Timeless",
@@ -533,12 +533,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1975,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413242733",
-    "discogs_sale_price": 25
+    "discogs_sale_price": 15
   },
   {
     "artist": "The Beatles",
     "title": "Something New",
-    "value": 50,
+    "value": 18,
     "sleeve": "G+",
     "media": "VG",
     "url": "https://www.discogs.com/release/5808624-The-Beatles-Something-New",
@@ -552,12 +552,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1964,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496001986",
-    "discogs_sale_price": 50
+    "discogs_sale_price": 18
   },
   {
     "artist": "Roland Kirk",
     "title": "Volunteered Slavery",
-    "value": 38,
+    "value": 18,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/search/?q=Roland+Kirk+Volunteered+Slavery+Atlantic+SD+1534&type=release",
@@ -570,7 +570,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4495986239",
-    "discogs_sale_price": 35
+    "discogs_sale_price": 18
   },
   {
     "artist": "Jack DeJohnette's Directions",
@@ -589,12 +589,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1976,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4418530683",
-    "discogs_sale_price": 33
+    "discogs_sale_price": 18
   },
   {
     "artist": "George Marsh",
     "title": "Marshland",
-    "value": 34,
+    "value": 18,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/4004985-George-Marsh-Featuring-Mel-Graves-Marshland",
@@ -608,12 +608,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1982,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496003945",
-    "discogs_sale_price": 34
+    "discogs_sale_price": 18
   },
   {
     "artist": "Lester Bowie Brass Fantasy",
     "title": "Avant Pop",
-    "value": 30,
+    "value": 15,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/1642923-Lester-Bowie-Brass-Fantasy-Avant-Pop",
@@ -627,7 +627,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1986,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413257952",
-    "discogs_sale_price": 30
+    "discogs_sale_price": 15
   },
   {
     "artist": "The Mothers of Invention (Frank Zappa)",
@@ -651,7 +651,7 @@ window.RECORDS = [
   {
     "artist": "Henry Mancini",
     "title": "Mancini Country",
-    "value": 40,
+    "value": 10,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/35590291-Henry-Mancini-His-Piano-Orchestra-Chorus-Mancini-Country",
@@ -665,12 +665,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496060015",
-    "discogs_sale_price": 40
+    "discogs_sale_price": 10
   },
   {
     "artist": "Brian Eno, David Byrne",
     "title": "My Life in the Bush of Ghosts",
-    "value": 32,
+    "value": 18,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/5618840-Brian-Eno-David-Byrne-My-Life-In-The-Bush-Of-Ghosts",
@@ -684,12 +684,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1981,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496074073",
-    "discogs_sale_price": 35
+    "discogs_sale_price": 18
   },
   {
     "artist": "The Mothers",
     "title": "The Grand Wazoo",
-    "value": 25,
+    "value": 20,
     "sleeve": "VG+",
     "media": "VG",
     "url": "https://www.discogs.com/release/9195021-The-Mothers-The-Grand-Wazoo",
@@ -703,7 +703,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1972,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496095190",
-    "discogs_sale_price": 25
+    "discogs_sale_price": 20
   },
   {
     "artist": "Simon and Garfunkel",
@@ -727,7 +727,7 @@ window.RECORDS = [
   {
     "artist": "Freddie Hubbard",
     "title": "Sky Dive",
-    "value": 30,
+    "value": 15,
     "sleeve": "NM",
     "media": "VG+",
     "url": "",
@@ -743,7 +743,7 @@ window.RECORDS = [
   {
     "artist": "Sergio Mendes",
     "title": "Stillness",
-    "value": 25,
+    "value": 15,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/15326039-Sergio-Mendes-Brasil-66-Stillness",
@@ -757,7 +757,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1970,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496137691",
-    "discogs_sale_price": 26
+    "discogs_sale_price": 15
   },
   {
     "artist": "Gary Burton, Chick Corea",
@@ -781,7 +781,7 @@ window.RECORDS = [
   {
     "artist": "Joe Cocker",
     "title": "With A Little Help from my Friends",
-    "value": 20,
+    "value": 15,
     "sleeve": "VG",
     "media": "VG+",
     "url": "https://www.discogs.com/release/2943675-Joe-Cocker-With-A-Little-Help-From-My-Friends",
@@ -795,7 +795,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1969,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496129921",
-    "discogs_sale_price": 20
+    "discogs_sale_price": 15
   },
   {
     "artist": "Chicago",
@@ -833,12 +833,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1984,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496103671",
-    "discogs_sale_price": 30
+    "discogs_sale_price": 12.5
   },
   {
     "artist": "Ken Nordine",
     "title": "Word Jazz",
-    "value": 25,
+    "value": 15,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/590731-Ken-Nordine-Featuring-The-Fred-Katz-Group-Word-Jazz",
@@ -852,12 +852,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1957,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496134892",
-    "discogs_sale_price": 25
+    "discogs_sale_price": 15
   },
   {
     "artist": "Crosby, Stills, Nash & Young",
     "title": "Déjà Vu",
-    "value": 20,
+    "value": 10,
     "sleeve": "VG",
     "media": "G+",
     "url": "https://www.discogs.com/search/?q=Crosby%2C+Stills%2C+Nash+%26+Young+D%C3%A9j%C3%A0+Vu+Atlantic+SD-7200&type=release",
@@ -870,7 +870,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4496123384",
-    "discogs_sale_price": 20
+    "discogs_sale_price": 10
   },
   {
     "artist": "Palghat Raghu, V. V. Subramaniam*, K. V. Narayanaswamy",
@@ -894,7 +894,7 @@ window.RECORDS = [
   {
     "artist": "Gregorio Paniaglia",
     "title": "La Folia de la Spagna",
-    "value": 29,
+    "value": 18,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/21409063-Gregorio-Paniagua-La-Folia-De-La-Spagna",
@@ -908,12 +908,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499065317",
-    "discogs_sale_price": 28
+    "discogs_sale_price": 18
   },
   {
     "artist": "Chicago",
     "title": "S/T",
-    "value": 29,
+    "value": 5,
     "sleeve": "G+",
     "media": "G+",
     "url": "https://www.discogs.com/release/448759",
@@ -925,12 +925,14 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": false,
-    "release_year": 1970
+    "release_year": 1970,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4506542034",
+    "discogs_sale_price": 5
   },
   {
     "artist": "Jesus Christ Superstar",
     "title": "A Rock Opera",
-    "value": 30,
+    "value": 10,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/3883400",
@@ -944,7 +946,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1970,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499067570",
-    "discogs_sale_price": 30
+    "discogs_sale_price": 10
   },
   {
     "artist": "Miles Davis",
@@ -968,7 +970,7 @@ window.RECORDS = [
   {
     "artist": "Peter Schickele And His Orchestra",
     "title": "Good-Time Ticket",
-    "value": 20,
+    "value": 10,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/4474402-Peter-Schickele-And-His-Orchestra-Good-Time-Ticket",
@@ -983,12 +985,12 @@ window.RECORDS = [
     "release_year": 1969,
     "subcategory": "Peter Schickele",
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499146866",
-    "discogs_sale_price": 20
+    "discogs_sale_price": 10
   },
   {
     "artist": "Paul Bley, Gary Peacock, Barry Altschul",
     "title": "Japan Suite",
-    "value": 25,
+    "value": 20,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/21725101-Paul-Bley-Gary-Peacock-Barry-Altschul-Japan-Suite",
@@ -1002,12 +1004,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1977,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413253962",
-    "discogs_sale_price": 25
+    "discogs_sale_price": 20
   },
   {
     "artist": "Ethnic Folkways Library",
     "title": "Music of Equatorial Africa",
-    "value": 25,
+    "value": 16,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/4580858-Various-Music-Of-Equatorial-Africa",
@@ -1021,12 +1023,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1950,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499152896",
-    "discogs_sale_price": 30
+    "discogs_sale_price": 16
   },
   {
     "artist": "Bud Powell",
     "title": "The Amazing Bud Powell, Vol. 3 (Bud!)",
-    "value": 25,
+    "value": 16,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/search/?q=Bud+Powell+The+Amazing+Bud+Powell%2C+Vol.+3+%28Bud%21%29+Blue+Note+BST+81571&type=release",
@@ -1039,12 +1041,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499149878",
-    "discogs_sale_price": 25
+    "discogs_sale_price": 16
   },
   {
     "artist": "Max Roach",
     "title": "It's Time",
-    "value": 30,
+    "value": 20,
     "sleeve": "VG",
     "media": "VG+",
     "url": "https://www.discogs.com/release/7265302-Max-Roach-His-Chorus-And-Orchestra-Its-Time",
@@ -1058,12 +1060,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1980,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499155761",
-    "discogs_sale_price": 30
+    "discogs_sale_price": 20
   },
   {
     "artist": "Samuel A. Grimes",
     "title": "The Vocally Versatile Mockingbird",
-    "value": 24,
+    "value": 18,
     "sleeve": "NM",
     "media": "VG+",
     "url": "https://www.discogs.com/release/7423405-Samuel-A-Grimes-The-Vocally-Versatile-Mockingbird",
@@ -1077,7 +1079,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1979,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499157423",
-    "discogs_sale_price": 21
+    "discogs_sale_price": 18
   },
   {
     "artist": "Miles Davis Quintet",
@@ -1136,7 +1138,7 @@ window.RECORDS = [
   {
     "artist": "Take 6",
     "title": "S/T",
-    "value": 23,
+    "value": 10,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/9842774-Take-6-Take-6",
@@ -1150,7 +1152,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1988,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499280489",
-    "discogs_sale_price": 23
+    "discogs_sale_price": 10
   },
   {
     "artist": "Bud Powell",
@@ -1193,7 +1195,7 @@ window.RECORDS = [
   {
     "artist": "Allman Brothers Band",
     "title": "At Fillmore East",
-    "value": 22,
+    "value": 5,
     "sleeve": "G+",
     "media": "F",
     "url": "https://www.discogs.com/release/3078778-The-Allman-Brothers-Band-The-Allman-Brothers-Band-At-Fillmore-East",
@@ -1210,7 +1212,7 @@ window.RECORDS = [
   {
     "artist": "Jay Clayton, Jerry Granelli",
     "title": "Sound Songs",
-    "value": 22,
+    "value": 10,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/3267583-Jay-Clayton-Jerry-Granelli-Sound-Songs",
@@ -1224,7 +1226,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1986,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413275307",
-    "discogs_sale_price": 19
+    "discogs_sale_price": 10
   },
   {
     "artist": "George Marsh, John Abercrombie",
@@ -1248,7 +1250,7 @@ window.RECORDS = [
   {
     "artist": "Kirk Nurock",
     "title": "Natural Sound",
-    "value": 22,
+    "value": 10,
     "sleeve": "VG",
     "media": "NM",
     "url": "https://www.discogs.com/release/2455868-Kirk-Nurock-Natural-Sound",
@@ -1262,12 +1264,12 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1982,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499375601",
-    "discogs_sale_price": 15
+    "discogs_sale_price": 10
   },
   {
     "artist": "Paul Simon",
     "title": "Graceland",
-    "value": 18,
+    "value": 15,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/11338773",
@@ -1281,7 +1283,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1986,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4499425011",
-    "discogs_sale_price": 18
+    "discogs_sale_price": 15
   },
   {
     "artist": "Rufus Reid Trio",
@@ -1441,7 +1443,7 @@ window.RECORDS = [
   {
     "artist": "Emerson, Lake and Palmer",
     "title": "Tarkus",
-    "value": 18,
+    "value": 10,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/606407-Emerson-Lake-Palmer-Tarkus",
