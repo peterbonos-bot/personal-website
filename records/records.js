@@ -226,8 +226,9 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1978,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4494143039",
-    "discogs_sale_price": 45
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Sold on Discogs; owner confirmed 2026-11-24"
   },
   {
     "artist": "Collin Walcott, Don Cherry, Nana Vasconcelos",
