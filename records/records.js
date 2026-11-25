@@ -151,7 +151,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1981,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413252747",
-    "discogs_sale_price": 45
+    "discogs_sale_price": 40
   },
   {
     "artist": "Wings",
@@ -1290,8 +1290,8 @@ window.RECORDS = [
   {
     "artist": "Rufus Reid Trio",
     "title": "Perpetual Stroll",
-    "value": 19.5,
-    "sleeve": "NM",
+    "value": 15,
+    "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/817911-Rufus-Reid-Trio-Perpetual-Stroll",
     "cover": "covers/817911.jpg",
@@ -1302,7 +1302,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1981
+    "release_year": 1981,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518565857",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Various",
@@ -1389,7 +1391,9 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518592827",
+    "discogs_sale_price": 18
   },
   {
     "artist": "Les McCann & Eddie Harris",
@@ -1458,7 +1462,8 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1971,
-    "discogs_sale_price": 12
+    "discogs_sale_price": 12,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4506545940"
   },
   {
     "artist": "Michael Colombier",
@@ -1901,7 +1906,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1963
+    "release_year": 1963,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518566193",
+    "discogs_sale_price": 13
   },
   {
     "artist": "Jean Luc Ponty",
@@ -2038,7 +2045,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1972
+    "release_year": 1972,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518599298",
+    "discogs_sale_price": 7
   },
   {
     "artist": "Oregon",
@@ -2106,7 +2115,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1979
+    "release_year": 1979,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518607344",
+    "discogs_sale_price": 12.5
   },
   {
     "artist": "Cal Tjader",
@@ -2226,7 +2237,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1968
+    "release_year": 1968,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518593535",
+    "discogs_sale_price": 5
   },
   {
     "artist": "The Rascals",
@@ -2484,7 +2497,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518593817",
+    "discogs_sale_price": 6
   },
   {
     "artist": "Engelbert Humperdinck",
@@ -2568,7 +2583,9 @@ window.RECORDS = [
     "genre": "Other/Miscellaneous",
     "year": null,
     "featured": false,
-    "release_year": 1973
+    "release_year": 1973,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518594702",
+    "discogs_sale_price": 6
   },
   {
     "artist": "National Lampoon",
@@ -2635,7 +2652,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1973
+    "release_year": 1973,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518596661",
+    "discogs_sale_price": 7
   },
   {
     "artist": "Ira Sullivan",
@@ -2652,7 +2671,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1979
+    "release_year": 1979,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518597183",
+    "discogs_sale_price": 7
   },
   {
     "artist": "Tito Morano and His Orchestra",
@@ -2791,7 +2812,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": null
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518594399",
+    "discogs_sale_price": 5
   },
   {
     "artist": "Lionel Hampton",
@@ -3580,7 +3603,7 @@ window.RECORDS = [
     "artist": "Elton John",
     "title": "Tumbleweed Connection",
     "value": 2,
-    "sleeve": "G",
+    "sleeve": "VG+",
     "media": "VG",
     "url": "https://www.discogs.com/release/6025572-Elton-John-Tumbleweed-Connection",
     "cover": "covers/6025572.jpg",
@@ -3591,7 +3614,9 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": 1970,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518592431",
+    "discogs_sale_price": 7
   },
   {
     "artist": "Phyllis Diller",
@@ -5034,5 +5059,21 @@ window.RECORDS = [
     "release_year": null,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4518587631",
     "discogs_sale_price": 10
+  },
+  {
+    "artist": "Fred Raulston",
+    "title": "Uncharted Waters",
+    "value": 16,
+    "media": "VG+",
+    "sleeve": "NM",
+    "url": "https://www.discogs.com/release/5576399-Fred-Raulston-Uncharted-Waters",
+    "note": "4 Copies in Collection",
+    "catalog": "",
+    "matrix": "",
+    "runout": "",
+    "genre": "Jazz",
+    "year": null,
+    "featured": false,
+    "release_year": 1981
   }
 ];
