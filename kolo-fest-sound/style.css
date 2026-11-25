@@ -137,7 +137,7 @@
 .gear-section tbody th { background: transparent; color: var(--ink); }
 
 .original-source { margin: 1.25rem 0 0; }
-.original-source .rider-zoom { display: block; width: min(100%, 560px); }
+.original-source .rider-zoom { display: block; width: min(100%, 600px); }
 .rider-zoom img { max-width: 100%; height: auto; cursor: zoom-in; }
 .original-unavailable { font-size: .9rem; color: var(--pine); }
 #rider-image-zoom { width: min(96vw, 1400px); max-height: 95vh; border: 1px solid var(--line); padding: .75rem; }
