@@ -117,7 +117,7 @@ window.RECORDS = [
   {
     "artist": "Peter Schickele",
     "title": "The Open Window",
-    "value": 25,
+    "value": 50,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/sell/release/4714792",
@@ -189,7 +189,7 @@ window.RECORDS = [
     "featured": true,
     "release_year": 1971,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4418532921",
-    "discogs_sale_price": 50
+    "discogs_sale_price": 30
   },
   {
     "artist": "Santana",
@@ -425,7 +425,7 @@ window.RECORDS = [
   {
     "artist": "Jack DeJohnette",
     "title": "Pictures",
-    "value": 18,
+    "value": 20,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/498592",
@@ -576,7 +576,7 @@ window.RECORDS = [
   {
     "artist": "Jack DeJohnette's Directions",
     "title": "Untitled",
-    "value": 33,
+    "value": 18,
     "sleeve": "NM",
     "media": "NM",
     "url": "https://www.discogs.com/release/498582-Jack-DeJohnettes-Directions-Untitled",
@@ -820,7 +820,7 @@ window.RECORDS = [
   {
     "artist": "A Tribute To Thelonious Monk",
     "title": "That's The Way I Feel Now",
-    "value": 30,
+    "value": 12.5,
     "sleeve": "VG+",
     "media": "NM",
     "url": "https://www.discogs.com/release/2480250-Various-Thats-The-Way-I-Feel-Now-A-Tribute-To-Thelonious-Monk-",
@@ -952,7 +952,7 @@ window.RECORDS = [
   {
     "artist": "Miles Davis",
     "title": "At Fillmore",
-    "value": null,
+    "value": 25,
     "sleeve": "VG+",
     "media": "VG+",
     "url": "https://www.discogs.com/release/10595158-Miles-Davis-Miles-Davis-At-Fillmore",
@@ -1208,7 +1208,8 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_price": 5
   },
   {
     "artist": "Jay Clayton, Jerry Granelli",
@@ -1444,7 +1445,7 @@ window.RECORDS = [
   {
     "artist": "Emerson, Lake and Palmer",
     "title": "Tarkus",
-    "value": 10,
+    "value": 12,
     "sleeve": "VG",
     "media": "VG",
     "url": "https://www.discogs.com/release/606407-Emerson-Lake-Palmer-Tarkus",
@@ -1456,7 +1457,8 @@ window.RECORDS = [
     "genre": "Rock/Pop",
     "year": null,
     "featured": false,
-    "release_year": 1971
+    "release_year": 1971,
+    "discogs_sale_price": 12
   },
   {
     "artist": "Michael Colombier",
@@ -1595,7 +1597,7 @@ window.RECORDS = [
   {
     "artist": "Cannonball Adderley Quintet",
     "title": "Mercy, Mercy, Mercy! Live at the Club",
-    "value": 16,
+    "value": 22.5,
     "sleeve": "G+",
     "media": "VG",
     "url": "https://www.discogs.com/release/4003528-The-Cannonball-Adderley-Quintet-Mercy-Mercy-Mercy-Live-At-The-Club",
@@ -1609,7 +1611,7 @@ window.RECORDS = [
     "featured": false,
     "release_year": 1967,
     "discogs_sale_url": "https://www.discogs.com/sell/item/4413245601",
-    "discogs_sale_price": 40
+    "discogs_sale_price": 22.5
   },
   {
     "artist": "Bobby Bridger",
@@ -2673,7 +2675,7 @@ window.RECORDS = [
   {
     "artist": "Keith Jarrett and Jack DeJohnette",
     "title": "Ruta and Daitya",
-    "value": 10,
+    "value": 15,
     "sleeve": "NM",
     "media": "VG+",
     "url": "https://www.discogs.com/release/28849336-Keith-Jarrett-Jack-DeJohnette-Ruta-And-Daitya",
@@ -4912,5 +4914,125 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": 1979
+  },
+  {
+    "artist": "Professor Terry's Circus Band Extraordináire, Keith Terry",
+    "title": "Live!",
+    "value": 12,
+    "sleeve": "NM",
+    "media": "NM",
+    "url": "https://www.discogs.com/release/38997845",
+    "cover": "",
+    "note": "HDCD; listed for sale on Discogs",
+    "catalog": "CPCD004",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "HDCD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518588798",
+    "discogs_sale_price": 12
+  },
+  {
+    "artist": "Crosspulse Percussion Ensemble",
+    "title": "I Like Everything About You (Yes I Do!)",
+    "value": 13,
+    "sleeve": "NM",
+    "media": "NM",
+    "url": "https://www.discogs.com/release/11299381",
+    "cover": "",
+    "note": "CD; listed for sale on Discogs",
+    "catalog": "CPCD006",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "CD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518588459",
+    "discogs_sale_price": 13
+  },
+  {
+    "artist": "Keith Terry And Crosspulse",
+    "title": "Serpentine",
+    "value": 10,
+    "sleeve": "NM",
+    "media": "NM",
+    "url": "https://www.discogs.com/release/9643459",
+    "cover": "",
+    "note": "HDCD; listed for sale on Discogs",
+    "catalog": "CPRCD001",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "HDCD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518588288",
+    "discogs_sale_price": 10
+  },
+  {
+    "artist": "Slammin All-Body Band",
+    "title": "Slammin All-Body Band",
+    "value": 13,
+    "sleeve": "NM",
+    "media": "NM",
+    "url": "https://www.discogs.com/release/15077218",
+    "cover": "",
+    "note": "HDCD; listed for sale on Discogs",
+    "catalog": "CPCD005",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "HDCD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518588180",
+    "discogs_sale_price": 13
+  },
+  {
+    "artist": "Free Dive",
+    "title": "Free Dive",
+    "value": 12,
+    "sleeve": "VG+",
+    "media": "VG+",
+    "url": "https://www.discogs.com/release/38996939",
+    "cover": "",
+    "note": "CD; listed for sale on Discogs",
+    "catalog": "CPCD007",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "CD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518587979",
+    "discogs_sale_price": 12
+  },
+  {
+    "artist": "Keith Terry, Crosspulse",
+    "title": "Body Tjak / The Celebration Soundtrack",
+    "value": 10,
+    "sleeve": "NM",
+    "media": "NM",
+    "url": "https://www.discogs.com/release/14995045",
+    "cover": "",
+    "note": "CD; listed for sale on Discogs",
+    "catalog": "CPCD003",
+    "matrix": "",
+    "runout": "",
+    "genre": "Keith Terry & Crosspulse CDs",
+    "format": "CD",
+    "year": null,
+    "featured": false,
+    "release_year": null,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4518587631",
+    "discogs_sale_price": 10
   }
 ];
