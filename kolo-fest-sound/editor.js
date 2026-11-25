@@ -7,6 +7,9 @@
   const toggle = toolbar.querySelector('[data-edit]');
   const status = toolbar.querySelector('output');
   let selection;
+  const publishedOriginals = Array.from(main.querySelectorAll('.band > .original-source'), original => [
+    original.closest('.band').id, original.cloneNode(true)
+  ]);
 
   function persist() {
     for (const field of main.querySelectorAll('input')) {
@@ -70,6 +73,27 @@
     }
   } catch {
     status.textContent = 'Browser storage is unavailable';
+  }
+
+  for (const [id, original] of publishedOriginals) {
+    const rider = document.getElementById(id);
+    if (!rider) continue;
+    rider.querySelectorAll(':scope > .original-source, :scope > .original').forEach(item => item.remove());
+    rider.append(original);
+  }
+
+  const zoom = document.querySelector('#rider-image-zoom');
+  if (zoom?.showModal) {
+    main.addEventListener('click', event => {
+      const link = event.target.closest('.rider-zoom');
+      if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const preview = zoom.querySelector('img');
+      preview.src = link.href;
+      preview.alt = link.querySelector('img').alt;
+      zoom.showModal();
+      zoom.addEventListener('close', () => link.focus(), { once: true });
+    });
   }
 
   toggle.addEventListener('click', () => {

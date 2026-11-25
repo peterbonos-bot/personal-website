@@ -135,3 +135,14 @@
 .gear-section th:first-child { width: 27%; }
 .gear-section th:nth-child(2) { width: 18%; }
 .gear-section tbody th { background: transparent; color: var(--ink); }
+
+.original-source { margin: 1.25rem 0 0; }
+.original-source .rider-zoom { display: block; width: min(100%, 560px); }
+.rider-zoom img { max-width: 100%; height: auto; cursor: zoom-in; }
+.original-unavailable { font-size: .9rem; color: var(--pine); }
+#rider-image-zoom { width: min(96vw, 1400px); max-height: 95vh; border: 1px solid var(--line); padding: .75rem; }
+#rider-image-zoom::backdrop { background: #111c; }
+#rider-image-zoom form { position: sticky; top: 0; display: flex; justify-content: flex-end; }
+#rider-image-zoom button { padding: .4rem .7rem; font: inherit; }
+#rider-image-zoom img { display: block; width: 100%; height: auto; }
+@media print { #rider-image-zoom, .original-source { display: none; } }
