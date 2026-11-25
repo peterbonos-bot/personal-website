@@ -146,3 +146,40 @@
 #rider-image-zoom button { padding: .4rem .7rem; font: inherit; }
 #rider-image-zoom img { display: block; width: 100%; height: auto; }
 @media print { #rider-image-zoom, .original-source { display: none; } }
+
+/* Show-day schedules and patch sheets */
+.festival-schedule { border: 1px solid var(--line); }
+.festival-schedule thead th:nth-child(2) { background: #323950; }
+.festival-schedule thead th:nth-child(3) { background: #214f47; }
+.festival-schedule tbody td:nth-child(2) { background: #f5f2e8; }
+.festival-schedule tbody td:nth-child(3) { background: #e6f0e8; border-inline-start: 2px solid #81a397; }
+.festival-schedule tbody td:first-child:not(.break) { font-variant-numeric: tabular-nums; font-weight: 650; }
+.room-lineups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-bottom: 1.4rem; }
+.room-lineup { padding: .7rem; background: #f5f2e8; border: 1px solid var(--line); }
+.room-lineup.kafana { background: #e6f0e8; border-color: #81a397; }
+.room-lineup h3 { margin: 0 0 .5rem; }
+.room-lineup .rider-running-order { margin: 0; }
+.rider-room[id$="-kafana"] .rider-room-title { padding: .5rem .7rem; color: #163c35; background: #e6f0e8; border-left: 4px solid #397667; }
+.rider-room[id$="-main-hall"] .rider-room-title { padding: .5rem .7rem; background: #f5f2e8; border-left: 4px solid #323950; }
+.rider-print { border: 1px solid #7b817e; border-radius: .25rem; background: #fff; color: var(--pine); padding: .3rem .65rem; font: inherit; font-size: .85rem; cursor: pointer; }
+.rider-title + .rider-print { float: right; margin: .2rem 0 .4rem .5rem; }
+.rider-counts { clear: both; }
+.patch-list th.ch { width: 4.3rem; }
+.patch-list th:nth-child(2) { width: 30%; }
+.patch-list tbody tr:nth-child(even) { background: #f7f3e9; }
+.patch-list .patch-critical { background: #f8e7d2; }
+.patch-list .patch-critical td:last-child { font-weight: 700; }
+.patch-list .patch-check td:last-child, .patch-note { color: #66431c; }
+.patch-list input { min-height: 1.3rem; }
+.plot-scroll { border-color: #9ba7a0; }
+.stage-edge { background: #e7eee9; color: #20362d; }
+.station { border-color: #8a9a91; box-shadow: 0 1px 2px #202a2426; }
+@media (max-width: 700px) { .room-lineups { grid-template-columns: 1fr; } .patch-list th.ch { width: 3.2rem; } }
+@media print {
+  .rider-print, .room-lineups, #rider-files { display: none !important; }
+  body.print-single-rider .band:not(.print-target) { display: none; }
+  body.print-single-rider .band.print-target { break-after: auto; }
+  .patch-list td, .patch-list th { padding-block: .14rem; }
+  .rider-details .visual-plot { margin-block: .45rem; }
+  .rider-details .stage-map { height: 190px; }
+}

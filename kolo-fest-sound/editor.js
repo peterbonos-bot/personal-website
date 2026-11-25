@@ -7,6 +7,9 @@
   const toggle = toolbar.querySelector('[data-edit]');
   const status = toolbar.querySelector('output');
   let selection;
+  const printedPatches = Array.from(main.querySelectorAll('.band[id] .patch-list'), table => [
+    table.closest('.band').id, table.cloneNode(true)
+  ]);
   const publishedOriginals = Array.from(main.querySelectorAll('.band > .original-source'), original => [
     original.closest('.band').id, original.cloneNode(true)
   ]);
@@ -26,7 +29,7 @@
   try {
     const saved = JSON.parse(localStorage.getItem(key) || 'null');
     if (Array.isArray(saved) && saved.length === regions.length) {
-      if (main.hasAttribute('data-rider-schedule') && !saved[2].includes('id="input-counts"')) {
+      if (main.hasAttribute('data-rider-schedule') && !saved[2].includes('class="patch-list"')) {
         const previousPage = document.createElement('template');
         previousPage.innerHTML = saved[2];
         const previousRiders = new Map(
@@ -56,6 +59,7 @@
 
           const oldPlot = details.querySelector('.plot');
           if (plot && oldPlot) oldPlot.replaceWith(plot);
+          else if (plot && !details.querySelector('.visual-plot')) details.prepend(plot);
           for (const heading of details.querySelectorAll(':scope > h3')) {
             const replacement = document.createElement('h5');
             replacement.innerHTML = heading.innerHTML;
@@ -74,6 +78,34 @@
   } catch {
     status.textContent = 'Browser storage is unavailable';
   }
+
+  for (const [id, table] of printedPatches) {
+    const rider = document.getElementById(id);
+    const existing = rider?.querySelector('.rider-details table');
+    if (!existing || existing.classList.contains('patch-list')) continue;
+    const assigned = new Map(Array.from(existing.querySelectorAll('input'), input => [input.getAttribute('aria-label'), input.value]));
+    for (const input of table.querySelectorAll('input')) {
+      const previous = input.dataset.previousChannel;
+      const value = assigned.get(input.getAttribute('aria-label')) || (previous ? assigned.get('Channel for ' + previous) : undefined);
+      if (value) input.value = value;
+    }
+    existing.replaceWith(table);
+  }
+
+  main.addEventListener('click', event => {
+    const button = event.target.closest('[data-print-rider]');
+    if (!button) return;
+    const rider = button.dataset.printRider ? document.getElementById(button.dataset.printRider) : null;
+    if (rider) {
+      document.body.classList.add('print-single-rider');
+      rider.classList.add('print-target');
+      window.addEventListener('afterprint', () => {
+        document.body.classList.remove('print-single-rider');
+        rider.classList.remove('print-target');
+      }, { once: true });
+    }
+    window.print();
+  });
 
   for (const [id, original] of publishedOriginals) {
     const rider = document.getElementById(id);
