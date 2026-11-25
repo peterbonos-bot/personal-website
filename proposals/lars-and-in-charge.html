@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lars and In Charge | Booking and Artist Development Proposal</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #161922;
+      --paper: #fff6e5;
+      --ink: #20232b;
+      --blue: #303bb5;
+      --yellow: #ffd867;
+      --peach: #f5c0a6;
+      font-family: "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--night); color: var(--paper); }
+    [hidden] { display: none !important; }
+    button { font: inherit; }
+    button:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+
+    .deck {
+      width: min(100% - 64px, 1160px);
+      min-height: 100vh;
+      min-height: 100svh;
+      margin-inline: auto;
+      padding-block: 28px;
+      display: grid;
+      align-content: center;
+      gap: 16px;
+    }
+
+    .slides { display: grid; gap: 16px; }
+    .slide {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 0.92fr;
+      align-items: center;
+      gap: clamp(32px, 6vw, 88px);
+      min-height: clamp(490px, 71vh, 685px);
+      isolation: isolate;
+      overflow: hidden;
+      padding: clamp(35px, 6.1vw, 88px);
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--ink);
+      color-scheme: light;
+    }
+
+    .slide h1, .slide h2, .slide h3, .slide p { margin: 0; }
+    .slide h1, .slide h2 {
+      font-family: "Arial Black", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.075em;
+      line-height: 0.99;
+      text-wrap: balance;
+    }
+
+    .slide h2 { max-width: 12ch; font-size: clamp(2.65rem, 6vw, 5.3rem); }
+    .slide .lead {
+      max-width: 32ch;
+      margin-top: 24px;
+      font-size: clamp(1.03rem, 1.75vw, 1.31rem);
+      line-height: 1.5;
+    }
+
+    .details { align-self: center; }
+    .detail { padding: 15px 0 17px; border-top: 1px solid #20232b5c; }
+    .detail:last-child { border-bottom: 1px solid #20232b5c; }
+    .detail h3 { margin-bottom: 5px; font-size: 1rem; font-weight: 800; line-height: 1.3; }
+    .detail p { max-width: 45ch; font-size: 0.98rem; line-height: 1.5; }
+
+    .cover {
+      grid-template-columns: minmax(0, 1fr);
+      background: var(--blue);
+      color: var(--paper);
+      color-scheme: dark;
+    }
+
+    .cover h1 { font-size: clamp(4rem, 10vw, 9rem); text-wrap: initial; }
+    .cover .descriptor {
+      max-width: 24ch;
+      margin-bottom: 25px;
+      color: var(--yellow);
+      font-weight: 800;
+      font-size: clamp(0.84rem, 1.55vw, 1.14rem);
+      letter-spacing: 0.045em;
+      line-height: 1.3;
+    }
+    .cover .byline { margin-top: 32px; font-size: 1.03rem; font-weight: 650; }
+    .cover-art {
+      position: absolute;
+      z-index: -1;
+      width: min(55%, 650px);
+      aspect-ratio: 1;
+      top: 50%;
+      right: -12%;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      background: repeating-radial-gradient(circle, transparent 0 19px, #fff6e534 20px 21px, transparent 22px 35px);
+      border: 1px solid #fff6e534;
+    }
+    .cover-art::after {
+      content: "";
+      position: absolute;
+      width: 24%;
+      aspect-ratio: 1;
+      inset: 38%;
+      border: 1px solid #ffd86799;
+      border-radius: 50%;
+      box-shadow: 0 0 0 13px #ffd86726;
+    }
+
+    .tint-peach { background: var(--peach); }
+    .tint-blue { background: #dce2ff; }
+    .tint-yellow { background: var(--yellow); }
+    .terms h2 { font-size: clamp(2.65rem, 5.5vw, 4.75rem); }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .position {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.84rem;
+      font-variant-numeric: tabular-nums;
+      font-weight: 650;
+    }
+    progress { appearance: none; width: min(145px, 100%); height: 4px; border: none; border-radius: 20px; overflow: hidden; }
+    progress::-webkit-progress-bar { background: #595c69; }
+    progress::-webkit-progress-value { background: var(--yellow); }
+    progress { background: #595c69; }
+    progress::-moz-progress-bar { background: var(--yellow); }
+    .actions { display: flex; gap: 8px; }
+    .actions button {
+      min-width: 92px;
+      min-height: 44px;
+      padding: 8px 14px;
+      border: 1px solid #fff6e56b;
+      border-radius: 5px;
+      background: transparent;
+      color: var(--paper);
+      cursor: pointer;
+    }
+    .actions button:hover:not(:disabled) { background: var(--paper); color: var(--night); }
+    .actions button:disabled { opacity: 0.48; cursor: default; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 710px) {
+      .deck { width: min(100% - 28px, 560px); padding-block: 14px; align-content: start; gap: 10px; }
+      .slide { grid-template-columns: minmax(0, 1fr); gap: 26px; min-height: min(490px, calc(100svh - 82px)); padding: clamp(24px, 6vw, 40px); }
+      .slide h2 { max-width: none; font-size: clamp(2.25rem, 8vw, 3.35rem); }
+      .slide .lead { margin-top: 13px; }
+      .detail { padding: 10px 0 12px; }
+      .cover h1 { font-size: clamp(3.6rem, 12vw, 6rem); }
+      .cover-art { width: 72%; right: -29%; top: 72%; }
+      .terms h2 { max-width: none; }
+      .controls { gap: 12px; }
+      .position { gap: 8px; }
+      .actions button { min-width: 72px; padding-inline: 8px; }
+    }
+
+
+    :root { --night: #191512; --paper: #f7e9ce; --ink: #261a17; --blue: #301c24; --yellow: #f3c264; --peach: #efc4aa; }
+    .slide { border-radius: 3px; }
+    .cover { background: linear-gradient(112deg, #311b25 36%, #642e31 100%); }
+    .cover h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.7rem, 10.5vw, 9.4rem); line-height: .86; }
+    .cover .descriptor { max-width: none; text-transform: uppercase; letter-spacing: .13em; }
+    .cover-art { right: -4%; width: min(61%, 690px); border-color: #f3c26466; background: repeating-radial-gradient(circle, transparent 0 22px, #f3c26458 23px 24px, transparent 25px 37px); }
+    .cover-art::before { content: ""; position: absolute; inset: 22% -15%; transform: rotate(-36deg); border-block: 1px solid #f3c26477; background: repeating-linear-gradient(0deg, transparent 0 18px, #f3c26430 19px 20px); }
+    .tint-blue { background: #e8dac7; }
+    .slide h2 { color: #5e282d; }
+    .detail h3 { color: #5e282d; }
+    @media (max-width: 710px) {
+      .cover h1 { font-size: clamp(3.3rem, 12vw, 6rem); }
+      .cover-art { width: 84%; right: -28%; }
+    }
+
+    .work-areas { margin: 0; padding-left: 1.75rem; }
+    .work-areas li { padding: 11px 0; border-bottom: 1px solid #20232b5c; }
+    .work-areas li::marker { font-weight: 800; color: #5e282d; }
+    .work-areas a { color: #5e282d; font-weight: 800; text-underline-offset: .18em; }
+    .work-areas span { display: block; margin-top: 3px; line-height: 1.4; }
+
+    @media print {
+      @page { size: landscape; margin: 0.35in; }
+      body { background: white; }
+      .deck, .slides { display: block; width: auto; min-height: 0; padding: 0; }
+      .slide, .slide[hidden] {
+        display: grid !important;
+        min-height: 6.45in;
+        padding: 0.47in;
+        break-inside: avoid;
+        break-after: page;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      .slide:last-child { break-after: auto; }
+      .slide h2 { font-size: 46pt; }
+      .cover h1 { font-size: 74pt; }
+      .controls { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="Lars and In Charge proposal">
+    <div class="slides">
+      <section class="slide cover" id="slide-1" aria-labelledby="title-1">
+        <div class="cover-art" aria-hidden="true"></div>
+        <div>
+          <p class="descriptor">Booking and artist development proposal</p>
+          <h1 id="title-1">Lars and<br>
+            In Charge</h1>
+          <p class="byline">Peter Bonos · Prepared for Lars Tergis</p>
+        </div>
+      </section>
+
+
+      <section class="slide tint-blue" id="work-areas" aria-labelledby="title-work">
+        <div>
+          <h2 id="title-work">Six areas of work</h2>
+        </div>
+        <ol class="work-areas">
+          <li><a href="#slide-2">Booking support</a><span>Research venues and festivals and prepare pitches for the band.</span></li>
+          <li><a href="#slide-3">Website design and EPK</a><span>Give presenters one link for the bio, media, and booking contact.</span></li>
+          <li><a href="#slide-4">Social media</a><span>Plan and prepare posts around shows, collaborators, and releases.</span></li>
+          <li><a href="#slide-5">Belly dance collaborations</a><span>Coordinate dancer availability and schedules for confirmed shows.</span></li>
+          <li><a href="#slide-6">Recording and video production</a><span>Plan sessions and shoots for release and promotion.</span></li>
+          <li><a href="#slide-7">Visual media and branding</a><span>Create artwork, photo edits, illustrations, and reusable templates.</span></li>
+        </ol>
+      </section>
+
+      <section class="slide" id="slide-2" aria-labelledby="title-2">
+        <div>
+          <h2 id="title-2">Booking support</h2>
+          <p class="lead">I’d help the band pursue larger festival opportunities and better-paying gigs that fit the live show.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Choose where to pitch</h3>
+            <p>Build a shortlist of festivals, concert series, dance events, and other live performance opportunities. Filter by availability, travel range, and minimum fee.</p>
+          </div>
+          <div class="detail">
+            <h3>Prepare pitches and support confirmed shows</h3>
+            <p>I’ll draft tailored pitches for Lars to send, with help from Joe Rosato if needed. The band will handle presenter follow-up, fees, and dates. Once a show is confirmed, I can help with logistics.</p>
+          </div>
+          <div class="detail">
+            <h3>California booking requirements</h3>
+            <p>California requires a license and a bond if I book gigs for you. The bond protects the band and starts around $500 a year. For now, I can prep the pitches and you can send them.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide tint-blue" id="slide-3" aria-labelledby="title-3">
+        <div>
+          <h2 id="title-3">Website as the EPK</h2>
+          <p class="lead">Build or refresh a mobile-friendly website that doubles as the band’s electronic press kit. Presenters can use one link to see the band live, download press materials, and get in touch.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Listen and book</h3>
+            <p>Feature live clips, upcoming shows, and a clear booking contact.</p>
+          </div>
+          <div class="detail">
+            <h3>Press downloads</h3>
+            <p>Make short and full bios, approved press photos with credits, and available tech materials easy to download.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-4" aria-labelledby="title-4">
+        <div>
+          <h2 id="title-4">Social media</h2>
+          <p class="lead">Give people a reason to follow the band between shows and an easy way to find the next one.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Plan around actual dates</h3>
+            <p>Build a manageable calendar around gig announcements, collaborator spotlights, and new audio or video.</p>
+          </div>
+          <div class="detail">
+            <h3>Make posts easy to share</h3>
+            <p>Prepare captions and short edits, coordinate tags with venues and collaborators, and agree who approves and posts each piece.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide tint-peach" id="slide-5" aria-labelledby="title-5">
+        <div>
+          <h2 id="title-5">Belly dance collaborations</h2>
+          <p class="lead">Coordinate scheduling with the dancers the band already works with.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Coordinate availability</h3>
+            <p>Check dancer availability against confirmed performance dates and coordinate any rehearsals with the band.</p>
+          </div>
+          <div class="detail">
+            <h3>Share the show schedule</h3>
+            <p>Share call times, soundcheck, and set times with the dancers and the band.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-6" aria-labelledby="title-6">
+        <div>
+          <h2 id="title-6">Recording and video</h2>
+          <p class="lead">Plan audio and video projects that capture what people hear and see at a Lars and In Charge show.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Choose the first production</h3>
+            <p>Decide whether a live performance shoot or a recording session best serves the band’s booking and release goals.</p>
+          </div>
+          <div class="detail">
+            <h3>Define what we’ll make</h3>
+            <p>Agree on the crew, budget, and finished materials before the session. For a live shoot, prioritize a full tune that shows the interplay onstage and a short cut that shows the room dancing. Add a dance feature when collaborators are confirmed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide tint-blue" id="slide-7" aria-labelledby="title-7">
+        <div>
+          <h2 id="title-7">Visual media and branding</h2>
+          <p class="lead">Create a recognizable look for the band across posters, the website, social media, and releases.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Set the visual direction</h3>
+            <p>Review the band’s current artwork and agree on typography, colors, photo treatment, and how the band name appears.</p>
+          </div>
+          <div class="detail">
+            <h3>Make artwork the band can reuse</h3>
+            <p>Use Photoshop for photo editing and composites, create original illustrations where they fit, and build reusable poster and social templates.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-8" aria-labelledby="title-8">
+        <div>
+          <h2 id="title-8">The first 30 days</h2>
+          <p class="lead">I propose 4–5 hours of remote work per week in December 2026, then 8–10 hours per week from January 2027 onward.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Week 1</h3>
+            <p>Review the existing EPK, bios, photos, and live footage. Agree on available dates, a minimum fee, and the first venues and festivals to approach.</p>
+          </div>
+          <div class="detail">
+            <h3>Weeks 2 to 4</h3>
+            <p>Draft a new EPK using the band’s best existing material, prepare pitches for the band to send, and keep a shared record of outreach.</p>
+          </div>
+          <div class="detail">
+            <h3>End of the month</h3>
+            <p>Review the responses and what the new EPK still needs. Decide which opportunities to pursue and which project would help most next.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide tint-yellow terms" id="slide-9" aria-labelledby="title-9">
+        <div>
+          <h2 id="title-9">How we’d work together</h2>
+          <p class="lead">If this feels right, let’s agree on December’s priorities and a start date.</p>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <h3>Roles</h3>
+            <p>I’d research opportunities and draft materials. Lars or a band member would handle presenter contact and booking decisions.</p>
+          </div>
+          <div class="detail">
+            <h3>Preliminary rates</h3>
+            <p><strong>$30/hr for remote work</strong> including booking research and pitch drafting, web and EPK design, PR, and graphic design. That’s $120–$150/week in December and $240–$300/week from January onward.<br>
+              <strong>$40/hr for in-person work</strong> including production assistance with recording, live sound, and video.</p>
+          </div>
+          <div class="detail">
+            <h3>Weekly check-in and invoicing</h3>
+            <p>We’ll check in once a week before I start to agree on priorities and estimated hours. I’ll invoice after the week’s work is complete, with a brief summary of the work and hours.</p>
+          </div>
+          <div class="detail">
+            <h3>Additional projects</h3>
+            <p>We’ll agree on deliverables and a budget for each additional project and approve any outside costs before committing.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <nav class="controls" aria-label="Slideshow controls" hidden>
+      <div class="position">
+        <span id="page-number" aria-hidden="true"></span>
+        <progress id="progress" aria-label="Slideshow progress"></progress>
+        <span class="sr-only" id="announcement" role="status"></span>
+      </div>
+      <div class="actions">
+        <button type="button" id="previous" title="Previous slide (Left arrow)">Back</button>
+        <button type="button" id="next" title="Next slide (Right arrow)">Next</button>
+      </div>
+    </nav>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const controls = document.querySelector('.controls');
+    const previous = document.getElementById('previous');
+    const next = document.getElementById('next');
+    const progress = document.getElementById('progress');
+    const pageNumber = document.getElementById('page-number');
+    const announcement = document.getElementById('announcement');
+    let current = 0;
+
+    function showSlide(index) {
+      const focusedControl = document.activeElement;
+      current = Math.max(0, Math.min(index, slides.length - 1));
+      slides.forEach((slide, position) => { slide.hidden = position !== current; });
+      previous.disabled = current === 0;
+      next.disabled = current === slides.length - 1;
+      if (focusedControl === previous && previous.disabled) next.focus({ preventScroll: true });
+      if (focusedControl === next && next.disabled) previous.focus({ preventScroll: true });
+      progress.value = current + 1;
+      pageNumber.textContent = (current + 1) + ' / ' + slides.length;
+      const title = slides[current].querySelector('h1, h2').textContent.trim().replace(/\s+/g, ' ');
+      announcement.textContent = 'Slide ' + (current + 1) + ' of ' + slides.length + '. ' + title;
+      window.scrollTo(0, 0);
+    }
+
+    function readLocation() {
+      const index = slides.findIndex(slide => '#' + slide.id === window.location.hash);
+      showSlide(index < 0 ? 0 : index);
+    }
+
+    function navigate(index) {
+      if (index < 0 || index >= slides.length || index === current) return;
+      window.location.hash = slides[index].id;
+    }
+
+    progress.max = slides.length;
+    previous.addEventListener('click', () => navigate(current - 1));
+    next.addEventListener('click', () => navigate(current + 1));
+    window.addEventListener('hashchange', readLocation);
+    window.addEventListener('keydown', event => {
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const shortcuts = { ArrowLeft: current - 1, ArrowRight: current + 1, Home: 0, End: slides.length - 1 };
+      const destination = shortcuts[event.key];
+      if (!Number.isInteger(destination)) return;
+      event.preventDefault();
+      navigate(destination);
+    });
+    controls.hidden = false;
+    readLocation();
+  </script>
+</body>
+</html>
