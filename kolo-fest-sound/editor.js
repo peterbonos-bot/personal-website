@@ -96,6 +96,13 @@
     const button = event.target.closest('[data-print-rider]');
     if (!button) return;
     const rider = button.dataset.printRider ? document.getElementById(button.dataset.printRider) : null;
+    const pageTitle = document.title;
+    const actName = rider?.querySelector('.rider-title')?.cloneNode(true);
+    actName?.querySelector('.pending')?.remove();
+    document.title = actName?.textContent.trim() || 'Kolo Festival 2026 - Show Riders';
+    window.addEventListener('afterprint', () => {
+      document.title = pageTitle;
+    }, { once: true });
     if (rider) {
       document.body.classList.add('print-single-rider');
       rider.classList.add('print-target');
