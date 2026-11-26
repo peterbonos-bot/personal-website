@@ -150,8 +150,9 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1981,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4413252747",
-    "discogs_sale_price": 40
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Confirmed in collection sheet Sold tab; synchronized 2026-11-26"
   },
   {
     "artist": "Wings",
@@ -188,8 +189,9 @@ window.RECORDS = [
     "year": null,
     "featured": true,
     "release_year": 1971,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4418532921",
-    "discogs_sale_price": 30
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Confirmed in collection sheet Sold tab; synchronized 2026-11-26"
   },
   {
     "artist": "Santana",
@@ -1041,8 +1043,9 @@ window.RECORDS = [
     "year": null,
     "featured": false,
     "release_year": null,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4499149878",
-    "discogs_sale_price": 16
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Confirmed in collection sheet Sold tab; synchronized 2026-11-26"
   },
   {
     "artist": "Max Roach",
@@ -2383,7 +2386,7 @@ window.RECORDS = [
     "title": "Clockwork Orange",
     "value": 9,
     "sleeve": "G+",
-    "media": "VG",
+    "media": "G+",
     "url": "https://www.discogs.com/release/4391060-Walter-Carlos-Walter-Carlos-Clockwork-Orange",
     "cover": "covers/4391060.jpg",
     "note": "",
@@ -2427,7 +2430,10 @@ window.RECORDS = [
     "genre": "World Music/International",
     "year": null,
     "featured": false,
-    "release_year": 1951
+    "release_year": 1951,
+    "excluded": true,
+    "status": "sold",
+    "exclusion_reason": "Confirmed in collection sheet Sold tab; synchronized 2026-11-26"
   },
   {
     "artist": "Red Star Singers",
@@ -3517,7 +3523,7 @@ window.RECORDS = [
   },
   {
     "artist": "The Ventures",
-    "title": "Play Country Classics",
+    "title": "I Walk the Line and Other Giant Hits",
     "value": 3,
     "sleeve": "VG",
     "media": "VG",
@@ -4948,7 +4954,7 @@ window.RECORDS = [
     "media": "NM",
     "url": "https://www.discogs.com/release/38997845",
     "cover": "",
-    "note": "HDCD; listed for sale on Discogs",
+    "note": "HDCD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPCD004",
     "matrix": "",
     "runout": "",
@@ -4968,7 +4974,7 @@ window.RECORDS = [
     "media": "NM",
     "url": "https://www.discogs.com/release/11299381",
     "cover": "",
-    "note": "CD; listed for sale on Discogs",
+    "note": "CD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPCD006",
     "matrix": "",
     "runout": "",
@@ -4988,7 +4994,7 @@ window.RECORDS = [
     "media": "NM",
     "url": "https://www.discogs.com/release/9643459",
     "cover": "",
-    "note": "HDCD; listed for sale on Discogs",
+    "note": "HDCD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPRCD001",
     "matrix": "",
     "runout": "",
@@ -5008,7 +5014,7 @@ window.RECORDS = [
     "media": "NM",
     "url": "https://www.discogs.com/release/15077218",
     "cover": "",
-    "note": "HDCD; listed for sale on Discogs",
+    "note": "HDCD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPCD005",
     "matrix": "",
     "runout": "",
@@ -5028,7 +5034,7 @@ window.RECORDS = [
     "media": "VG+",
     "url": "https://www.discogs.com/release/38996939",
     "cover": "",
-    "note": "CD; listed for sale on Discogs",
+    "note": "CD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPCD007",
     "matrix": "",
     "runout": "",
@@ -5048,7 +5054,7 @@ window.RECORDS = [
     "media": "NM",
     "url": "https://www.discogs.com/release/14995045",
     "cover": "",
-    "note": "CD; listed for sale on Discogs",
+    "note": "CD — Keith Terry/Crosspulse release. Discogs asking price (Nov 25, 2026).",
     "catalog": "CPCD003",
     "matrix": "",
     "runout": "",
