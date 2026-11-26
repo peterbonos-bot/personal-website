@@ -118,7 +118,26 @@
     const rider = document.getElementById(id);
     if (!rider) continue;
     rider.querySelectorAll(':scope > .original-source, :scope > .original').forEach(item => item.remove());
-    rider.append(original);
+    rider.insertBefore(original, rider.querySelector(':scope > .rider-counts'));
+  }
+
+  for (const table of main.querySelectorAll('.band .patch-list')) {
+    const headings = table.tHead.rows[0];
+    if (headings.querySelector('[data-input-number]')) continue;
+
+    const numberHeading = document.createElement('th');
+    numberHeading.scope = 'col';
+    numberHeading.textContent = '#';
+    numberHeading.setAttribute('aria-label', 'Input list number');
+    numberHeading.dataset.inputNumber = '';
+    headings.prepend(numberHeading);
+    headings.cells[1].textContent = 'Actual ch.';
+
+    for (const body of table.tBodies) {
+      Array.from(body.rows).forEach((row, index) => {
+        row.insertCell(0).textContent = String(index + 1);
+      });
+    }
   }
 
   const zoom = document.querySelector('#rider-image-zoom');
