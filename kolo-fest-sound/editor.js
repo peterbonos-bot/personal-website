@@ -28,6 +28,15 @@
 
   try {
     const saved = JSON.parse(localStorage.getItem(key) || 'null');
+    if (Array.isArray(saved)) {
+      for (const [index, region] of saved.entries()) {
+        if (typeof region === 'string') {
+          saved[index] = region.replace(/\bionella\b(?!-)/gi, name =>
+            name === name.toUpperCase() ? 'IONELA' : name[0] + 'onela'
+          );
+        }
+      }
+    }
     if (Array.isArray(saved) && saved.length === regions.length) {
       if (main.hasAttribute('data-rider-schedule') && !saved[2].includes('class="patch-list"')) {
         const previousPage = document.createElement('template');
