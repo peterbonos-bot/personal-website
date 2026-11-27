@@ -1756,7 +1756,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1973
+    "release_year": 1973,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4527153105",
+    "discogs_sale_price": 10
   },
   {
     "artist": "Nat \"King\" Cole",
@@ -2039,7 +2041,7 @@ window.RECORDS = [
     "value": 12,
     "sleeve": "VG",
     "media": "VG",
-    "url": "https://www.discogs.com/release/24239741-Paul-Winter-Icarus",
+    "url": "https://www.discogs.com/release/1485553",
     "cover": "covers/24239741.jpg",
     "note": "",
     "catalog": "",
@@ -2048,9 +2050,9 @@ window.RECORDS = [
     "genre": "Jazz",
     "year": null,
     "featured": false,
-    "release_year": 1972,
-    "discogs_sale_url": "https://www.discogs.com/sell/item/4518599298",
-    "discogs_sale_price": 7
+    "release_year": 1973,
+    "discogs_sale_url": "https://www.discogs.com/sell/item/4527154839",
+    "discogs_sale_price": 15
   },
   {
     "artist": "Oregon",
